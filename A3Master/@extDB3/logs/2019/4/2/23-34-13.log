@@ -1,0 +1,57 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 4 Cores, Setting up 4 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[23:34:13:713167 +02:00] [Thread 3692] extDB3: SQL: Initialized: Add Quotes around TEXT Datatypes mode: 2
+[23:34:13:713376 +02:00] [Thread 3692] extDB3: SQL: Initialized: NULL = ""
+[23:34:13:713712 +02:00] [Thread 3692] extDB3: Locked
+[23:34:53:586886 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'C64S67' FROM players' at line 1
+[23:34:53:586909 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'C64S67' FROM players
+[23:35:10:887751 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'B44D80' FROM players' at line 1
+[23:35:10:887768 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'B44D80' FROM players
+[23:35:11:084407 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'L14M05' FROM players' at line 1
+[23:35:11:084430 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'L14M05' FROM players
+[23:35:11:216460 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'R27W52' FROM players' at line 1
+[23:35:11:216477 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'R27W52' FROM players
+[23:35:11:413558 +02:00] [Thread 7472] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'O63A21' FROM players' at line 1
+[23:35:11:413575 +02:00] [Thread 7472] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'O63A21' FROM players
+[23:35:11:567444 +02:00] [Thread 15068] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'H18K12' FROM players' at line 1
+[23:35:11:567463 +02:00] [Thread 15068] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'H18K12' FROM players
+[23:35:11:745795 +02:00] [Thread 15068] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'T96F17' FROM players' at line 1
+[23:35:11:745814 +02:00] [Thread 15068] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'T96F17' FROM players
+[23:35:11:919321 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'P66B36' FROM players' at line 1
+[23:35:11:919391 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'P66B36' FROM players
+[23:35:12:118425 +02:00] [Thread 7472] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'Y67N86' FROM players' at line 1
+[23:35:12:118447 +02:00] [Thread 7472] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'Y67N86' FROM players
+[23:35:12:272925 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'S32X23' FROM players' at line 1
+[23:35:12:272942 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'S32X23' FROM players
+[23:35:13:375850 +02:00] [Thread 7472] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'F53X18' FROM players' at line 1
+[23:35:13:375870 +02:00] [Thread 7472] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'F53X18' FROM players
+[23:35:13:594573 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'B88H24' FROM players' at line 1
+[23:35:13:594593 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'B88H24' FROM players
+[23:35:13:812649 +02:00] [Thread 7472] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'H36H47' FROM players' at line 1
+[23:35:13:812665 +02:00] [Thread 7472] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'H36H47' FROM players
+[23:35:14:031088 +02:00] [Thread 17144] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'X64I57' FROM players' at line 1
+[23:35:14:031107 +02:00] [Thread 17144] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'X64I57' FROM players
+[23:35:14:188694 +02:00] [Thread 7472] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'L47P10' FROM players' at line 1
+[23:35:14:188711 +02:00] [Thread 7472] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'L47P10' FROM players
+[23:35:14:385712 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'L06W86' FROM players' at line 1
+[23:35:14:385732 +02:00] [Thread 2008] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'L06W86' FROM players
+[23:35:14:584597 +02:00] [Thread 15068] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE playerintid = 'K14E01' FROM players' at line 1
+[23:35:14:584619 +02:00] [Thread 15068] extDB3: SQL: Error MariaDBQueryException: Input: SELECT playerintid WHERE playerintid = 'K14E01' FROM players

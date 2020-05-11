@@ -1,0 +1,9 @@
+[14:47:48:514836 +01:00] [Thread 13444]  Performed Query 1 - 157369 - SHOW PROCESSLIST
+[14:47:48:514888 +01:00] [Thread 15056]  Finished Query - SHOW PROCESSLIST - with return - [1010]
+[18:37:32:030870 +01:00] [Thread 8416]  Performed Query 1 - 750258 - SHOW PROCESSLIST
+[18:39:50:773085 +01:00] [Thread 8416]  Performed Query 1 - 750258 - SELECT id FROM players WHERE steamid64 = '76561198216442289'
+[18:39:51:212687 +01:00] [Thread 7048]  SINGLE RETURN ARRIVED - [4]
+[18:39:51:212721 +01:00] [Thread 8416]  Finished Query - SELECT id FROM players WHERE steamid64 = '76561198216442289' - with return - [4]
+[18:39:51:212833 +01:00] [Thread 7048]  Performed Query 1 - 750258 - SELECT intid, a3name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE steamid64 = '76561198216442289'
+[18:39:51:429627 +01:00] [Thread 7048]  SINGLE RETURN ARRIVED - ["C34QBC43Y","Rudi Bildungsstop",0,0,0,1,0,0,0,0]
+[18:39:51:429656 +01:00] [Thread 8416]  Finished Query - SELECT intid, a3name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE steamid64 = '76561198216442289' - with return - ["C34QBC43Y","Rudi Bildungsstop",0,0,0,1,0,0,0,0]

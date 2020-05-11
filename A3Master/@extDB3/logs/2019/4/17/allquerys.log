@@ -1,0 +1,14 @@
+[10:07:01:834064 +02:00] [Thread 16200]  Performed Query 1 - 238584 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[10:07:01:834206 +02:00] [Thread 10168]  Performed Query 1 - 238584 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[10:14:18:489454 +02:00] [Thread 10440]  Performed Query 1 - 168057 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[10:14:18:730266 +02:00] [Thread 11200]  SINGLE RETURN ARRIVED - [1]
+[10:14:18:730291 +02:00] [Thread 10440]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1]
+[10:14:18:730398 +02:00] [Thread 10440]  Performed Query 1 - 168057 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[10:14:18:949864 +02:00] [Thread 11200]  SINGLE RETURN ARRIVED - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[10:14:18:949933 +02:00] [Thread 10440]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[10:23:03:408340 +02:00] [Thread 8488]  Performed Query 1 - 523470 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[10:23:03:632062 +02:00] [Thread 15108]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1]
+[10:23:03:632556 +02:00] [Thread 8488]  SINGLE RETURN ARRIVED - [1]
+[10:23:03:632842 +02:00] [Thread 204]  Performed Query 1 - 523470 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[10:23:03:845039 +02:00] [Thread 16096]  SINGLE RETURN ARRIVED - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[10:23:03:845090 +02:00] [Thread 204]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]

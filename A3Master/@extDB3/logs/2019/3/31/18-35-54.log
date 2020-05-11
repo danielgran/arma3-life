@@ -1,0 +1,27 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 4 Cores, Setting up 4 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[18:35:54:421250 +02:00] [Thread 920] extDB3: SQL: Initialized: Add Quotes around TEXT Datatypes mode: 2
+[18:35:54:421445 +02:00] [Thread 920] extDB3: SQL: Initialized: NULL = ""
+[18:35:54:478269 +02:00] [Thread 920] extDB3: LOG: Error: Failed opening file P:\a3servertest\A3Master\@extDB3\logs\2019\3\31\playerdata.log for writing: Permission denied
+[18:35:54:478307 +02:00] [Thread 920] extDB3: Failed to Load Protocol: LOG
+[18:35:54:533653 +02:00] [Thread 920] extDB3: LOG: Error: Failed opening file P:\a3servertest\A3Master\@extDB3\logs\2019\3\31\allquerys.log for writing: Permission denied
+[18:35:54:533694 +02:00] [Thread 920] extDB3: Failed to Load Protocol: LOG
+[18:35:54:533748 +02:00] [Thread 920] extDB3: Locked

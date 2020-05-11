@@ -1,0 +1,1 @@
+Its fairly important to log every single transaction which is made into a logfile or database TODO

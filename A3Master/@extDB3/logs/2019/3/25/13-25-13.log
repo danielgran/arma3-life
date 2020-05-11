@@ -1,0 +1,27 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 4 Cores, Setting up 4 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[13:25:13:379204 +01:00] [Thread 16004] extDB3: Config Error: KOTH: No such node (KOTH.IP)
+[13:25:13:379417 +01:00] [Thread 16004] extDB3: Failed to Load Unknown Protocol: SQL_RAW_v2
+[13:25:13:379756 +01:00] [Thread 16004] extDB3: Failed to Load Unknown Protocol: MISC
+[13:25:13:379805 +01:00] [Thread 16004] extDB3: Error Invalid Format: 9:START_RCON:RCON
+[13:25:13:379825 +01:00] [Thread 16004] extDB3: Failed to Load Unknown Protocol: RCON
+[13:25:13:379853 +01:00] [Thread 16004] extDB3: Error Invalid Format: 9:RCON_STATUS
+[13:25:13:379890 +01:00] [Thread 16004] extDB3: Locked

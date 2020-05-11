@@ -1,0 +1,4 @@
+[16:47:16:541194 +02:00] [Thread 17376]  Performed Query 1 - 67018 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[16:47:16:541319 +02:00] [Thread 17372]  Performed Query 1 - 67018 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[17:37:52:712959 +02:00] [Thread 15652]  Performed Query 1 - 643455 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[17:37:52:713087 +02:00] [Thread 16868]  Performed Query 1 - 643455 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'

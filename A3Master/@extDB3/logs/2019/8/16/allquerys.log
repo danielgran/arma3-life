@@ -1,0 +1,182 @@
+[12:45:49:663302 +02:00] [Thread 18388]  Performed Query 1 - 896885 - SHOW PROCESSLIST
+[12:45:49:663400 +02:00] [Thread 18380]  Finished Query - SHOW PROCESSLIST - with return - [1010]
+[12:49:29:328592 +02:00] [Thread 18688]  Performed Query 1 - 163550 - SHOW PROCESSLIST
+[12:49:54:728247 +02:00] [Thread 18688]  Performed Query 1 - 163550 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[12:49:55:855501 +02:00] [Thread 15244]  SINGLE RETURN ARRIVED - [3]
+[12:49:55:855536 +02:00] [Thread 18688]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[12:49:55:855645 +02:00] [Thread 18688]  Performed Query 1 - 163550 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[12:49:56:075501 +02:00] [Thread 18688]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,0,0,10,0,0,0]
+[12:49:56:075521 +02:00] [Thread 15244]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,0,0,10,0,0,0]
+[12:53:09:867204 +02:00] [Thread 18500]  Performed Query 1 - 425552 - SHOW PROCESSLIST
+[12:53:09:896140 +02:00] [Thread 18500]  SINGLE RETURN ARRIVED - [3,"admire","localhost:16625","koth","Query",0,"init","SHOW PROCESSLIST",0]
+[12:53:09:896170 +02:00] [Thread 3716]  Finished Query - SHOW PROCESSLIST - with return - [3,"admire","localhost:16625","koth","Query",0,"init","SHOW PROCESSLIST",0]
+[12:54:40:224253 +02:00] [Thread 18500]  Performed Query 1 - 425552 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[12:54:40:442648 +02:00] [Thread 3716]  SINGLE RETURN ARRIVED - [3]
+[12:54:40:442662 +02:00] [Thread 18500]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[12:54:40:442761 +02:00] [Thread 3716]  Performed Query 1 - 425552 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[12:54:40:663647 +02:00] [Thread 18500]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,0,0,10,0,0,0]
+[12:54:40:663728 +02:00] [Thread 3716]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,0,0,10,0,0,0]
+[16:07:38:065627 +02:00] [Thread 21608]  Performed Query 1 - 240136 - SHOW PROCESSLIST
+[16:07:38:254038 +02:00] [Thread 21608]  SINGLE RETURN ARRIVED - [4,"root","localhost:31131","koth","Sleep",73,"","",0]
+[16:07:38:254171 +02:00] [Thread 21608]  Finished Query - SHOW PROCESSLIST - with return - [4,"root","localhost:31131","koth","Sleep",73,"","",0]
+[16:08:43:960171 +02:00] [Thread 21612]  Performed Query 1 - 240136 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[16:08:44:179822 +02:00] [Thread 21608]  SINGLE RETURN ARRIVED - [3]
+[16:08:44:179843 +02:00] [Thread 21612]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[16:08:44:180051 +02:00] [Thread 21608]  Performed Query 1 - 240136 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[16:08:44:401364 +02:00] [Thread 21612]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,120120,0,10,0,0,0]
+[16:08:44:401430 +02:00] [Thread 21608]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,120120,0,10,0,0,0]
+[16:11:32:631444 +02:00] [Thread 20576]  Performed Query 1 - 182705 - SHOW PROCESSLIST
+[16:11:32:687067 +02:00] [Thread 16212]  SINGLE RETURN ARRIVED - [4,"root","localhost:31131","koth","Sleep",308,"","",0]
+[16:11:32:687268 +02:00] [Thread 20576]  Finished Query - SHOW PROCESSLIST - with return - [4,"root","localhost:31131","koth","Sleep",308,"","",0]
+[16:12:13:593486 +02:00] [Thread 16212]  Performed Query 1 - 182705 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[16:12:13:812139 +02:00] [Thread 20576]  SINGLE RETURN ARRIVED - [3]
+[16:12:13:812153 +02:00] [Thread 16212]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[16:12:13:812273 +02:00] [Thread 20576]  Performed Query 1 - 182705 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[16:12:14:032079 +02:00] [Thread 16212]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,120120,0,10,0,0,0]
+[16:12:14:032112 +02:00] [Thread 20576]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,120120,0,10,0,0,0]
+[16:26:58:769914 +02:00] [Thread 18756]  Performed Query 1 - 836382 - SHOW PROCESSLIST
+[16:26:58:770378 +02:00] [Thread 20748]  SINGLE RETURN ARRIVED - [4,"root","localhost:31131","koth","Sleep",1234,"","",0]
+[16:26:58:770560 +02:00] [Thread 18756]  Finished Query - SHOW PROCESSLIST - with return - [4,"root","localhost:31131","koth","Sleep",1234,"","",0]
+[16:27:53:932097 +02:00] [Thread 20748]  Performed Query 1 - 836382 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[16:27:54:151426 +02:00] [Thread 18756]  SINGLE RETURN ARRIVED - [3]
+[16:27:54:151448 +02:00] [Thread 20748]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[16:27:54:151553 +02:00] [Thread 18756]  Performed Query 1 - 836382 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[16:27:54:352002 +02:00] [Thread 18756]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,120120,0,10,0,0,0]
+[16:27:54:352106 +02:00] [Thread 20748]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,120120,0,10,0,0,0]
+[17:33:49:536248 +02:00] [Thread 3316]  Performed Query 1 - 211967 - SHOW PROCESSLIST
+[17:33:49:662769 +02:00] [Thread 3316]  SINGLE RETURN ARRIVED - [4,"root","localhost:31131","koth","Sleep",12,"","",0]
+[17:33:49:662797 +02:00] [Thread 16432]  Finished Query - SHOW PROCESSLIST - with return - [4,"root","localhost:31131","koth","Sleep",12,"","",0]
+[17:34:54:277184 +02:00] [Thread 3316]  Performed Query 1 - 211967 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[17:34:54:496085 +02:00] [Thread 3316]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[17:34:54:496304 +02:00] [Thread 11356]  Performed Query 1 - 211967 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[17:34:54:496538 +02:00] [Thread 16432]  SINGLE RETURN ARRIVED - [3]
+[17:34:54:716116 +02:00] [Thread 3316]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,0,0,10,0,0,0]
+[17:34:54:716140 +02:00] [Thread 16432]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,0,0,10,0,0,0]
+[17:40:18:264511 +02:00] [Thread 20980]  Performed Query 1 - 295999 - SHOW PROCESSLIST
+[17:40:18:343969 +02:00] [Thread 19284]  SINGLE RETURN ARRIVED - [4,"root","localhost:31131","koth","Sleep",401,"","",0]
+[17:40:18:343995 +02:00] [Thread 20980]  Finished Query - SHOW PROCESSLIST - with return - [4,"root","localhost:31131","koth","Sleep",401,"","",0]
+[17:41:14:192004 +02:00] [Thread 19284]  Performed Query 1 - 295999 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[17:41:14:412340 +02:00] [Thread 20980]  SINGLE RETURN ARRIVED - [3]
+[17:41:14:412489 +02:00] [Thread 19284]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[17:41:14:412627 +02:00] [Thread 19284]  Performed Query 1 - 295999 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[17:41:14:631761 +02:00] [Thread 20980]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,0,0,10,0,0,0]
+[17:41:14:631775 +02:00] [Thread 19284]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,0,0,10,0,0,0]
+[17:48:37:013992 +02:00] [Thread 20152]  Performed Query 1 - 131505 - SHOW PROCESSLIST
+[17:48:37:179149 +02:00] [Thread 8580]  SINGLE RETURN ARRIVED - [4,"root","localhost:31131","koth","Sleep",899,"","",0]
+[17:48:37:179185 +02:00] [Thread 20152]  Finished Query - SHOW PROCESSLIST - with return - [4,"root","localhost:31131","koth","Sleep",899,"","",0]
+[17:49:36:186811 +02:00] [Thread 20152]  Performed Query 1 - 131505 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[17:49:36:388550 +02:00] [Thread 8580]  SINGLE RETURN ARRIVED - [3]
+[17:49:36:388569 +02:00] [Thread 20152]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[17:49:36:388663 +02:00] [Thread 8580]  Performed Query 1 - 131505 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[17:49:36:588682 +02:00] [Thread 20152]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,0,0,10,0,0,0]
+[17:49:36:588694 +02:00] [Thread 8580]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,0,0,10,0,0,0]
+[17:52:05:701933 +02:00] [Thread 23192]  Performed Query 1 - 39064 - SHOW PROCESSLIST
+[17:52:05:856945 +02:00] [Thread 23188]  SINGLE RETURN ARRIVED - [4,"root","localhost:31131","koth","Sleep",1108,"","",0]
+[17:52:05:856970 +02:00] [Thread 23192]  Finished Query - SHOW PROCESSLIST - with return - [4,"root","localhost:31131","koth","Sleep",1108,"","",0]
+[17:52:51:758510 +02:00] [Thread 23188]  Performed Query 1 - 39064 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[17:52:51:978577 +02:00] [Thread 23192]  SINGLE RETURN ARRIVED - [3]
+[17:52:51:979500 +02:00] [Thread 23188]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[17:52:51:979882 +02:00] [Thread 23184]  Performed Query 1 - 39064 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[17:52:52:183792 +02:00] [Thread 23192]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,0,0,10,0,0,0]
+[17:52:52:183858 +02:00] [Thread 23192]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,0,0,10,0,0,0]
+[17:53:00:185909 +02:00] [Thread 23184]  Performed Query 1 - 39064 - UPDATE players SET name = 'Prof Bildungsstop', xp = 1000, level = 1, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[17:53:00:579371 +02:00] [Thread 23184]  Performed Query 1 - 39064 - UPDATE players SET name = 'Prof Bildungsstop', xp = 2000, level = 1, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[17:53:16:213697 +02:00] [Thread 23184]  Performed Query 1 - 39064 - UPDATE players SET name = 'Prof Bildungsstop', xp = 3000, level = 1, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[17:53:24:396800 +02:00] [Thread 23184]  Performed Query 1 - 39064 - UPDATE players SET name = 'Prof Bildungsstop', xp = 3000, level = 1, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[17:55:41:228490 +02:00] [Thread 23192]  Performed Query 1 - 39064 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[17:55:41:445977 +02:00] [Thread 23188]  SINGLE RETURN ARRIVED - [3]
+[17:55:41:445978 +02:00] [Thread 23192]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[17:55:41:446096 +02:00] [Thread 23188]  Performed Query 1 - 39064 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[17:55:41:666333 +02:00] [Thread 23192]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,3000,1,10,0,0,0]
+[17:55:41:666376 +02:00] [Thread 23188]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,3000,1,10,0,0,0]
+[17:55:51:467010 +02:00] [Thread 23192]  Performed Query 1 - 39064 - UPDATE players SET name = 'Prof Bildungsstop', xp = 4000, level = 3, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[17:55:57:594463 +02:00] [Thread 23192]  Performed Query 1 - 39064 - UPDATE players SET name = 'Prof Bildungsstop', xp = 7000, level = 3, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:19:30:999690 +02:00] [Thread 19284]  Performed Query 1 - 60475 - SHOW PROCESSLIST
+[18:19:31:091852 +02:00] [Thread 19284]  SINGLE RETURN ARRIVED - [4,"root","localhost:31131","koth","Sleep",2753,"","",0]
+[18:19:31:091889 +02:00] [Thread 19688]  Finished Query - SHOW PROCESSLIST - with return - [4,"root","localhost:31131","koth","Sleep",2753,"","",0]
+[18:19:58:981266 +02:00] [Thread 19284]  Performed Query 1 - 60475 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[18:19:59:200878 +02:00] [Thread 19688]  SINGLE RETURN ARRIVED - [3]
+[18:19:59:200911 +02:00] [Thread 19284]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[18:19:59:201014 +02:00] [Thread 19688]  Performed Query 1 - 60475 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[18:19:59:404624 +02:00] [Thread 19284]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,7000,3,10,0,0,0]
+[18:19:59:404655 +02:00] [Thread 19688]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,7000,3,10,0,0,0]
+[18:20:16:306002 +02:00] [Thread 19284]  Performed Query 1 - 60475 - UPDATE players SET name = 'Prof Bildungsstop', xp = 10000, level = 5, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:20:17:216382 +02:00] [Thread 19284]  Performed Query 1 - 60475 - UPDATE players SET name = 'Prof Bildungsstop', xp = 15000, level = 5, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:20:20:296418 +02:00] [Thread 19284]  Performed Query 1 - 60475 - UPDATE players SET name = 'Prof Bildungsstop', xp = 21000, level = 5, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:20:21:718753 +02:00] [Thread 19284]  Performed Query 1 - 60475 - UPDATE players SET name = 'Prof Bildungsstop', xp = 29000, level = 5, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:20:21:829542 +02:00] [Thread 19284]  Performed Query 1 - 60475 - UPDATE players SET name = 'Prof Bildungsstop', xp = 30000, level = 5, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:25:37:809410 +02:00] [Thread 23244]  Performed Query 1 - 375743 - SHOW PROCESSLIST
+[18:25:37:809459 +02:00] [Thread 21452]  SINGLE RETURN ARRIVED - [4,"root","localhost:31131","koth","Sleep",15,"","",0]
+[18:25:37:809496 +02:00] [Thread 23244]  Finished Query - SHOW PROCESSLIST - with return - [4,"root","localhost:31131","koth","Sleep",15,"","",0]
+[18:26:11:714905 +02:00] [Thread 21452]  Performed Query 1 - 375743 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[18:26:11:935661 +02:00] [Thread 23244]  SINGLE RETURN ARRIVED - [3]
+[18:26:11:935707 +02:00] [Thread 21452]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[18:26:11:935901 +02:00] [Thread 23244]  Performed Query 1 - 375743 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[18:26:12:157657 +02:00] [Thread 21452]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,0,5,10,0,0,0]
+[18:26:12:157705 +02:00] [Thread 23244]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,0,5,10,0,0,0]
+[18:26:22:104122 +02:00] [Thread 21452]  Performed Query 1 - 375743 - UPDATE players SET name = 'Prof Bildungsstop', xp = 1000, level = 1, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:26:33:831053 +02:00] [Thread 21452]  Performed Query 1 - 375743 - UPDATE players SET name = 'Prof Bildungsstop', xp = 2000, level = 2, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:26:40:596480 +02:00] [Thread 21452]  Performed Query 1 - 375743 - UPDATE players SET name = 'Prof Bildungsstop', xp = 102000, level = 3, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:26:47:419092 +02:00] [Thread 21452]  Performed Query 1 - 375743 - UPDATE players SET name = 'Prof Bildungsstop', xp = 202000, level = 14, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:26:47:642081 +02:00] [Thread 21452]  Performed Query 1 - 375743 - UPDATE players SET name = 'Prof Bildungsstop', xp = 302000, level = 19, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:26:53:794826 +02:00] [Thread 21452]  Performed Query 1 - 375743 - UPDATE players SET name = 'Prof Bildungsstop', xp = 402000, level = 22, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:26:54:018447 +02:00] [Thread 21452]  Performed Query 1 - 375743 - UPDATE players SET name = 'Prof Bildungsstop', xp = 502000, level = 25, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:26:54:196467 +02:00] [Thread 21452]  Performed Query 1 - 375743 - UPDATE players SET name = 'Prof Bildungsstop', xp = 602000, level = 27, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:26:54:459058 +02:00] [Thread 21452]  Performed Query 1 - 375743 - UPDATE players SET name = 'Prof Bildungsstop', xp = 702000, level = 29, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:26:54:704195 +02:00] [Thread 21452]  Performed Query 1 - 375743 - UPDATE players SET name = 'Prof Bildungsstop', xp = 802000, level = 31, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:26:54:928497 +02:00] [Thread 21452]  Performed Query 1 - 375743 - UPDATE players SET name = 'Prof Bildungsstop', xp = 902000, level = 33, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[18:28:06:257544 +02:00] [Thread 21452]  Performed Query 1 - 375743 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[18:28:06:476074 +02:00] [Thread 23244]  SINGLE RETURN ARRIVED - [3]
+[18:28:06:476093 +02:00] [Thread 21452]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[18:28:06:476176 +02:00] [Thread 23244]  Performed Query 1 - 375743 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[18:28:06:696652 +02:00] [Thread 21452]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,902000,33,10,0,0,0]
+[18:28:06:696768 +02:00] [Thread 21452]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,902000,33,10,0,0,0]
+[18:31:01:774026 +02:00] [Thread 23244]  Performed Query 1 - 375743 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[18:31:01:994283 +02:00] [Thread 21452]  SINGLE RETURN ARRIVED - [3]
+[18:31:01:994324 +02:00] [Thread 23244]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[18:31:01:994400 +02:00] [Thread 21452]  Performed Query 1 - 375743 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[18:31:02:196381 +02:00] [Thread 23244]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,902000,33,10,0,0,0]
+[18:31:02:196405 +02:00] [Thread 21452]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,902000,33,10,0,0,0]
+[18:38:20:434383 +02:00] [Thread 23244]  Performed Query 1 - 375743 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[18:38:20:664598 +02:00] [Thread 21452]  SINGLE RETURN ARRIVED - [3]
+[18:38:20:664731 +02:00] [Thread 10172]  Performed Query 1 - 375743 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[18:38:20:683182 +02:00] [Thread 23244]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[18:38:20:865914 +02:00] [Thread 21452]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,902000,33,10,0,0,0]
+[18:38:20:865975 +02:00] [Thread 21452]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,902000,33,10,0,0,0]
+[23:37:09:736025 +02:00] [Thread 6872]  Performed Query 1 - 21695 - SHOW PROCESSLIST
+[23:37:09:780957 +02:00] [Thread 20224]  Finished Query - SHOW PROCESSLIST - with return - [3,"root","localhost:51578","koth","Sleep",844,"","",0]
+[23:37:09:780963 +02:00] [Thread 6872]  SINGLE RETURN ARRIVED - [3,"root","localhost:51578","koth","Sleep",844,"","",0]
+[23:39:16:287795 +02:00] [Thread 6872]  Performed Query 1 - 21695 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[23:39:16:488662 +02:00] [Thread 20224]  SINGLE RETURN ARRIVED - [3]
+[23:39:16:488711 +02:00] [Thread 6872]  Finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [3]
+[23:39:16:488808 +02:00] [Thread 20224]  Performed Query 1 - 21695 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[23:39:16:694018 +02:00] [Thread 6872]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof Bildungsstop",0,0,902000,33,10,0,0,0]
+[23:39:16:718495 +02:00] [Thread 20224]  Finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof Bildungsstop",0,0,902000,33,10,0,0,0]
+[23:39:34:785576 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = 804001, level = 34, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:39:34:988930 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = 706002, level = 33, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:39:35:139387 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = 608003, level = 31, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:39:55:089004 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = 510004, level = 29, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:39:55:264962 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = 412005, level = 27, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:39:55:442841 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = 314006, level = 25, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:39:55:619655 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = 216007, level = 22, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:39:55:773365 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = 118008, level = 19, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:39:55:972139 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = 20009, level = 15, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:39:56:194731 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -77990, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:39:56:349286 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -175989, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:39:56:485525 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -273988, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:39:57:204754 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -371987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:04:595089 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -361987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:04:771906 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -351987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:05:128321 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -341987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:05:724869 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -331987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:09:139310 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -321987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:09:937785 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -311987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:10:891684 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -301987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:11:123210 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -291987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:11:281142 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -281987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:11:486299 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -271987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:11:641803 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -261987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:11:801583 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -251987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:11:986191 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -241987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:12:162145 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = -231987, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'
+[23:40:25:102714 +02:00] [Thread 6872]  Performed Query 1 - 21695 - UPDATE players SET name = 'Prof Bildungsstop', xp = 0, level = 7, money = 10, kills = 0, teamkills = 0, deaths = 0 WHERE playerid = '76561198216442289'

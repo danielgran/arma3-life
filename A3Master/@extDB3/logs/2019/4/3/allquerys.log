@@ -1,0 +1,9 @@
+[22:19:06:004623 +02:00] [Thread 15000]  New Query Statement SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[22:19:06:004623 +02:00] [Thread 7276]  To Database 465274
+[22:19:06:004629 +02:00] [Thread 17436] data var [0,"Error Unknown Protocol"]
+[22:19:06:064214 +02:00] [Thread 7276] data var [0,"Error Unknown Protocol"]
+[22:19:06:064793 +02:00] [Thread 7276] data var Error Unknown Protocol
+[22:19:06:111513 +02:00] [Thread 7276] result var 
+[22:19:06:132577 +02:00] [Thread 7276] result BEFORE IF var 
+[22:19:06:335484 +02:00] [Thread 7276] result 2 LAST var <null>
+[22:19:06:337770 +02:00] [Thread 7276] return var any

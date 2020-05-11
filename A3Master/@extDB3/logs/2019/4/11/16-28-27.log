@@ -1,0 +1,29 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 4 Cores, Setting up 4 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[16:28:27:652235 +02:00] [Thread 13732] extDB3: SQL: Initialized: Add Quotes around TEXT Datatypes mode: 2
+[16:28:27:652462 +02:00] [Thread 13732] extDB3: SQL: Initialized: NULL = ""
+[16:28:27:652931 +02:00] [Thread 13732] extDB3: Locked
+[16:36:03:993541 +02:00] [Thread 13732] extDB3: Error Unknown Protocol: 910  Input String: 2:910:SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '10'
+[16:39:14:324583 +02:00] [Thread 13732] extDB3: Error Unknown Protocol: 910  Input String: 2:910:SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '10'
+[16:39:16:107904 +02:00] [Thread 13732] extDB3: Error Unknown Protocol: 910  Input String: 2:910:SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '10'
+[16:39:26:241249 +02:00] [Thread 13732] extDB3: Error Unknown Protocol: 910  Input String: 2:910:SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '10'
+[16:42:13:031420 +02:00] [Thread 17684] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where playerid = '10'' at line 1
+[16:42:13:031457 +02:00] [Thread 17684] extDB3: SQL: Error MariaDBQueryException: Input: select * where playerid = '10'

@@ -1,0 +1,20 @@
+[15:53:39:544714 +02:00] [Thread 232]  Error - Innerloopcounter exeeded max  - [3]
+[16:36:03:993652 +02:00] [Thread 9316]  Failed Statement - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '10' - with [0,"Error Unknown Protocol"]
+[16:39:14:324690 +02:00] [Thread 17684]  Failed Statement - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '10' - with [0,"Error Unknown Protocol"]
+[16:39:16:108025 +02:00] [Thread 9316]  Failed Statement - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '10' - with [0,"Error Unknown Protocol"]
+[16:39:26:241354 +02:00] [Thread 17684]  Failed Statement - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '10' - with [0,"Error Unknown Protocol"]
+[16:42:13:004271 +02:00] [Thread 9316]  Error - Innerloopcounter exeeded max  - [3] - select * where playerid = '10'
+[16:49:10:974568 +02:00] [Thread 17996]  Failed Statement - select * from players where playerid = '110' - with [0,"Error Unknown Protocol"]
+[17:43:48:402504 +02:00] [Thread 11140]  Error when receiving the result - [0,"Error MariaDBQueryException Exception"]
+[17:43:50:123762 +02:00] [Thread 11140]  Error when receiving the result - [0,"Error MariaDBQueryException Exception"]
+[17:43:50:981203 +02:00] [Thread 11140]  Error when receiving the result - [0,"Error MariaDBQueryException Exception"]
+[17:43:51:159866 +02:00] [Thread 11140]  Error when receiving the result - [0,"Error MariaDBQueryException Exception"]
+[17:43:51:312803 +02:00] [Thread 11140]  Error when receiving the result - [0,"Error MariaDBQueryException Exception"]
+[17:43:51:511510 +02:00] [Thread 11140]  Error when receiving the result - [0,"Error MariaDBQueryException Exception"]
+[17:49:12:437733 +02:00] [Thread 12124]  Error when receiving the result - [0,"Error MariaDBQueryException Exception"]
+[17:51:42:018538 +02:00] [Thread 9240]  Error when receiving the result - [0,"Error MariaDBQueryException Exception"]
+[17:51:43:524908 +02:00] [Thread 9240]  Error when receiving the result - [0,"Error MariaDBQueryException Exception"]
+[18:03:43:039788 +02:00] [Thread 17560]  Error - Innerloopcounter exeeded max  - [3] - SELECT playerintid FROM players WHERE playerintid = 'U87I29'
+[18:03:49:338452 +02:00] [Thread 13072]  Error - Innerloopcounter exeeded max  - [3] - SELECT playerintid FROM players WHERE playerintid = 'Y18L42'
+[18:04:04:337635 +02:00] [Thread 13072]  Error - Innerloopcounter exeeded max  - [3] - SELECT playerintid FROM players WHERE playerintid = 'T80S85'
+[18:04:09:304673 +02:00] [Thread 13072]  Error - Innerloopcounter exeeded max  - [3] - SELECT playerintid FROM players WHERE playerintid = 'F84S76'

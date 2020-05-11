@@ -1,0 +1,2 @@
+[15:22:20:073631 +02:00] [Thread 16548]  Failed Statement - SHOW PROCESSLIST - with [0,"Error Unknown Protocol"]
+[15:25:23:578752 +02:00] [Thread 5104]  Error - Innerloopcounter exeeded max  - [3] - SHOW PROCESSLIST

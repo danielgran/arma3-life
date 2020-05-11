@@ -1,0 +1,71 @@
+[15:36:59:243823 +02:00] [Thread 18272]  Performed Query 1 - 710438 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[15:36:59:485596 +02:00] [Thread 19384]  SINGLE RETURN ARRIVED - [1]
+[15:36:59:485688 +02:00] [Thread 19384]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1]
+[15:36:59:485965 +02:00] [Thread 18272]  Performed Query 1 - 710438 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[15:36:59:705424 +02:00] [Thread 19384]  SINGLE RETURN ARRIVED - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[15:36:59:705514 +02:00] [Thread 18272]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[15:48:29:070002 +02:00] [Thread 15552]  Performed Query 1 - 827572 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[15:48:29:332052 +02:00] [Thread 6384]  SINGLE RETURN ARRIVED - [1]
+[15:48:29:332101 +02:00] [Thread 15552]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1]
+[15:48:29:332182 +02:00] [Thread 6384]  Performed Query 1 - 827572 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[15:48:29:538577 +02:00] [Thread 15552]  SINGLE RETURN ARRIVED - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[15:48:29:538632 +02:00] [Thread 6384]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[15:50:46:776158 +02:00] [Thread 18812]  Performed Query 1 - 960157 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[15:50:46:973473 +02:00] [Thread 18812]  SINGLE RETURN ARRIVED - [1]
+[15:50:46:973492 +02:00] [Thread 17156]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1]
+[15:50:46:973586 +02:00] [Thread 18812]  Performed Query 1 - 960157 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[15:50:47:206661 +02:00] [Thread 17156]  SINGLE RETURN ARRIVED - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[15:50:47:206716 +02:00] [Thread 17156]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[16:11:56:843366 +02:00] [Thread 18812]  Performed Query 1 - 960157 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[16:11:57:049091 +02:00] [Thread 17156]  SINGLE RETURN ARRIVED - [1]
+[16:11:57:049118 +02:00] [Thread 18812]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1]
+[16:11:57:049259 +02:00] [Thread 17156]  Performed Query 1 - 960157 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[16:11:57:259095 +02:00] [Thread 18812]  SINGLE RETURN ARRIVED - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[16:11:57:259171 +02:00] [Thread 17156]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[21:26:30:117665 +02:00] [Thread 20092]  Performed Query 1 - 34744 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[21:26:30:333832 +02:00] [Thread 21696]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1]
+[21:26:30:333922 +02:00] [Thread 20092]  SINGLE RETURN ARRIVED - [1]
+[21:26:30:334061 +02:00] [Thread 21696]  Performed Query 1 - 34744 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[21:26:30:553691 +02:00] [Thread 20092]  SINGLE RETURN ARRIVED - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[21:26:30:553753 +02:00] [Thread 21696]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[21:29:21:231977 +02:00] [Thread 18816]  Performed Query 1 - 310665 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[21:29:21:447340 +02:00] [Thread 20188]  SINGLE RETURN ARRIVED - [1]
+[21:29:21:447392 +02:00] [Thread 18816]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1]
+[21:29:21:447657 +02:00] [Thread 18816]  Performed Query 1 - 310665 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[21:29:21:659747 +02:00] [Thread 20188]  SINGLE RETURN ARRIVED - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[21:29:21:659799 +02:00] [Thread 18816]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[21:34:34:768539 +02:00] [Thread 20096]  Performed Query 1 - 347742 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[21:34:35:022672 +02:00] [Thread 21144]  SINGLE RETURN ARRIVED - [1]
+[21:34:35:022764 +02:00] [Thread 21144]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1]
+[21:34:35:025574 +02:00] [Thread 20096]  Performed Query 1 - 347742 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[21:34:35:226185 +02:00] [Thread 20096]  SINGLE RETURN ARRIVED - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[21:34:35:226217 +02:00] [Thread 21144]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[22:10:00:484760 +02:00] [Thread 6232]  Performed Query 1 - 985308 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[22:10:00:738727 +02:00] [Thread 20632]  SINGLE RETURN ARRIVED - [1]
+[22:10:00:738802 +02:00] [Thread 20632]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1]
+[22:10:00:739252 +02:00] [Thread 6232]  Performed Query 1 - 985308 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[22:10:00:970159 +02:00] [Thread 20632]  SINGLE RETURN ARRIVED - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[22:10:00:970271 +02:00] [Thread 20632]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[22:14:26:504598 +02:00] [Thread 19228]  Performed Query 1 - 861350 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[22:14:26:756412 +02:00] [Thread 22980]  SINGLE RETURN ARRIVED - [1]
+[22:14:26:756513 +02:00] [Thread 22980]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1]
+[22:14:26:760501 +02:00] [Thread 19228]  Performed Query 1 - 861350 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[22:14:27:001470 +02:00] [Thread 22980]  SINGLE RETURN ARRIVED - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[22:14:27:001911 +02:00] [Thread 19228]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["ADMIN","Max Mustermann",100,0,100000,123,123,123,0,123]
+[22:17:26:195714 +02:00] [Thread 19228]  Performed Query 1 - 861350 - UPDATE players SET name = 'Prof. Rudi Bildungsstop', xp = 100000, level = 123, money = 10000, kills = 123, teamkills = 0, deaths = 123 WHERE playerid = '76561198216442289'
+[22:20:18:016206 +02:00] [Thread 19228]  Performed Query 1 - 861350 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[22:20:18:264727 +02:00] [Thread 22980]  SINGLE RETURN ARRIVED - [1]
+[22:20:18:264760 +02:00] [Thread 19228]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1]
+[22:20:18:264836 +02:00] [Thread 22980]  Performed Query 1 - 861350 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[22:20:18:500544 +02:00] [Thread 19228]  SINGLE RETURN ARRIVED - ["ADMIN","Prof. Rudi Bildungsstop",100,0,100000,123,10000,123,0,123]
+[22:20:18:500807 +02:00] [Thread 19228]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["ADMIN","Prof. Rudi Bildungsstop",100,0,100000,123,10000,123,0,123]
+[22:20:50:725660 +02:00] [Thread 22980]  Performed Query 1 - 861350 - SELECT id FROM players WHERE playerid = '76561198216442289'
+[22:20:51:010098 +02:00] [Thread 22980]  SINGLE RETURN ARRIVED - [1001]
+[22:20:51:010156 +02:00] [Thread 22980]  Successfully finished Query - SELECT id FROM players WHERE playerid = '76561198216442289' - with return - [1001]
+[22:20:51:010382 +02:00] [Thread 19228]  Performed Query 1 - 861350 - SELECT playerintid FROM players WHERE playerintid = 'I14ZYD92R'
+[22:20:51:209758 +02:00] [Thread 22980]  SINGLE RETURN ARRIVED - [1001]
+[22:20:51:209821 +02:00] [Thread 22980]  Successfully finished Query - SELECT playerintid FROM players WHERE playerintid = 'I14ZYD92R' - with return - [1001]
+[22:20:51:625460 +02:00] [Thread 19228]  Performed Query 1 - 861350 - INSERT INTO players (playerid, playerintid, name, playtime, firstconnect, lastconnect) values (76561198216442289,'I14ZYD92R','Prof. Rudi Bildungsstop','00:00:00','2019-8-11 22:20:00','2019-8-11 22:20:00')
+[22:20:52:203821 +02:00] [Thread 19228]  Performed Query 1 - 861350 - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289'
+[22:20:52:442086 +02:00] [Thread 22980]  SINGLE RETURN ARRIVED - ["I14ZYD92R","Prof. Rudi Bildungsstop",0,0,0,0,0,0,0,0]
+[22:20:52:442109 +02:00] [Thread 19228]  Successfully finished Query - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with return - ["I14ZYD92R","Prof. Rudi Bildungsstop",0,0,0,0,0,0,0,0]

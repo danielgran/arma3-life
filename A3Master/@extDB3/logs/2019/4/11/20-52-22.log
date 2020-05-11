@@ -1,0 +1,49 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 4 Cores, Setting up 4 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[20:52:22:218721 +02:00] [Thread 20856] extDB3: SQL: Initialized: Add Quotes around TEXT Datatypes mode: 2
+[20:52:22:218950 +02:00] [Thread 20856] extDB3: SQL: Initialized: NULL = ""
+[20:52:22:219378 +02:00] [Thread 20856] extDB3: Locked
+[21:05:18:487221 +02:00] [Thread 2744] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:05:18:487272 +02:00] [Thread 2744] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (name) values ('name')
+[21:05:18:538095 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:05:18:538141 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (name) values ('name')
+[21:05:29:295896 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:05:29:295934 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (name) values ('name')
+[21:05:29:820771 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:05:29:820866 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (name) values ('name')
+[21:05:30:351653 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:05:30:351688 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (name) values ('name')
+[21:05:30:920582 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:05:30:920621 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (name) values ('name')
+[21:05:31:604219 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:05:31:604258 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (name) values ('name')
+[21:05:43:209975 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:05:43:210017 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (name) values ('name2')
+[21:05:51:186433 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:05:51:186478 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (name) values ('name2')
+[21:07:08:357743 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:07:08:357800 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (playerintid, name) values ('564579','name2')
+[21:13:20:265621 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:13:20:265668 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (playerintid, name) values ('564579','name2')
+[21:14:05:530233 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:14:05:530276 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (playerintid, name) values ('564579','name2123')
+[21:17:11:780587 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Duplicate entry '' for key 'playerid'
+[21:17:11:780830 +02:00] [Thread 19252] extDB3: SQL: Error MariaDBQueryException: Input: insert into players (playerintid, name) values ('564d579','name212d3')

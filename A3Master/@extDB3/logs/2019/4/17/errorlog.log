@@ -1,0 +1,6 @@
+[10:07:01:834099 +02:00] [Thread 1740]  Failed Statement - SELECT id FROM players WHERE playerid = '76561198216442289' - with [0,"Error Unknown Protocol"]
+[10:07:01:834223 +02:00] [Thread 8120]  Failed Statement - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with [0,"Error Unknown Protocol"]
+[10:15:52:036081 +02:00] [Thread 10440]  Failed with Query, DatabaseID is empty
+[10:29:37:485175 +02:00] [Thread 204]  Failed with Query, DatabaseID is empty
+[10:29:53:970998 +02:00] [Thread 204]  Failed with Query, DatabaseID is empty
+[10:32:31:242763 +02:00] [Thread 204]  Failed with Query, DatabaseID is empty

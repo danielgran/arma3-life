@@ -1,0 +1,27 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 4 Cores, Setting up 4 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[21:57:54:944109 +02:00] [Thread 15684] extDB3: SQL: Initialized: Add Quotes around TEXT Datatypes mode: 2
+[21:57:54:944350 +02:00] [Thread 15684] extDB3: SQL: Initialized: NULL = ""
+[21:57:54:954057 +02:00] [Thread 15684] extDB3: Locked
+[21:58:32:409976 +02:00] [Thread 7460] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Bildungsstop,00:00:00,<null>,<null>)' at line 1
+[21:58:32:410015 +02:00] [Thread 7460] extDB3: SQL: Error MariaDBQueryException: Input: INSERT INTO players (playerid, playerintid, name, playtime, firstconnect, lastconnect) values (76561198216442289,any,Prof. Rudi Bildungsstop,00:00:00,<null>,<null>)
+[22:00:39:811293 +02:00] [Thread 7460] extDB3: SQL: Error MariaDBQueryException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Bildungsstop,00:00:00,<null>,<null>)' at line 1
+[22:00:39:811316 +02:00] [Thread 7460] extDB3: SQL: Error MariaDBQueryException: Input: INSERT INTO players (playerid, playerintid, name, playtime, firstconnect, lastconnect) values (76561198216442289,any,Prof. Rudi Bildungsstop,00:00:00,<null>,<null>)

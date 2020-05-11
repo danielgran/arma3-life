@@ -1,0 +1,2 @@
+[16:15:23:687422 +02:00] [Thread 20408]  Failed Statement - SELECT id FROM players WHERE playerid = '76561198216442289' - with [0,"Error Unknown Protocol"]
+[16:15:23:687591 +02:00] [Thread 19756]  Failed Statement - SELECT playerintid, name, rank, banned, xp, level, money, kills, teamkills, deaths FROM players WHERE playerid = '76561198216442289' - with [0,"Error Unknown Protocol"]

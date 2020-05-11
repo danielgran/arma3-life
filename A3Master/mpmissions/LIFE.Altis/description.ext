@@ -1,0 +1,74 @@
+#include "infiSTAR_AdminMenu.hpp"
+
+
+
+disabledAI = 1;
+author = "Author";
+onLoadName = "onLoadName";
+onLoadMission = "onLoadMission";
+overviewText = "overviewText";
+
+skipLobby = 1;
+
+respawn = 2;
+respawnDialog = 0;
+
+enableDebugConsole = 2;
+
+//todo set all class definitions in seperate file
+
+class Header
+{
+	gameType = RPG;
+	minPlayers = 0;
+	maxPlayers = 80;
+};
+
+class CfgDebriefing //todo debriefing in extra header file
+{
+    class TeamWin
+    {
+        title = "Your Team wins!"; //todo set title properly
+        subtitle = "DOCKOTH.eu"; //todo set subtitle properly
+        description = "Some Description here"; //todo set description properly
+        pictureBackground = ""; //todo picture background?
+        picture = ""; // todo set pictures
+        pictureColor[] = {0.0,0.3,0.6,1}; //todo set colors properly
+    };
+
+    class TeamLose
+    {
+        title = "Your Team loses!"; //todo set title properly
+        subtitle = "DOCKOTH.eu"; //todo set subtitle properly
+        description = "Some Description here"; //todo set description properly
+        pictureBackground = ""; //todo picture background?
+        picture = ""; // todo set pictures
+        pictureColor[] = {0.0,0.3,0.6,1}; //todo set colors properly
+    };
+};
+
+
+///////////////////////////////////////
+//						Dialog								 //
+///////////////////////////////////////
+// Implement standard defines
+#include "core\dialog\define\standard.hpp"
+// Implement custom defines
+#include "core\dialog\define\DucDefines.hpp"
+// Implement RscTitles
+#include "core\dialog\title\RscTitles.hpp"
+
+
+
+
+
+
+class CfgFunctions
+{
+	#include "functions.h"
+};
+
+class CfgRemoteExec
+{
+	#include "CfgRemoteExec.hpp"
+};
