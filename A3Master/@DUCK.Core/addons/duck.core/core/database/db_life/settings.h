@@ -12,7 +12,7 @@ class db_life
     {
       {"playerdata", 0}, // Contains all the cached playerdata which the player is using
       {"garagedata", 1}, // Contains all playergarages and houses
-      {"placeholder02", 2},
+      {"shopdata", 2}, // Contains Infrmation about shops on the server
       {"placeholder03", 3},
       {"placeholder04", 4},
       {"placeholder05", 5},
@@ -62,7 +62,7 @@ class db_life
   {
     schema[] =
     {
-      {"id", "INT"},
+      {"id", "SCALAR"},
       {"intid", "STRING"},
       {"nameClass", "STRING"},
       {"nameDisplay", "STRING"},
@@ -96,6 +96,18 @@ class db_life
   };
 
 
+
+  class tblEcoShopServerInfo
+  {
+    schema[] = 
+    {
+      {"id", "SCALAR"},
+      {"name", "DBSTRING"},
+      {"type", "DBSTRING"},
+      {"warehouse", "DBARRAY"}
+    };
+
+  };
 
 
 

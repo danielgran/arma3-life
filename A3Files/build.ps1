@@ -35,8 +35,6 @@ Get-ChildItem -Path "$($Source)\*" | ForEach-Object {
   }; 
 }
 
-#Get-ChildItem -
-
-
+Copy-Item "C:\SHARE\*" -Destination "P:\a3servertest" -Recurse -Force
 
 P:\a3servertest\A3Master\arma3server_x64_Start.bat

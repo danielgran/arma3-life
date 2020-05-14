@@ -56,6 +56,20 @@ class HUD
 };
 
 
+class ECO
+{
+  tag = "DUC_ECO";
+
+  class Money
+  {
+    file = "modules\economy\money";
+
+    class deposit {};
+    class transfer {};
+    class withdraw {};
+  }
+}
+
 
 
 
