@@ -101,9 +101,10 @@ class db_life
   {
     schema[] = 
     {
-      {"id", "SCALAR"},
-      {"name", "DBSTRING"},
-      {"type", "DBSTRING"},
+      // {"id", "SCALAR"}, Header: ShopID
+      {"shopName", "BOOL"},
+      {"shopClass", "BOOL"},
+      {"shopType", "DBSTRING"},
       {"warehouse", "DBARRAY"}
     };
 

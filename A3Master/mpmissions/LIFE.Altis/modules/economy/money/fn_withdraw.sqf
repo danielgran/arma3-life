@@ -1,41 +1,6 @@
 /*
 
   Author: Duckfine
-  Date created: 14-5-2020 22:48
-
-  Description
-    <desc>
-
-  Parameter:
-    - <type> <name>
-
-  Returns:
-    - <type> <name>
-
-
- */
-
-
-
-
-private[
-
-  "_placeholder01",
-  "_placeholder02"
-
-];
-
-
-params[
-
-  "ph01",
-  "ph02",
-
-];
-
-/*
-
-  Author: Duckfine
   Date created: {datetime} {time24h}
 
   Description
@@ -64,7 +29,7 @@ private[
 params[
 
   "ph01",
-  "ph02",
+  "ph02"
 
 ];
 

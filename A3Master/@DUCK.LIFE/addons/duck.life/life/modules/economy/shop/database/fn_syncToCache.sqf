@@ -10,6 +10,8 @@
 	also if the shopcount db and redis are not the same, the server will push
 	redis to mysql and then read all shops 
 
+  HAS TO BE SPAWNED
+
   Parameter:
     - <type> <name>
 
@@ -18,6 +20,14 @@
 
 
  */
+/*
+params[
+
+
+];
+
+
+*/
 
 private[
 
@@ -27,23 +37,27 @@ private[
 ];
 
 
-params[
 
-  "ph01",
-  "ph02"
 
-];
+if (!canSuspend) exitWith { false; };
+
+// GET MYSQL DATA
+_stmt = format["CALL spGetEconomyShopData('%1')", 1]; //TODO MAKE GLOBAL VARIABLE SERVER ID
+_databaseResult = [_stmt, 2, (call ducv_core_dbidplayerdata)] call DUC_core_mysql_fnc_queryHandler;
+
+diag_log _databaseResult;
+
+
+
+
+
+// like []
+
+
+
+
 
 //Get Redis Shopdata
-
-_schema = getArray(configFile >> "CfgSettings" >> "db_life" >> "tblEcoShopServerInfo" >> "schema");
-_schemaCfg = getArray(configFile >> "CfgSettings" >> "db_life" >> "Redis" >> "dbIDs");
-_databaseID = [_schemaCfg, "shopdata", "SCALAR"] call DUC_CORE_fnc_getConfigEntry;
-
-
-_dataRedis = [_databaseID, , _schema, "bank"] call DUC_CORE_redis_fnc_listEntryGet;
-
-_moneySender = [_databaseID, _steamidSender, _schema, "bank"] call DUC_CORE_redis_fnc_listEntryGet;
 
 // check if mysql count and redis count are the same 
 

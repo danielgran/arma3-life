@@ -58,6 +58,22 @@ class Duck_Life_Economy
 	};
 };
 
+class Duck_Life_VItems
+{
+	tag = "duc_life_vitem";
+
+	class Shop_Database
+	{
+		file = "duck.life\life\modules\economy\shop\database";
+
+		class syncToCache {};
+	};
+};
+
+
+
+
+
 
 class Duck_Life_Vehicles
 {
