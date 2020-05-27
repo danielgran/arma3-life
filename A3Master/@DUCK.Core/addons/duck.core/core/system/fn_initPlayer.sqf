@@ -69,7 +69,7 @@ if ([_databaseID, _steamID64] call DUC_core_redis_fnc_keyExists) then
 {
   // save dump to mysql
   _playerSafe = [_databaseID, _steamID64, _schema] call DUC_core_redis_fnc_listFetch;
-  [_uid, _schema, _playerSafe] call DUC_core_mysql_fnc_datasetUpdate;
+  [_steamID64, _schema, _playerSafe] call DUC_core_mysql_fnc_datasetUpdate;
 
 } else
 {

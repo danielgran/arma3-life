@@ -99,14 +99,31 @@ class db_life
 
   class tblEcoShopServerInfo
   {
-    schema[] = 
+
+    // schema of the sp in the mysql 
+    schemaSP[] =
     {
-      // {"id", "SCALAR"}, Header: ShopID
-      {"shopName", "BOOL"},
-      {"shopClass", "BOOL"},
-      {"shopType", "DBSTRING"},
+      {"shopID", "STRING"},
+      {"shopName", "STRING"},
+      {"shopType", "STRING"},
+      {"itemClass", "STRING"},
+      {"itemName", "STRING"},
+      {"itemIsVirtual", "STRING"},
+      {"itemType", "STRING"},
+      {"itemPriceBuy", "SCALAR"},
+      {"itemPriceSell", "SCALAR"},
+      {"itemStock", "SCALAR"}
+    };
+
+    schemaCache[] = 
+    {
+      {"shopID", "STRING"},
+      {"shopName", "STRING"},
+      {"shopType", "STRING"},
       {"warehouse", "DBARRAY"}
     };
+
+
 
   };
 

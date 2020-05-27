@@ -16,7 +16,7 @@ class Duck_Core_Test
 	tag = "test";
 	class test
 	{
-		file = "duck.core\test"
+		file = "duck.core\test";
 		class log {};
 	};
 };
@@ -41,8 +41,10 @@ class Duck_Core
 	class Util
 	{
 		file = "duck.core\core\util";
+		
 		class generateID {};
 
+		class getArrayValue {};
 		class getConfigEntry {};
 
 		class mresStringToArray {};
@@ -133,6 +135,9 @@ class Duck_Core_Redis
 		/**/  class getInfoFromDB {};    /**/
 		/////////////////////////////////////
 
+		class DBFlush {};
+		class DBGetKeys {};
+		class DBGetSize {};
 
 		class keyDelete {};
 		class keyExists {};
