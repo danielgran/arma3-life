@@ -62,12 +62,36 @@ class Duck_Life_VItems
 {
 	tag = "duc_life_vitem";
 
+	class Handler
+	{
+		file = "duck.life\life\modules\item";
+
+		class handlerItem {};
+	};
+
+	class Helper
+	{
+		file = "duck.life\life\modules\item\inventory\helper";
+
+		class hasItem {};
+	};
+
+	class Inventory
+	{
+		file = "duck.life\life\modules\item\inventory";
+
+		class removeItem {};
+	};
+
 	class Shop_Database
 	{
-		file = "duck.life\life\modules\economy\shop\database";
+		file = "duck.life\life\modules\item\shop\database";
 
-		class syncToCache {};
+		class syncShopToCache {};
 	};
+
+
+
 };
 
 

@@ -41,7 +41,7 @@ if (count _array > count _schema) exitWith { false; };
 
 _index = -1;
 {
-	if ((_x select 0)isEqualTo _key) exitWith { _index = _forEachIndex};
+	if ((_x select 0) isEqualTo _key) exitWith { _index = _forEachIndex};
 } forEach _schema;
 
 if (_index isEqualTo -1) exitWith { false; };

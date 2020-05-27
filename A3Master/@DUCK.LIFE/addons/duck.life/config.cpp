@@ -10,7 +10,7 @@ class CfgPatches
 	{
 		name = "Ducks Life Server Mod";
 		author = "Duckfine";
-		url = "duckoslife.eu";
+		url = "ONE-UNIT.NET";
 
 		requiredAddons[] = { "duck_core" };
 		units[] = {};
@@ -24,7 +24,7 @@ class CfgFunctions
 };
 
 
-class CfgSettings {
-
-
+class CfgSettings
+{
+	#include "life\modules\item\definitions.h"
 };
