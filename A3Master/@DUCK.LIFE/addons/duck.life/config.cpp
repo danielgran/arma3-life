@@ -5,7 +5,6 @@
 
 class CfgPatches
 {
-  //todo
 	class duck_life
 	{
 		name = "Ducks Life Server Mod";

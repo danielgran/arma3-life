@@ -1,2 +1,2 @@
-name = "Essentials for all Gamemodes";
+name = "DUCK.CORE";
 author="Duckfine";

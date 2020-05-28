@@ -130,3 +130,35 @@ if (_databaseResult isEqualTo [[]]) then // Check if Databaseconnection is estab
 
 //TODO: some sort of control structure if everything loaded fine
 serverInitDone = true;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"END PREINIT" call test_fnc_log;
+//

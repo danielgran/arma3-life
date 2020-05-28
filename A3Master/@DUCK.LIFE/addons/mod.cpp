@@ -3,5 +3,5 @@
  * @Last modified time: 2020-04-07T23:22:21+02:00
  */
 
-name = "Duckos Life Extension";
+name = "DUCK.LIFE";
 author="Duckfine";

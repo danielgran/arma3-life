@@ -13,13 +13,6 @@ diag_log "|_|     \____/|_____/   |_|  |_____|_| \_|_____|  |_|   ";
 
 
 
-"DU HURENSOHN ICH FICKE DICH" call test_fnc_log;
-"DU HURENSOHN ICH FICKE DICH" call test_fnc_log;
-"DU HURENSOHN ICH FICKE DICH" call test_fnc_log;
-"DU HURENSOHN ICH FICKE DICH" call test_fnc_log;
-"DU HURENSOHN ICH FICKE DICH" call test_fnc_log;
-"DU HURENSOHN ICH FICKE DICH" call test_fnc_log;
-"DU HURENSOHN ICH FICKE DICH" call test_fnc_log;
 
 
 
@@ -50,6 +43,5 @@ diag_log "|_|     \____/|_____/   |_|  |_____|_| \_|_____|  |_|   ";
 
 
 
-
-
+"END POST INIT" call test_fnc_log;
 //

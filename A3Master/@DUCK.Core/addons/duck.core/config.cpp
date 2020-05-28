@@ -9,9 +9,9 @@ class CfgPatches
 {
 	class duck_core
 	{
-		name = "DUCKOTH";
+		name = "DUCK.CORE";
 		author = "Duckfine";
-		url = "duckoth.eu";
+		url = "ONE-UNIT.NET";
 
 		requiredAddons[] = {};
 		units[] = {};
