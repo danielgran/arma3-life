@@ -37,12 +37,13 @@ params[
 _schemaInvenoryItem = getArray(configFile >> "CfgSettings" >> "DEF_VITEM" >> "inventoryItem");
 
 
+
+_return = -1;
 {
 
   _xitem = [_schemaInvenoryItem, _x, "itemClass"] call DUC_CORE_fnc_getArrayValue;
   _xcount = [_schemaInvenoryItem, _x, "itemCount"] call DUC_CORE_fnc_getArrayValue;
 
-  _return = -1;
   // Check if current looped item is equal to the searched one
   if(_xitem isEqualTo _item) then
   {
@@ -55,20 +56,13 @@ _schemaInvenoryItem = getArray(configFile >> "CfgSettings" >> "DEF_VITEM" >> "in
 
 } forEach _inventory;
 
-// Exit with false if item was not found or count <= 0
-if(_return <= 0) exitWith { false; };
+
 
 // check if the inv has the right amount items
-if(_return > (_return - _count)) exitWith
+if(0 > (_return - _count)) exitWith
 {
-  false;
+  true;
 };
 
+
 false;
-
-
-
-
-
-
-
