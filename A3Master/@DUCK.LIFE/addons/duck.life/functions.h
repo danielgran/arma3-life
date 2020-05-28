@@ -73,7 +73,7 @@ class Duck_Life_VItems
 	{
 		file = "duck.life\life\modules\item\inventory\helper";
 
-		class hasItem {};
+		class invHasItem {};
 	};
 
 	class Inventory

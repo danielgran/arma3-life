@@ -30,9 +30,18 @@ private[
 params[
 
   ["_steamID64", "", ["a"]],
-  ["_info", [], [[]]]
+  "_info" //[[inv], "item1", count]
 
 ];
+
+//Errorhandling
+if (_info select 2 <= 0) exitWith { false; };
+if !(typeName _info isEqualTo "ARRAY") exitWith { false; };
+
+_inventory = [_info select 0, _info select 1, _info select 2] call DUC_LIFE_VITEM_FNC_invSetItem;
+
+
+// update entry in redis
 
 
 _schema = getArray(configFile >> "CfgSettings" >> "db_life" >> "tblplayers" >> "playerRelated");
@@ -40,14 +49,12 @@ _schema = getArray(configFile >> "CfgSettings" >> "db_life" >> "tblplayers" >> "
 _schemaCfg = getArray(configFile >> "CfgSettings" >> "db_life" >> "Redis" >> "dbIDs");
 _databaseID = [_schemaCfg, "playerdata", "SCALAR"] call DUC_CORE_fnc_getConfigEntry;
 
-_vinv = [_databaseID, _steamID64, _schema, "invVirtual"] call DUC_CORE_redis_fnc_listEntryGet;
+// todo get inventory from redis
+
+// todo here update redis
 
 
-
-
-
-
-
+_tmp01 = [_databaseID, _steamID64, _inventory, _schema, "bank"] call DUC_CORE_redis_fnc_listEntryUpdate;
 
 
 

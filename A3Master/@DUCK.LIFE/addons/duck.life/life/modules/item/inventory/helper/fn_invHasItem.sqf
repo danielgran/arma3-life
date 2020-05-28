@@ -29,8 +29,8 @@ private[
 params[
 
   "_inventory",
-  "_itemClassname",
-  ["_count", 0]
+  "_item",
+  ["_count", 1, [1]]
 
 ];
 
@@ -39,38 +39,32 @@ _schemaInvenoryItem = getArray(configFile >> "CfgSettings" >> "DEF_VITEM" >> "in
 
 {
 
-    // 
-
-
   _xitem = [_schemaInvenoryItem, _x, "itemClass"] call DUC_CORE_fnc_getArrayValue;
   _xcount = [_schemaInvenoryItem, _x, "itemCount"] call DUC_CORE_fnc_getArrayValue;
 
-
   _return = -1;
-
-
   // Check if current looped item is equal to the searched one
-  if(_xitem isEqualTo _itemClassname) then
+  if(_xitem isEqualTo _item) then
   {
     //Check the amount
     if (_xcount > 0) exitWith
     {
       _return = _xcount;
     };
-    if (_xcount isEqualTo 0) exitWith
-    {
-      _return = false;
-    };
   };
 
 } forEach _inventory;
 
-if(_return isEqualTo -1) exitWith
+// Exit with false if item was not found or count <= 0
+if(_return <= 0) exitWith { false; };
+
+// check if the inv has the right amount items
+if(_return > (_return - _count)) exitWith
 {
-  
+  false;
 };
 
-_found;
+false;
 
 
 

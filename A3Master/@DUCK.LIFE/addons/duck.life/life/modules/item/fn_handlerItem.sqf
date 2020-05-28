@@ -54,7 +54,7 @@ switch (_id) do {
 
 // here return to client
 
-[_token, "ITM", _id, _content] remoteExec ["DUC_life_sys_fnc_receiveServer", _sender];
+[_token, "VITEM", _id, _content] remoteExec ["DUC_life_sys_fnc_receiveServer", _sender];
 
 
 
