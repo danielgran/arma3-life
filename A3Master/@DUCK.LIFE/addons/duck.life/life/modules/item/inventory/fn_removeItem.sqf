@@ -51,7 +51,7 @@ _inventory = [_databaseID, _steamID64, _schema, "invVirtual"] call DUC_CORE_redi
 
 _itemCount = [_inventory, _info select 1] call DUC_LIFE_VITEM_fnc_invGetItemCount;
 // no item found
-if(_itemCount isEqualTo false) exitWith false;
+if(_itemCount isEqualTo false) exitWith { false; };
 
 if (_itemCount <= (_info select 2)) then 
 {

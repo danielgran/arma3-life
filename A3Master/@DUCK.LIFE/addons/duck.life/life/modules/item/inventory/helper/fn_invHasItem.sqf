@@ -59,7 +59,7 @@ _return = -1;
 
 
 // check if the inv has the right amount items
-if(0 > (_return - _count)) exitWith
+if(_return - _count > 0) exitWith
 {
   true;
 };

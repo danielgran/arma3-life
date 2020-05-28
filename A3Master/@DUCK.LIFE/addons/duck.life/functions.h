@@ -73,7 +73,11 @@ class Duck_Life_VItems
 	{
 		file = "duck.life\life\modules\item\inventory\helper";
 
+		class invAddItem {};
+		class invDeleteItem {};
+		class invGetItemCount {};
 		class invHasItem {};
+		class invSetItem {};
 	};
 
 	class Inventory
