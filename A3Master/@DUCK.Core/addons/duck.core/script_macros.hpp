@@ -19,8 +19,8 @@
 
 
 
-#define DEF_DB_GET_SCHEMA(DB, TBL, SCH) getArray(configFile >> "CfgSettings" >> DB >> TBL >> SCH);
-#define DEF_DB_REDIS_GET_DBID(KEY) [DEF_DB_GET_SCHEMA("db_life", "Redis", "dbIDs"), KEY, "SCALAR"] call DUC_CORE_fnc_getConfigEntry;
+#define DEF_DB_GET_SCHEMA(DB, TBL, SCH) getArray(configFile >> "CfgSettings" >> DB >> TBL >> SCH)
+#define DEF_DB_REDIS_GET_DBID(KEY) [DEF_DB_GET_SCHEMA("db_life", "Redis", "dbIDs"), KEY, "SCALAR"] call DUC_CORE_fnc_getConfigEntry
 
 
 

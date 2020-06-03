@@ -13,4 +13,4 @@
 
 
 // yeah inventry not invenotry hahahah not funny
-#define INV_GET_SCHEMA_INVENTRY getArray(configFile >> "CfgSettings" >> "DEF_VITEM" >> "schemaInventoryEntry");
+#define INV_GET_SCHEMA_INVENTRY getArray(configFile >> "CfgSettings" >> "DEF_VITEM" >> "schemaInventoryEntry")

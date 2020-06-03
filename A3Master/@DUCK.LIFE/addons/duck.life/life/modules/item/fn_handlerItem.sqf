@@ -44,8 +44,9 @@ switch (_id) do {
       _item = _content select 0;
       _count = _content select 1;
 
-      _databaseID = DEF_DB_REDIS_GET_DBID("playerdata")
-      _databaseSchema = DEF_DB_GET_SCHEMA("db_life", "tblplayers", "playerRelated")
+      _databaseID = DEF_DB_REDIS_GET_DBID("playerdata");
+
+      _databaseSchema = DEF_DB_GET_SCHEMA("db_life", "tblplayers", "playerRelated");
       _databaseKey =  "invVirtual";
 
       [_databaseID, _databaseSchema, _databaseKey, _steamID64, _item, _count] call DUC_LIFE_VITEM_fnc_removeItem;

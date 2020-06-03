@@ -39,7 +39,7 @@ params[
 
 
 
-_schemaInventoryItem = INV_GET_SCHEMA_INVENTRY
+_schemaInventoryItem = INV_GET_SCHEMA_INVENTRY;
 
 _return = -1;
 {
