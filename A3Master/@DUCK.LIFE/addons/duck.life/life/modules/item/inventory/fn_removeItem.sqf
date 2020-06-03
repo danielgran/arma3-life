@@ -1,17 +1,18 @@
+#include "\duck.core\script_macros.hpp"
+#include "\duck.life\life\modules\item\inventory\script_macros.hpp"
 /*
 
   Author: Duckfine
-  Date created: 27-5-2020 20:39
+  Date created: 3-6-2020 13:51
 
   Description
-    Removes Item(s) from Players inventory
+    <desc>
 
   Parameter:
-    - STRING steamid64
-    - ARRAY info ["itemname", count as scalar]
+    - <type> <name>
 
   Returns:
-    - BOOL succeeded
+    - <type> <name>
 
 
  */
@@ -29,45 +30,16 @@ private[
 
 params[
 
-  ["_steamID64", "", ["a"]],
-  "_info" //["invtype", "item1", count] //invtype not used yeet
+  "_databaseID",
+  "_databaseSchema",
+  "_databaseKey", // i.e. invVirtual
+  "_steamID64Sender",
+  "_item",
+  "_count"
 
 ];
 
-// Errorhandling
-if (_info select 2 <= 0) exitWith { false; };
-if !(typeName _info isEqualTo "ARRAY") exitWith { false; };
-
-// Get inventory from redis
-
-
-_schema = getArray(configFile >> "CfgSettings" >> "db_life" >> "tblplayers" >> "playerRelated");
-
-_schemaCfg = getArray(configFile >> "CfgSettings" >> "db_life" >> "Redis" >> "dbIDs");
-_databaseID = [_schemaCfg, "playerdata", "SCALAR"] call DUC_CORE_fnc_getConfigEntry;
-
-_inventory = [_databaseID, _steamID64, _schema, "invVirtual"] call DUC_CORE_redis_fnc_listEntryGet;
-
-
-_itemCount = [_inventory, _info select 1] call DUC_LIFE_VITEM_fnc_invGetItemCount;
-// no item found
-if(_itemCount isEqualTo false) exitWith { false; };
-
-if (_itemCount <= (_info select 2)) then 
-{
-  _inventory = [_inventory, _info select 1] call DUC_LIFE_VITEM_fnc_invDeleteItem;
-} else {
-  _itemCount = _itemCount - (_info select 2);
-  _inventory = [_inventory, _info select 1, _itemCount] call DUC_LIFE_VITEM_fnc_invSetItem;
-};
-
-
-// update entry in cache
-
-_tmp01 = [_databaseID, _steamID64, _inventory, _schema, "invVirtual"] call DUC_CORE_redis_fnc_listEntryUpdate;
-
+_inventory = [_databaseID, _steamID64Sender, _databaseSchema, _databaseKey] call DUC_CORE_redis_fnc_listEntryGet;
+_inventory = [_inventory, _item, _count] call DUC_LIFE_VITEM_FNC_invRemoveItem;
+[_databaseID, _steamID64Sender, _inventory, _databaseSchema, _databaseKey] call DUC_CORE_redis_fnc_listEntryUpdate;
 true;
-
-
-
-

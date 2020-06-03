@@ -1,14 +1,9 @@
-/**
- * @Date:   2020-04-01T11:19:22+02:00
- */
-
 /*
     Author: Duckfine
 
     Description:
         Serverside functions.h
 */
-
 
 class Duck_Core_Test
 {
@@ -51,6 +46,9 @@ class Duck_Core
 		class mresString {};
 
 		class numberToString {};
+
+		class setArrayValue {};
+		
 		class stringIsNumber {};
 
 	};

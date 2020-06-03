@@ -5,16 +5,12 @@
 class DEF_VITEM
 {
 
-
-  inventoryItem[] = 
+  schemaInventoryEntry[] = 
   {
-	  {"itemClass", "STRING"},
-    {"itemCount", "SCALAR"}
+    {"itemClassName", "STRING"},
+    {"itemCount", "STRING"},
+    {"specialNotUsedPlaceholder", "STRING"}
   };
-
-
-
-
 
 
 };

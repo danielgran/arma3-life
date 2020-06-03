@@ -3,6 +3,13 @@
 
 
 */
+
+// Activate DEBUG Mode
+#define DEBUG debug
+
+
+
+
 diag_log "___  _   _  ___ _  __  _    ___ ___ ___   ";
 diag_log "|   \| | | |/ __| |/ / | |  |_ _| __| __| ";
 diag_log "| |) | |_| | (__| ' < _| |__ | || _|| _|  ";

@@ -1,3 +1,5 @@
+#include "\duck.core\script_macros.hpp"
+#include "\duck.life\life\modules\item\inventory\script_macros.hpp"
 /*
 
   Author: Duckfine
@@ -37,12 +39,21 @@ params[
 
 switch (_id) do {
 
-    case (0): { // Item aus Inventar entfernen
-        [_steamID64, _content] call DUC_LIFE_VITEM_fnc_removeItem;
+    case (0): { // Item aus Spielerinventar entfernen
+      // Extract content
+      _item = _content select 0;
+      _count = _content select 1;
+
+      _databaseID = DEF_DB_REDIS_GET_DBID("playerdata")
+      _databaseSchema = DEF_DB_GET_SCHEMA("db_life", "tblplayers", "playerRelated")
+      _databaseKey =  "invVirtual";
+
+      [_databaseID, _databaseSchema, _databaseKey, _steamID64, _item, _count] call DUC_LIFE_VITEM_fnc_removeItem;
     };
 
-    case (1): { // Einzahlen
-      //spawn handleQuery
+    case (1): { // Item dem Inventar hinzufügen
+      [_steamID64, _content] call DUC_LIFE_VITEM_fnc_addItem;
+
 
     };
 

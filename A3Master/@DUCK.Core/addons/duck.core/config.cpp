@@ -3,8 +3,6 @@
  * @Last modified time: 18-04-2020 21:35
  */
 
-
-
 class CfgPatches
 {
 	class duck_core

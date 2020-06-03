@@ -18,6 +18,18 @@ if (!isNil(serverInitDone) or serverInitDone isEqualTo true) exitWith {diag_log 
 serverInitDone = false;
 
 
+
+
+// Activate DEBUG Mode
+#define DEBUG debug
+
+#ifdef DEBUG
+
+diag_log "DEBUGMODE ACTIVATED AHAHAHAH";
+
+#endif
+
+
 #define __SVAR__(var1,var2) var1 = compileFinal (if(typeName var2 isEqualTo "STRING") then {var2} else {str(var2)})
 #define __SCVAR__(var) var = compileFinal (if(typeName var isEqualTo "STRING") then {var} else {str(var)})
 

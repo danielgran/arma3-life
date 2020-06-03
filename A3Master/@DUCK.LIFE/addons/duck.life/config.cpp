@@ -3,6 +3,11 @@
  * @Last modified time: 18-04-2020 21:34
  */
 
+
+
+
+
+
 class CfgPatches
 {
 	class duck_life

@@ -33,9 +33,20 @@ params[
 
 ];
 
-//todo check if item is there
+// nope
+if(_count <= 0) exitWith { false; };
 
 
-_inventory pushBack [_item, _count];
+_itemCount = [_inventory, _item] call DUC_LIFE_VITEM_fnc_invGetItemCount;
+
+
+if(_itemCount isEqualTo 0) exitWith
+{
+  _inventory pushBack [_item, _count];
+  _inventory;
+};
+
+_inventory = [_inventory, _item, _count] call DUC_LIFE_VITEM_invSetItem;
+
 
 _inventory;

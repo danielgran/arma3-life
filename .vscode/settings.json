@@ -8,7 +8,9 @@
     },
     "fileHeaderComment.template": {
 
+
         "sqf":[
+            "#include \"\\duck.core\\script_macros.hpp\"",
             "${commentbegin}",
             "",
             "  Author: Duckfine",
@@ -39,8 +41,8 @@
             "",
             "params[",
             "",
-            "  \"ph01\",",
-            "  \"ph02\"",
+            "  [\"_ph01\", \"\", [\"a\"]],",
+            "  [\"_ph02\", \"\", [\"a\"]],",
             "",
             "];",
             ""
