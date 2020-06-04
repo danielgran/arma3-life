@@ -11,7 +11,7 @@
 
   Returns:
     - <type> <name>
-
+[0, getArray(configFile >> "CfgSettings" >> "db_life" >> "tblplayers" >> "playerRelated"), "76561198216442289", "invVirtual", 0, getArray(configFile >> "CfgSettings" >> "db_life" >> "tblplayers" >> "playerRelated"), "76561198248607510", "invVirtual", "dasIstEinGeheimdfghdfghdfhdfghre", 1] call DUC_LIFE_VITEM_FNC_transferItem
 
  */
 
@@ -49,7 +49,7 @@ _senderInv = [_senderDatabaseID, _senderDatabaseKey, _senderDatabaseSchema, _sen
 _itemCheckSenderInv = [_senderInv, _item, _count] call DUC_LIFE_VITEM_FNC_invGetItem;
 
 // check if sender has enough items
-if (_itemCheckSenderInv < _itemCheckSenderInv - _count) exitWith { false; };
+if (_itemCheckSenderInv - _count < 0) exitWith { false; };
 
 // remove item from the sender (not updated yet)
 _senderInv = [_senderInv, _item, _count] call DUC_LIFE_VITEM_FNC_invRemoveItem;
