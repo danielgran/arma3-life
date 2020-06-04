@@ -1,0 +1,12 @@
+# Object file
+*.o
+
+# Ada Library Information
+*.ali
+
+
+# ARMA 3
+
+*.pbo
+A3Master/@DUCK.LIFE/addons/duck.life.pbo
+A3Master/@DUCK.LIFE/addons/duck.life.pbo
