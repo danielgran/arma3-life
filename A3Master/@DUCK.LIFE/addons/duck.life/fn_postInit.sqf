@@ -20,6 +20,10 @@ diag_log " |_|  \___/|___/ |_| |___|_|\_|___| |_|  ";
 [] execVM "duck.life\life\events\ev_playerDisconnect.sqf";
 
 
+// Shopsystem
+// Refresh shopsystem once to Redis Cache
+[true] spawn DUC_LIFE_VITEM_FNC_syncShopToCache;
+
 
 
 

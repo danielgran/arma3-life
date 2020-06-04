@@ -20,14 +20,11 @@
 
 
  */
-/*
-params[
 
+params[
+  ["_fullSync", false, [false]]
 
 ];
-
-
-*/
 
 private[
 
@@ -99,12 +96,17 @@ _done = [];
 
 diag_log format["_redisarray: %1", _redisarray];
 
-
-
-
 _schemaRedisDB = getArray(configFile >> "CfgSettings" >> "db_life" >> "Redis" >> "dbIds");
 
 _databaseID = [_schemaRedisDB, "shopdata", "SCALAR"] call DUC_CORE_fnc_getConfigEntry;
+
+
+// If Fullsync delete db
+if (_fullSync) then
+{
+  [_databaseID] call DUC_CORE_REDIS_FNC_DBFlush;
+};
+
 
 // Loop through redis array to push it into redis cache
 {
