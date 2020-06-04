@@ -38,7 +38,7 @@ params[
 ];
 
 _inventory = [_databaseID, _steamID64Sender, _databaseSchema, _databaseKey] call DUC_CORE_redis_fnc_listEntryGet;
-_inventory = [_inventory, _item, _count] call DUC_CORE_redis_fnc_invAddItem;
-[_databaseID, _steamID64, _inventory, _schema, "invVirtual"] call DUC_CORE_redis_fnc_listEntryUpdate;
+_inventory = [_inventory, _item, _count] call DUC_LIFE_VITEM_FNC_invAddItem;
+[_databaseID, _steamID64Sender, _inventory, _databaseSchema, "invVirtual"] call DUC_CORE_redis_fnc_listEntryUpdate;
 
 true;

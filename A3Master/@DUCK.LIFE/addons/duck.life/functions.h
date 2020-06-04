@@ -84,6 +84,8 @@ class Duck_Life_VItems
 		file = "duck.life\life\modules\item\inventory";
 
 		class removeItem {};
+		class addItem  {};
+		class transferItem {};
 	};
 
 	class Shop_Database
