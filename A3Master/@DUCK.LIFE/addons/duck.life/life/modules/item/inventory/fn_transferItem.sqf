@@ -45,7 +45,7 @@ if(_senderDatabaseKeyValue isEqualTo "" || _receiverDatabaseKeyValue isEqualTo "
 
 
 // get inventory from sender
-_senderInv = [_senderDatabaseID, _senderDatabaseKeyValue, _senderDatabaseSchema, _senderDatabaseKey] call DUC_CORE_redis_fnc_listEntryGet;
+_senderInv = [_senderDatabaseID, _senderDatabaseKey, _senderDatabaseSchema, _senderDatabaseKeyValue] call DUC_CORE_redis_fnc_listEntryGet;
 _itemCheckSenderInv = [_senderInv, _item, _count] call DUC_LIFE_VITEM_FNC_invGetItem;
 
 // check if sender has enough items
@@ -54,7 +54,7 @@ if (_itemCheckSenderInv < _itemCheckSenderInv - _count) exitWith { false; };
 // remove item from the sender (not updated yet)
 _senderInv = [_senderInv, _item, _count] call DUC_LIFE_VITEM_FNC_invRemoveItem;
 
-_receiverInv =  [_receiverDatabaseID, _receiverDatabaseKeyValue, _receiverDatabaseSchema, _receiverDatabaseKey] call DUC_CORE_redis_fnc_listEntryGet;
+_receiverInv =  [_receiverDatabaseID, _receiverDatabaseKey, _receiverDatabaseSchema, _receiverDatabaseKeyValue] call DUC_CORE_redis_fnc_listEntryGet;
 // add item to the receiver (not updated yet)
 _receiverInv =  [_receiverInv, _item, _count] call DUC_LIFE_VITEM_FNC_invAddItem;
 
