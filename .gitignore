@@ -1,0 +1,10 @@
+# Object file
+*.o
+
+# Ada Library Information
+*.ali
+
+
+# ARMA 3
+
+*.pbo
