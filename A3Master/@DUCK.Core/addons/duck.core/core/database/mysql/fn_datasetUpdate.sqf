@@ -1,22 +1,31 @@
 /*
 
-  Updates COMPLETE Player in MySQL Database
+  Updates COMPLETE Dataset update in MySQL Database
 
   Author: Duckfine
 
 
 */
 private[
+  
   "_stmt"
 
 ];
 
-
+/*
 params[
   ["_steamid64", "", ["a"]],
   ["_schema", []],
   ["_playerSafe", []]
 
+];
+*/
+
+params[
+  ["_datasetSchema", [], [[]]],
+  ["_dataset", []],
+  ["_table", ""],
+  ["_where", "", ["a"]]
 ];
 
 
@@ -31,7 +40,7 @@ params[
 
 
 //rank lacks (security issue)
-_stmt = [_schema, _playerSafe, "players", format["steamid64 = '%1'", _steamid64]] call DUC_core_mysql_fnc_buildUpdate;
+_stmt = [_datasetSchema, _dataset, _table, _where] call DUC_core_mysql_fnc_buildUpdate;
 
 diag_log _stmt;
 

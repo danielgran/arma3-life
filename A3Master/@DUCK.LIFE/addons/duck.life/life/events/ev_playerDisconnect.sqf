@@ -26,7 +26,8 @@ addMissionEventHandler ["HandleDisconnect", {
   _databaseID = [_schemaCfg, "playerdata", "SCALAR"] call DUC_CORE_fnc_getConfigEntry;
 
   _playerSafe = [_databaseID, _uid, _schema] call DUC_core_redis_fnc_listFetch;
-  [_uid, _schema, _playerSafe] call DUC_core_mysql_fnc_datasetUpdate;
+  //[_uid, _schema, _playerSafe] call DUC_core_mysql_fnc_datasetUpdate;
+  [_schema, _playerSafe, "players", format["steamid64 = '%1'", _uid]] call DUC_core_mysql_fnc_datasetUpdate;
 
 
 

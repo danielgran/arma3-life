@@ -17,8 +17,6 @@ private[
   "_counter",
   "_arrayCount",
   "_mysqlvar",
-  "_schema",
-  "_playerSafe",
   "_dbArray"
 ];
 
@@ -27,15 +25,15 @@ _return = "UPDATE ";
 params[
 
   ["_schema", []],
-  ["_playerSafe", []],
-  ["_table", "", ["a"]],
-  ["_where", "", ["a"]]
+  ["_dataSet", []], // the dataset according to the schema
+  ["_table", "", ["a"]], // the table
+  ["_where", "", ["a"]] // where statement
 
 ];
 
 /*
 _schema = [["a3name","STRING"],["a3namealiases","DBARRAY"],["intid","STRING"],["rankTeam","SCALAR"],["rankDonator","SCALAR"],["nickname","STRING"],["location","DBARRAY"],["loggedAs","DBENUM"],["gearCivilian","DBARRAY"],["gearPolice","DBARRAY"],["gearMedic","DBARRAY"],["gearMechanic","DBARRAY"],["invVirtual","DBARRAY"],["alive","BOOL"],["arrested","DBARRAY"],["banned","BOOL"],["cash","SCALAR"],["bank","SCALAR"],["teamkills","SCALAR"],["kills","SCALAR"],["deaths","SCALAR"],["xp","SCALAR"],["levelPlayer","SCALAR"],["levelPolice","SCALAR"],["levelMedic","SCALAR"],["levelMech","SCALAR"],["playtime","SCALAR"],["lastconnect","SCALAR"]];
-_playerSafe = ["Prof Bildungsstop",[],"COD PLAYERS","0","0","",[],"CIVILIAN",[],[],[],[],[],false,[],false,"0","0","0","0","0","0","0","0","0","0","0","0"];
+_dataSet = ["Prof Bildungsstop",[],"COD PLAYERS","0","0","",[],"CIVILIAN",[],[],[],[],[],false,[],false,"0","0","0","0","0","0","0","0","0","0","0","0"];
 
 _table = "players";
 _where = "steamid64 = '76561198216442289'";
@@ -44,7 +42,7 @@ _return = _return + _table + " SET ";
 
 _arrayCount = count _schema;
 
-_dbArray = [_schema, _playerSafe] call duc_core_mysql_fnc_A3ArrayToDBArray;
+_dbArray = [_schema, _dataSet] call duc_core_mysql_fnc_A3ArrayToDBArray;
 
 
 {
