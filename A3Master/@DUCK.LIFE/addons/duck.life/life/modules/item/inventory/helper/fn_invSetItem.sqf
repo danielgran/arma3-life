@@ -19,8 +19,11 @@
 
 private[
 
-  "_placeholder01",
-  "_placeholder02"
+  "_invHasItem",
+  "_inventory",
+  "_schemaInvenoryItem",
+  "_xitem",
+  "_xcount"
 
 ];
 

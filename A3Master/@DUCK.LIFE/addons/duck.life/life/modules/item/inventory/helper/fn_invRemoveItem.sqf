@@ -23,8 +23,13 @@
 
 private[
 
-  "_placeholder01",
-  "_placeholder02"
+  "_schemaInventoryItem",
+  "_xitem",
+  "_xcount",
+  "_inventory",
+  "_return",
+  "_newItem",
+  "_newItemCount"
 
 ];
 

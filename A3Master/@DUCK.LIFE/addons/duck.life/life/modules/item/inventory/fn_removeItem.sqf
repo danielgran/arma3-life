@@ -22,8 +22,7 @@
 
 private[
 
-  "_placeholder01",
-  "_placeholder02"
+  "_inventory"
 
 ];
 

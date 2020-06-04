@@ -20,8 +20,9 @@
 
 private[
 
-  "_placeholder01",
-  "_placeholder02"
+  "_senderInv",
+  "_receiverInv",
+  "_itemCheckSenderInv"
 
 ];
 
