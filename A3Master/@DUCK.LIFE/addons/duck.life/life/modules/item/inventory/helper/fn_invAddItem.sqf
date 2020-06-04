@@ -1,3 +1,5 @@
+#include "\duck.core\script_macros.hpp"
+#include "\duck.life\life\modules\item\inventory\script_macros.hpp"
 /*
 
   Author: Duckfine
@@ -37,16 +39,36 @@ params[
 if(_count <= 0) exitWith { false; };
 
 
-_itemCount = [_inventory, _item] call DUC_LIFE_VITEM_fnc_invGetItemCount;
+_schemaInventoryItem = INV_GET_SCHEMA_INVENTRY;
 
-
-if(_itemCount isEqualTo 0) exitWith
+_found = false;
 {
-  _inventory pushBack [_item, _count];
-  _inventory;
-};
+  _xitem = [_schemaInventoryItem, _x, "itemClassName"] call DUC_CORE_fnc_getArrayValue;
+  _xcount = [_schemaInventoryItem, _x, "itemCount"] call DUC_CORE_fnc_getArrayValue;
+  if(_xitem isEqualTo _item) exitWith
+  {
+    _found = true;
+    _newItemCount = _xcount + _count;
+    _newItem = [_schemaInventoryItem, _x, "itemCount", _newItemCount] call DUC_CORE_FNC_setArrayValue;
+    _inventory set [_forEachIndex, _newItem];
+  };
+} forEach _inventory;
 
-_inventory = [_inventory, _item, _count] call DUC_LIFE_VITEM_invSetItem;
+
+
+
+if (_found isEqualTo false) then
+{
+  // Create new item object / array
+  _newItem = [];
+  {
+    _newItem pushBack "";
+  } forEach _schemaInventoryItem;
+
+  _newItem = [_schemaInventoryItem, _newItem, "itemClassName", _item] call DUC_CORE_FNC_setArrayValue;
+  _newItem = [_schemaInventoryItem, _newItem, "itemCount", _count] call DUC_CORE_FNC_setArrayValue;
+  _inventory pushBack _newItem;
+};
 
 
 _inventory;

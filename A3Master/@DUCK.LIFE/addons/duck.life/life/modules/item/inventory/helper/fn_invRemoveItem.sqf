@@ -44,10 +44,7 @@ _schemaInventoryItem = INV_GET_SCHEMA_INVENTRY;
 _return = -1;
 {
 	_xitem = [_schemaInventoryItem, _x, "itemClassName"] call DUC_CORE_fnc_getArrayValue;
-  diag_log _xitem;
-  diag_log _item;
   _xcount = [_schemaInventoryItem, _x, "itemCount"] call DUC_CORE_fnc_getArrayValue;
-  diag_log _xcount;
 
 
   if(_xitem isEqualTo _item) exitWith 

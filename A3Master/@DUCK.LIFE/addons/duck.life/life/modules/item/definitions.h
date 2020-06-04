@@ -8,8 +8,7 @@ class DEF_VITEM
   schemaInventoryEntry[] = 
   {
     {"itemClassName", "STRING"},
-    {"itemCount", "STRING"},
-    {"specialNotUsedPlaceholder", "STRING"}
+    {"itemCount", "SCALAR"}
   };
 
 

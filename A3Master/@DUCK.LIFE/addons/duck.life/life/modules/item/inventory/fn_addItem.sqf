@@ -28,19 +28,17 @@ private[
 
 params[
 
-  ["_steamID64", "", ["a"]],
-  "_info" //["invtype", "item1", count] //invtype not used yeet
+  "_databaseID",
+  "_databaseSchema",
+  "_databaseKey", // i.e. invVirtual
+  "_steamID64Sender",
+  "_item",
+  "_count"
 
 ];
 
-_schema = getArray(configFile >> "CfgSettings" >> "db_life" >> "tblplayers" >> "playerRelated");
-
-_schemaCfg = getArray(configFile >> "CfgSettings" >> "db_life" >> "Redis" >> "dbIDs");
-_databaseID = [_schemaCfg, "playerdata", "SCALAR"] call DUC_CORE_fnc_getConfigEntry;
-
-_inventory = [_databaseID, _steamID64, _schema, "invVirtual"] call DUC_CORE_redis_fnc_listEntryGet;
-_inventory = [_inventory, _info select 1, _info select 2] call DUC_CORE_redis_fnc_invAddItem;
-
-_tmp01 = [_databaseID, _steamID64, _inventory, _schema, "invVirtual"] call DUC_CORE_redis_fnc_listEntryUpdate;
+_inventory = [_databaseID, _steamID64Sender, _databaseSchema, _databaseKey] call DUC_CORE_redis_fnc_listEntryGet;
+_inventory = [_inventory, _item, _count] call DUC_CORE_redis_fnc_invAddItem;
+[_databaseID, _steamID64, _inventory, _schema, "invVirtual"] call DUC_CORE_redis_fnc_listEntryUpdate;
 
 true;
