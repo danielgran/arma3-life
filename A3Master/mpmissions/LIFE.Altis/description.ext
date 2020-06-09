@@ -3,7 +3,7 @@
 
 
 disabledAI = 1;
-author = "Author";
+author = "Duckfine, ONE-UNIT";
 onLoadName = "onLoadName";
 onLoadMission = "onLoadMission";
 overviewText = "overviewText";
@@ -21,35 +21,35 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 0;
-	maxPlayers = 80;
+	maxPlayers = 75;
 };
 
 class CfgDebriefing //todo debriefing in extra header file
 {
-    class TeamWin
-    {
-        title = "Your Team wins!"; //todo set title properly
-        subtitle = "DOCKOTH.eu"; //todo set subtitle properly
-        description = "Some Description here"; //todo set description properly
-        pictureBackground = ""; //todo picture background?
-        picture = ""; // todo set pictures
-        pictureColor[] = {0.0,0.3,0.6,1}; //todo set colors properly
-    };
+  class TeamWin
+  {
+    title = "some title has to be fixed"; //todo set title properly
+    subtitle = "DOCKOTH.eu"; //todo set subtitle properly
+    description = "Some Description here"; //todo set description properly
+    pictureBackground = ""; //todo picture background?
+    picture = ""; // todo set pictures
+    pictureColor[] = {0.0,0.3,0.6,1}; //todo set colors properly
+  };
 
-    class TeamLose
-    {
-        title = "Your Team loses!"; //todo set title properly
-        subtitle = "DOCKOTH.eu"; //todo set subtitle properly
-        description = "Some Description here"; //todo set description properly
-        pictureBackground = ""; //todo picture background?
-        picture = ""; // todo set pictures
-        pictureColor[] = {0.0,0.3,0.6,1}; //todo set colors properly
-    };
+  class TeamLose
+  {
+    title = "Your Team loses!"; //todo set title properly
+    subtitle = "DOCKOTH.eu"; //todo set subtitle properly
+    description = "Some Description here"; //todo set description properly
+    pictureBackground = ""; //todo picture background?
+    picture = ""; // todo set pictures
+    pictureColor[] = {0.0,0.3,0.6,1}; //todo set colors properly
+  };
 };
 
 
 ///////////////////////////////////////
-//						Dialog								 //
+//               DIALOG              //
 ///////////////////////////////////////
 // Implement standard defines
 #include "core\dialog\define\standard.hpp"
@@ -65,10 +65,20 @@ class CfgDebriefing //todo debriefing in extra header file
 
 class CfgFunctions
 {
-	#include "functions.h"
+    // Include CoreFuncs
+    #include "core\coreFunctions.hpp"
+
+    // Include LifeFuncs
+	#include "life\functions.h"
 };
 
 class CfgRemoteExec
 {
 	#include "CfgRemoteExec.hpp"
+};
+
+class CfgSettings
+{
+
+  #include "life\config\clientVars.hpp"
 };

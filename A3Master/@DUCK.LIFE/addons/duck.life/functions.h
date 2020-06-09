@@ -92,6 +92,7 @@ class Duck_Life_VItems
 	{
 		file = "duck.life\life\modules\item\shop\database";
 
+		class syncCacheToMySQL {};
 		class syncShopToCache {};
 	};
 

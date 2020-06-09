@@ -1,6 +1,5 @@
 /**
  * @Date:   2020-04-09T19:16:32+02:00
- * @Last modified time: 04-05-2020 22:13
  */
 class db_life
 {

@@ -1,11 +1,10 @@
-#include "\duck.core\script_macros.hpp"
 /*
 
   Author: Duckfine
-  Date created: 4-6-2020 15:09
+  Date created: 9-6-2020 20:43
 
   Description
-    <desc>
+    Handles all of the main event handles which make arma 3 to a3l
 
   Parameter:
     - <type> <name>
@@ -34,8 +33,28 @@ params[
 
 ];
 
-_schemaRedisDB = DEF_DB_GET_SCHEMA("db_life", "Redis", "dbIds");
+player addEventHandler ["HandleRating"]
 
-_shopIDs = "";
 
-//get all shop ids in database
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
