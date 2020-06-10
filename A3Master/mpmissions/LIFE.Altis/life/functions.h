@@ -6,48 +6,25 @@
 
 
 
-class System
+
+
+class GUI
 {
-  tag = "DUC_life_sys";
+  tag = "CDUC_GUI";
 
-  class Handler
+  class xyz
   {
-    file = "modules\system\network";
-    class receiveServer {};
-    class sendServer {};
-  };
-
-  class Setter
-  {
-    file = "modules\system";
-
-    class setClientVars {};
-    class handlerSystem {};
+    file = "life\modules\ui\gui";
   }
-
 };
-
-
-class Connection
-{
-  tag = "DUC_LIFE_CON";
-
-  class ServerSwitch
-  {
-      file = "modules\server";
-
-      class serverSwitch {};
-  };
-};
-
 
 class HUD
 {
-  tag = "DUCG_HUD";
+  tag = "CDUC_HUD";
 
   class Overlay
   {
-    file = "core\dialog\title\hud";
+    file = "life\modules\ui\hud";
 
     class close {};
     class open {};
@@ -56,13 +33,14 @@ class HUD
 };
 
 
+
 class ECO
 {
-  tag = "DUC_ECO";
+  tag = "CDUC_ECO";
 
   class Money
   {
-    file = "modules\economy\money";
+    file = "life\modules\economy\money";
 
     class deposit {};
     class transfer {};

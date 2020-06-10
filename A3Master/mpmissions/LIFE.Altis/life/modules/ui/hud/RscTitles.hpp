@@ -8,6 +8,7 @@
 class RscTitles
 {
   titles[] = {DUCG_tlt_HUD};
+  
   // HUD
   #include "hud\hud.hpp"
 };

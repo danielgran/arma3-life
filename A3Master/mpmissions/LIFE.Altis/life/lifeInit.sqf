@@ -19,11 +19,16 @@
 // Set Debug mode active comment out if not needed
 #define DEBUG asd
 
-#ifdef
+#ifdef DEBUG
 
 diag_log "==========================================================";
 diag_log "ArmA 3 Life by Duckfine starting up";
+diag_log "==========================================================";
 
 
 
 #endif
+
+
+// init all default variables
+[] call compile preprocessFileLineNumbers "life\player\setupVars.sqf";

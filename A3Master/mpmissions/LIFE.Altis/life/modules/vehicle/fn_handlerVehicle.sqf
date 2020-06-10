@@ -37,7 +37,7 @@ switch (_id) do {
 
     // Get All Vehicles in Personal Garage
     case (0): {
-        [_content] call DUC_life_sys_fnc_setClientVars;
+        // [_content] call DUC_life_sys_fnc_setClientVars;
     };
 
 };

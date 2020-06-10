@@ -38,7 +38,7 @@ switch (_id) do {
 
     // Set / Update all client vars
     case (0): {
-        [_content] call DUC_life_sys_fnc_setClientVars;
+        [_content] call CDUC_SYS_fnc_setClientVars;
     };
 
 };

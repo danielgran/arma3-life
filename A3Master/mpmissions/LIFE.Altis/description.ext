@@ -65,10 +65,10 @@ class CfgDebriefing //todo debriefing in extra header file
 
 class CfgFunctions
 {
-    // Include CoreFuncs
-    #include "core\coreFunctions.hpp"
+  // Include CoreFuncs
+  #include "core\functions.h"
 
-    // Include LifeFuncs
+  // Include LifeFuncs
 	#include "life\functions.h"
 };
 

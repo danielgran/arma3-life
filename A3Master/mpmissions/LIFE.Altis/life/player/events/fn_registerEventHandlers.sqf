@@ -33,7 +33,6 @@ params[
 
 ];
 
-player addEventHandler ["HandleRating"]
 
 
 
