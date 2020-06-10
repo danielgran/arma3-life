@@ -42,12 +42,15 @@
             "params[",
             "",
             "  [\"_ph01\", \"\", [\"a\"]],",
-            "  [\"_ph02\", \"\", [\"a\"]],",
+            "  [\"_ph02\", \"\", [\"a\"]]",
             "",
             "];",
             ""
         ]
     },
     "editor.tabSize": 2,
-    "editor.useTabStops": false
+    "editor.useTabStops": false,
+    "psi-header.config": {
+    
+    }
 }

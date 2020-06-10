@@ -83,8 +83,8 @@ if(_token isEqualTo "") then
   if (_tmp isEqualTo false) exitWith { _proceed = false; };
 
 
-  // remoteexec authgenetter on client
-  ["", "AUTH", 0, _tmp] remoteExec ["CDUC_SYS_fnc_receiveServer", remoteExecutedOwner];
+  // remoteexec authgenetter on client  
+  ["", "AUTH", 0, _tmp, remoteExecutedOwner] call DUC_CORE_NET_fnc_sendClient;
   _proceed = false;
 };
 

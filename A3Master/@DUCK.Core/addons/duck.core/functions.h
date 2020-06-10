@@ -211,6 +211,7 @@ class Duck_Core_NETWORK
 		file = "duck.core\core\system\network";
 
 		class serverInterface {};
+		class sendClient {};
 		class prepClientVars {};
 	};
 };

@@ -55,10 +55,7 @@ switch (_id) do {
 
 // here return to client
 
-[_token, "SYS", _id, _content] remoteExec ["DUC_life_sys_fnc_receiveServer", _sender];
-
-
-
+[_token, "SYS", _id, _content, _sender] call DUC_CORE_NET_fnc_sendClient;
 
 
 

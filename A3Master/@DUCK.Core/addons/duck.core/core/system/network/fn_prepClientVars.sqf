@@ -19,6 +19,8 @@
 private[
 
   "_schema",
+  "_schemaCfg",
+  "_databaseID",
   "_databaseResult",
   "_return"
 
