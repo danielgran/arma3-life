@@ -45,17 +45,16 @@ _name = _content select 0;
 
 
 //MySQL check player
-_exists = [_steamID64] call DUC_core_mysql_fnc_playerCheck;
 
-if (_exists isEqualTo [true]) then {
+_exists = _steamID64 call DUC_core_mysql_fnc_playerCheck;
+
+if (_exists) then {
 
   diag_log "[DUCK:POSTINIT] Player already exists in Database :-)";
 
-};
-
-// Player unknown in Database
-if (_exists isEqualTo [false]) then
+} else
 {
+  // create new player
   [_steamID64, _name] call DUC_core_mysql_fnc_playerNew;
   diag_log "[DUCK:POSTINIT] Player was created in MYSQL Database";
 };
@@ -65,13 +64,12 @@ _schema = getArray(configFile >> "CfgSettings" >> "db_life" >> "tblplayers" >> "
 _schemaCfg = getArray(configFile >> "CfgSettings" >> "db_life" >> "Redis" >> "dbIDs");
 _databaseID = [_schemaCfg, "playerdata", "SCALAR"] call DUC_CORE_fnc_getConfigEntry;
 
+// If player is in redis database
 if ([_databaseID, _steamID64] call DUC_core_redis_fnc_keyExists) then
 {
   // save dump to mysql
   _playerSafe = [_databaseID, _steamID64, _schema] call DUC_core_redis_fnc_listFetch;
 
-
-  //[_steamID64, _schema, _playerSafe] call DUC_core_mysql_fnc_datasetUpdate;
   [_schema, _playerSafe, "players", format["steamid64 = '%1'", _steamID64]] call DUC_core_mysql_fnc_datasetUpdate;
 
 } else

@@ -20,16 +20,24 @@
 
 private[
 
-  "_clientVars",
+  "_vars",
   "_placeholder02"
 
 ];
 
-
-_clientVars = getArray(missionConfigFile >> "CfgSettings" >> "DUC_LIF" >> "Variables" >> "player");
+// Setup vars which are set with setVariable / global vars
+_vars = getArray(missionConfigFile >> "CfgSettings" >> "DUC_LIF" >> "Variables" >> "player");
 {
   [] call compile format["player setVariable[""%1"", %2, false];", _x select 0, _x select 1];
-} forEach _clientVars;
+} forEach _vars;
+
+
+// Setup public vars
+_vars = getArray(missionConfigFile >> "CfgSettings" >> "DUC_LIF" >> "Variables" >> "global");
+{
+  [] spawn compile format["%1 = %2", _x select 0, _x select 1];  
+} forEach _vars;
+
 
 
 

@@ -46,6 +46,8 @@ params[
 ];
 
 
+if !(canSuspend) exitWith { false; };
+
 disableSerialization;
 
 _display = uiNamespace getVariable ["DUCG_tlt_HUD", displayNull];

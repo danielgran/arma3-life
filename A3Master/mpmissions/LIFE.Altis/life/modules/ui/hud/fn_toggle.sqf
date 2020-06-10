@@ -19,15 +19,15 @@
 #include "config.hpp"
 
 
-if(!canSuspend) exitWith {};
-if (!DUCV_HUD_CLOSED) exitWith {};
+if(!canSuspend) exitWith { false; };
+if (!DUCV_HUD_CLOSED) exitWith { false; };
 DUCV_HUD_CLOSED = false;
 
-[] call GUI_fnc_open;
+[] call CDUC_GUI_fnc_open;
 
 uisleep 6;
 
-[] call GUI_fnc_close;
+[] call CDUC_GUI_fnc_close;
 DUCV_HUD_CLOSED = true;
 
 

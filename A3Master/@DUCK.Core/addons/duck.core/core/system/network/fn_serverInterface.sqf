@@ -40,6 +40,13 @@ params[
 
 ];
 
+diag_log "===============================";
+diag_log "=====fn_serverInterface.sqf====";
+diag_log "===============================";
+
+
+
+
 diag_log format ["_sender: %1", _sender];
 diag_log format ["_steamID64: %1", _steamID64];
 diag_log format ["_token: %1", _token];
@@ -52,12 +59,19 @@ diag_log format ["_content: %1", _content];
 
 
 // Errorhandling
-if (_sender isEqualTo  objNull) exitWith {
+if (_sender isEqualTo objNull) exitWith {
+    diag_log "Sender was null";
+
+    
     false;
 };
 
 // todo should be equal inform admin if its not
-if(_sender != remoteExecutedOwner) exitWith { false; };
+if(_sender != remoteExecutedOwner) exitWith
+{ 
+  diag_log "sender wasnt equal to remoteExecutedOwner";
+  false;
+};
 
 
 // Authentication
@@ -70,7 +84,7 @@ if(_token isEqualTo "") then
 
 
   // remoteexec authgenetter on client
-  ["", "AUTH", 0, _tmp] remoteExec ["DUC_life_sys_fnc_receiveServer", remoteExecutedOwner];
+  ["", "AUTH", 0, _tmp] remoteExec ["CDUC_SYS_fnc_receiveServer", remoteExecutedOwner];
   _proceed = false;
 };
 
@@ -120,6 +134,7 @@ switch (_requestModule) do {
 
 
 };
+
 
 
 

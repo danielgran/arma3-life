@@ -38,6 +38,7 @@ private[
 
 ];
 
+if !(canSuspend) exitWith { false; };
 
 disableSerialization;
 

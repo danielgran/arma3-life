@@ -4,7 +4,14 @@ class DUC_lif
   class Variables
   {
 
-    // Variables which get null after death
+    global[] = 
+    {
+      {"DUCV_HUD_CLOSED", "true"},
+      {"DUCV_PLACEHOLDER", """place"""}
+    };
+
+
+    // Variables which get null after death / atta
     player[] = 
     {
       {"LIF_firstSpawn", "true"}

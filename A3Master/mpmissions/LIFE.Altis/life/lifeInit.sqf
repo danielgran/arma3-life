@@ -32,3 +32,19 @@ diag_log "==========================================================";
 
 // init all default variables
 [] call compile preprocessFileLineNumbers "life\player\setupVars.sqf";
+
+
+
+
+
+
+
+
+// Setup player hud
+0 cutRsc ["DUCG_tlt_HUD", "PLAIN", 0, false];
+
+[] spawn {
+  uisleep 6;
+  [] call CDUC_HUD_fnc_close;
+  DUCV_HUD_CLOSED = true;
+};

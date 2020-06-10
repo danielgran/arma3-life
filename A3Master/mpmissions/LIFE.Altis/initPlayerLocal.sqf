@@ -77,14 +77,6 @@ waitUntil { !isNil "DUCV_alive" };
 
 
 
-// Setup player hud
-0 cutRsc ["DUCG_tlt_HUD", "PLAIN", 0, false];
-
-[] spawn {
-  uisleep 6;
-  [] call CDUC_HUD_fnc_close;
-  DUCV_HUD_CLOSED = true;
-};
 
 
 

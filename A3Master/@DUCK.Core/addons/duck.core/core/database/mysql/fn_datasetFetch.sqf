@@ -21,10 +21,8 @@ todo
 
 private[
 
-  "_schema",
-  "_counter",
-  "_insert",
-  "_dataType",
+  "_stmt",
+  "_databaseResult",
   "_return"
 
 ];
@@ -41,16 +39,13 @@ params
 
 ];
 
-_stmt = [_schema, "players", format["steamID64 = %1", _steamID64]] call DUC_core_mysql_fnc_buildSelect;
+_stmt = [_schema, "players", format["steamID64 = '%1'", _steamID64]] call DUC_core_mysql_fnc_buildSelect;
 _databaseResult = [_stmt, 2, call ducv_core_dbidplayerdata] call DUC_core_mysql_fnc_queryHandler;
-
-// _databaseResult = ["Prof Bildungsstop","","4CHZ2TWR4",0,0,"","","CIVILIAN","","","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 if (count _databaseResult isEqualTo 1 ) then
 {
     _databaseResult = _databaseResult select 0;
 };
-
 
 _return = [_schema, _databaseResult] call DUC_core_mysql_fnc_DBArrayToA3Array;
 
