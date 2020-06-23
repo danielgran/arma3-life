@@ -51,7 +51,7 @@ if ! (_token isEqualTo DUCV_SEC_AUTHTOKEN ) exitWith
 switch (_receiveModule) do {
 
   case ("SYS"): {
-      [_receiveID, _content] spawn DUC_life_sys_fnc_handlerSystem;
+      [_receiveID, _content] spawn CDUC_SYS_fnc_handlerSystem;
   };
 
     default {

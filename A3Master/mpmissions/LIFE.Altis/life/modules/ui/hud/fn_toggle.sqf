@@ -23,11 +23,11 @@ if(!canSuspend) exitWith { false; };
 if (!DUCV_HUD_CLOSED) exitWith { false; };
 DUCV_HUD_CLOSED = false;
 
-[] call CDUC_GUI_fnc_open;
+[] call CDUC_HUD_fnc_open;
 
 uisleep 6;
 
-[] call CDUC_GUI_fnc_close;
+[] call CDUC_HUD_fnc_close;
 DUCV_HUD_CLOSED = true;
 
 

@@ -14,8 +14,8 @@ params[
 
   ["_token", "", ["a"]],
   ["_module", "", ["a"]],
-  ["_id", "", ["a"]],
-  ["_content", "", ["a"]],
+  ["_id", -1, [1]],
+  "_content",
   "_sender"
 
 ];
