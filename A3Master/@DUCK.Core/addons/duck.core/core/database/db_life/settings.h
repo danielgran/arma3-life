@@ -85,8 +85,8 @@ class db_life
     {
 
       {"steamid64", "STRING"},
-      {"serverFrom", "STRING"},
-      {"serverTo", "STRING"},
+      {"serverFrom", "SCALAR"},
+      {"serverTo", "SCALAR"},
       {"vehicle", "STRING"},
       {"vehicleSkin", "STRING"},
       {"velocity", "DBARRAY"}

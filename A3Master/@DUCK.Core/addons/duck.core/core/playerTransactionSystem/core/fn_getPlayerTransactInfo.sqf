@@ -45,6 +45,7 @@ if (_databaseResult isEqualTo ["01"]) exitWith { false; };
 // Check if player has no active transaction
 if (_databaseResult isEqualTo ["02"]) exitWith { false; };
 
+if (count _databaseResult <= 2) exitWith { false; };
 
 
 

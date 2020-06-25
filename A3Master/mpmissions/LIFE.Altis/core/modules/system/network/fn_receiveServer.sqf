@@ -54,6 +54,11 @@ switch (_receiveModule) do {
       [_receiveID, _content] spawn CDUC_SYS_fnc_handlerSystem;
   };
 
+  case ("PTS") : {
+  ["127.0.0.1", 2302] spawn CDUC_PTS_FNC_serverSwitch;
+  };
+
+
     default {
         hint str(_content);
     };

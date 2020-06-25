@@ -24,6 +24,19 @@
 
 
 
+/////////////////////////////////////////////////
+//           __  ___      _____ ____    __     //
+//          /  |/  /_  __/ ___// __ \  / /     //
+//         / /|_/ / / / /\__ \/ / / / / /      //
+//        / /  / / /_/ /___/ / /_/ / / /___    //
+//       /_/  /_/\__, //____/\___\_\/_____/    //
+/////////////////////////////////////////////////
+
+// Exec query without rs
+#define DEF_DB_MYSQL_EXEC_QUERY(QUERY) [QUERY, 0, (call ducv_core_dbidplayerdata)] call DUC_core_mysql_fnc_queryHandler
+// Exec query with rs (ResultSet)
+#define DEF_DB_MYSQL_EXEC_QUERY_RS(QUERY) [QUERY, 2, (call ducv_core_dbidplayerdata)] call DUC_core_mysql_fnc_queryHandler
+
 
 
 

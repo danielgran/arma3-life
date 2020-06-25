@@ -217,16 +217,26 @@ class Duck_Core_NETWORK
 };
 
 
-class Duck_Core_PlayerTransactionSystem
+class Duck_Core_PTS
 {
 	// Stands for Player Transaction System
-	tag = "DUC_core_pts";
+	tag = "DUC_CORE_PTS";
 
-	class Core
+  class Handler
+  {
+    file = "duck.core\core\pts";
+
+    class handlerPTS {};
+  };
+
+
+
+	class Functions
 	{
-		file = "duck.core\core\playerTransactionSystem\core";
+		file = "duck.core\core\pts\functions";
 
-		class getPlayerTransactInfo {};
+		class getTransactionInfoPlayer {};
+    class transactPlayer {};
 	};
 
 };

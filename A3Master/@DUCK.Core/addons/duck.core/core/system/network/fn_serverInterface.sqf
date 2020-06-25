@@ -128,6 +128,11 @@ switch (_requestModule) do {
 
   };
 
+  case ("PTS"):
+  {
+    [_token, _sender, _steamID64, _requestID, _content] spawn DUC_CORE_PTS_FNC_handlerPTS;
+  };
+
 
 
 
