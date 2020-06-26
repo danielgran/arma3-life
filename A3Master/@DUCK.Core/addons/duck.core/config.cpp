@@ -30,6 +30,12 @@ class CfgRemoteExec
 
 class CfgSettings
 {
+  
+	ServerID = 1;
+
+	
+
+
 
  	// Settings for DB related stuff
 	#include "core\database\db_life\settings.h"

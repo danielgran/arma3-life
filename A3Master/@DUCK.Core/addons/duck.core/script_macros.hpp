@@ -4,9 +4,21 @@
   Date created: 3-6-2020 13:59
 
   Description
-    Defines some standard database macros
+    Defines some standard macros
 
  */
+
+////////////////////////////////
+//     ______                 //
+//    / ____/___  ________    //
+//   / /   / __ \/ ___/ _ \   //
+//  / /___/ /_/ / /  /  __/   //
+//  \____/\____/_/   \___/    //
+////////////////////////////////
+
+#define DEF_CORE_CONST_SERVERID getNumber(configFile >> "CfgSettings" >> "serverID")
+
+
 
 
 /////////////////////////////////////////////

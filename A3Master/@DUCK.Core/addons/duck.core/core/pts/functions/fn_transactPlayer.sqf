@@ -43,8 +43,7 @@ params[
 
 // CALL sp_PTSServerTransactPlayer('76561198216442289', 1, 0, 'B_MBT_01_mlrs_F', 'EinCoolerSkin.paa', """[0,20,0]""");
 
-//  TODO SET SERVER VALUES LIKE ID
-_query = format["CALL sp_PTSServerTransactPlayer('%1', %2, %3, '%4', '%5', '%6');", _steamID64, 0, _serverTarget, _vehicleName, _vehicleSkin, _playerVelocity];
+_query = format["CALL sp_PTSServerTransactPlayer('%1', %2, %3, '%4', '%5', '%6');", _steamID64, DEF_CORE_CONST_SERVERID, _serverTarget, _vehicleName, _vehicleSkin, _playerVelocity];
 
 // Register the send event in db
 DEF_DB_MYSQL_EXEC_QUERY(_query);

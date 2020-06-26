@@ -1,3 +1,4 @@
+#include "\duck.core\script_macros.hpp"
 /*
 
   Author: Duckfine
@@ -35,7 +36,7 @@ params[
 
 ];
 
-
+// Preperation of client vars related to the player figure (money, etc)
 
 _schema = getArray(configFile >> "CfgSettings" >> "db_life" >> "tblplayers" >> "playerRelated");
 _schemaCfg = getArray(configFile >> "CfgSettings" >> "db_life" >> "Redis" >> "dbIDs");
@@ -50,6 +51,12 @@ _databaseResult = [_databaseID, _steamID64, _schema] call DUC_core_redis_fnc_lis
 } forEach _schema;
 
 
+
+
+
+// Preperation of Server global vars
+
+_return pushBack ["G_SERVERID", DEF_CORE_CONST_SERVERID];
 
 
 
