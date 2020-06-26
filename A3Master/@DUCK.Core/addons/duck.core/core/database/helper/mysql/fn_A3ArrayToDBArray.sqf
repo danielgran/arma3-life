@@ -49,7 +49,7 @@ _a3array = ["Prof Bildungsstop",[],"COD PLAYERS",0,0,"",[],"CIVILIAN",[],[],[],[
 
     case ("DBARRAY"): {
       diag_log (count (str(_value) splitString ""));
-      if (count (str(_value) splitString "") < 8) exitWith {_insert = [[]] call DUC_core_fnc_mresArrayToString;};
+      if (count (str(_value) splitString "") < 5) exitWith {_insert = [[]] call DUC_core_fnc_mresArrayToString;};
       // playerdata can go corrupted
       _insert = [_value] call DUC_core_fnc_mresArrayToString;
     };
