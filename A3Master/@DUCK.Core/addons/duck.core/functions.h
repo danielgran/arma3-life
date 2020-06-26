@@ -178,7 +178,7 @@ class Duck_Core_Redis
 
 class Duck_Core_System
 {
-	tag = "DUC_core_sys";
+	tag = "DUC_CORE_SYS";
 
 	class System
 	{
@@ -186,6 +186,14 @@ class Duck_Core_System
 		class handlerSystem {};
 		class initPlayer {};
 	};
+
+	class Server
+  {
+    file = "duck.core\core\system\server";
+
+    class getServerInfo {};
+  };
+
 };
 
 

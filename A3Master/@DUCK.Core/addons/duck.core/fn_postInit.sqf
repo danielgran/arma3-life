@@ -15,7 +15,8 @@ diag_log "|_|     \____/|_____/   |_|  |_____|_| \_|_____|  |_|   ";
 
 
 
-
+// Set Servers in cache
+[] spawn DUC_CORE_SYS_FNC_getServerInfo;
 
 
 
