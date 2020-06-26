@@ -43,19 +43,20 @@ if ((_token isEqualTo "") && (_receiveModule isEqualTo "AUTH") && (_receiveID is
 };
 
 // todo kick player
-if ! (_token isEqualTo DUCV_SEC_AUTHTOKEN ) exitWith
+if !(_token isEqualTo DUCV_SEC_AUTHTOKEN ) exitWith
 {
+  // todo endMission
   hint str("Malicious activity detected! Aborting...");
 };
 
 switch (_receiveModule) do {
 
   case ("SYS"): {
-      [_receiveID, _content] spawn CDUC_SYS_fnc_handlerSystem;
+    [_receiveID, _content] spawn CDUC_SYS_fnc_handlerSystem;
   };
 
   case ("PTS") : {
-  ["127.0.0.1", 2302] spawn CDUC_PTS_FNC_serverSwitch;
+    ["127.0.0.1", 2302] spawn CDUC_PTS_FNC_serverSwitch;
   };
 
 

@@ -57,8 +57,8 @@ _databaseResult = [_databaseID, _steamID64, _schema] call DUC_core_redis_fnc_lis
 // Preperation of Server global vars
 
 _return pushBack ["G_SERVERID", DEF_CORE_CONST_SERVERID];
-_return pushBack ["G_SERVERLIST", uiNamespace getVariable "SDUC_V_MAPLIST"];
-_return pushBack ["G_MAPLIST", uiNamespace getVariable "SDUC_V_SERVERLIST"];
+_return pushBack ["G_SERVERLIST", uiNamespace getVariable "SDUC_V_SERVERLIST"];
+_return pushBack ["G_MAPLIST", uiNamespace getVariable "SDUC_V_MAPLIST"];
 
 
 
