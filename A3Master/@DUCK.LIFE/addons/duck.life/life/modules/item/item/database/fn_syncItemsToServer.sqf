@@ -21,8 +21,10 @@
 
 private[
 
-  "_placeholder01",
-  "_placeholder02"
+  "_schema",
+  "_query",
+  "_databaseResult",
+  "_toStore"
 
 ];
 
@@ -50,7 +52,7 @@ _toStore = _databaseResult;
 } forEach _databaseResult;
 */
 
-uiNamespace setVariable ["SUDC_V_ITEMLIST", _toStore];
+uiNamespace setVariable ["SUDC_V_LISTITEMS", _toStore];
 
 
 
