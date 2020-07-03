@@ -128,5 +128,21 @@ class db_life
   };
 
 
+  // Contains all the vitems
+  class tblListItems
+  {
+    schema[] = 
+    {
+      {"nameClass","STRING"},
+      {"type","STRING"}, // via MySQL JOIN WHERE ... types ...
+      {"isVirtual","BOOL"},
+      {"nameDisplay","STRING"},
+      {"priceBuy","SCALAR"},
+      {"priceSell","SCALAR"}
+    };
+
+  };
+
+
 
 };

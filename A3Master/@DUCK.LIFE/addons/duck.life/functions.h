@@ -96,6 +96,13 @@ class Duck_Life_VItems
 		class syncShopToCache {};
 	};
 
+	class Item_Database
+	{
+		file = "duck.life\life\modules\item\item\database";
+
+		class syncItemsToServer {};
+	};
+
 
 
 };
