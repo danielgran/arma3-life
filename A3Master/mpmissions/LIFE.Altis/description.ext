@@ -52,12 +52,15 @@ class CfgDebriefing //todo debriefing in extra header file
 //               DIALOG              //
 ///////////////////////////////////////
 // Implement standard defines
-#include "core\dialog\define\standard.hpp"
+#include "life\modules\ui\define\standard.hpp"
 // Implement custom defines
-#include "core\dialog\define\DucDefines.hpp"
+#include "life\modules\ui\define\DucDefines.hpp"
 // Implement RscTitles
-#include "core\dialog\title\RscTitles.hpp"
+#include "life\modules\ui\hud\RscTitles.hpp"
 
+
+// Test
+#include "life\modules\ui\gui\testUI\dialog\dialog.hpp"
 
 
 

@@ -45,4 +45,4 @@
 #define HUD_TXT_Y_6 HUD_TXT_Y_5 + HUD_TXT_SPACE
 #define HUD_TXT_Y_7 HUD_TXT_Y_6 + HUD_TXT_SPACE
 
-#define ASSETPATH(FILENAME) "life\modules\ui\assets\FILENAME"
+#define ASSETPATH(FILENAME) life\modules\ui\assets\FILENAME

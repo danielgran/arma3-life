@@ -39,7 +39,7 @@ class DUCG_tlt_HUD
     class hud_ico_cash : DUCD_Picture
     {
       idc = 15030;
-      text = ASSETPATH("ico_mid_cash.paa");
+      text = ASSETPATH(ico_mid_cash.paa);
       x = HUD_ICO_POS_X;
 	     y = HUD_ICO_Y_1;
       w = HUD_ICO_SIZE;
@@ -48,7 +48,7 @@ class DUCG_tlt_HUD
     class hud_ico_bank : DUCD_Picture
     {
       idc = 15040;
-      text = ASSETPATH("ico_mid_bank.paa");
+      text = ASSETPATH(ico_mid_bank.paa);
       x = HUD_ICO_POS_X;
 	    y = HUD_ICO_Y_2;
       w = HUD_ICO_SIZE;
@@ -57,7 +57,7 @@ class DUCG_tlt_HUD
     class hud_ico_players : DUCD_Picture
     {
       idc = 15050;
-      text = ASSETPATH("ico_mid_player.paa");
+      text = ASSETPATH(ico_mid_player.paa);
       x = HUD_ICO_POS_X;
 	    y = HUD_ICO_Y_3;
       w = HUD_ICO_SIZE;
@@ -66,7 +66,7 @@ class DUCG_tlt_HUD
     class hud_ico_cops : DUCD_Picture
     {
       idc = 15060;
-      text = ASSETPATH("ico_mid_cop.paa");
+      text = ASSETPATH(ico_mid_cop.paa);
       x = HUD_ICO_POS_X;
 	    y = HUD_ICO_Y_4;
       w = HUD_ICO_SIZE;
@@ -75,7 +75,7 @@ class DUCG_tlt_HUD
     class hud_ico_medics : DUCD_Picture
     {
       idc = 15070;
-      text = ASSETPATH("ico_mid_med.paa");
+      text = ASSETPATH(ico_mid_med.paa);
       x = HUD_ICO_POS_X;
 	    y = HUD_ICO_Y_5;
       w = HUD_ICO_SIZE;
@@ -84,7 +84,7 @@ class DUCG_tlt_HUD
     class hud_ico_mechs : DUCD_Picture
     {
       idc = 15080;
-      text = ASSETPATH("ico_mid_mech.paa");
+      text = ASSETPATH(ico_mid_mech.paa);
       x = HUD_ICO_POS_X;
 	    y = HUD_ICO_Y_6;
 	    w = HUD_ICO_SIZE;
