@@ -36,16 +36,16 @@ class DUCG_tlt_HUD
       h = HUD_HEIGHT;
       colorBackground[] = {0.035,0.373,0.059,0.75};
     };
-    class hud_ico_cash : DUCD_Picture
+    class hud_ico_cash : DUCD_Picture_KeepRatio
     {
       idc = 15030;
       text = ASSETPATH(ico_mid_cash.paa);
       x = HUD_ICO_POS_X;
-	     y = HUD_ICO_Y_1;
+	    y = HUD_ICO_Y_1;
       w = HUD_ICO_SIZE;
-	     h = HUD_ICO_SIZE;
+	    h = HUD_ICO_SIZE;
     };
-    class hud_ico_bank : DUCD_Picture
+    class hud_ico_bank : DUCD_Picture_KeepRatio
     {
       idc = 15040;
       text = ASSETPATH(ico_mid_bank.paa);
@@ -54,7 +54,7 @@ class DUCG_tlt_HUD
       w = HUD_ICO_SIZE;
 	    h = HUD_ICO_SIZE;
     };
-    class hud_ico_players : DUCD_Picture
+    class hud_ico_players : DUCD_Picture_KeepRatio
     {
       idc = 15050;
       text = ASSETPATH(ico_mid_player.paa);
@@ -63,7 +63,7 @@ class DUCG_tlt_HUD
       w = HUD_ICO_SIZE;
 	    h = HUD_ICO_SIZE;
     };
-    class hud_ico_cops : DUCD_Picture
+    class hud_ico_cops : DUCD_Picture_KeepRatio
     {
       idc = 15060;
       text = ASSETPATH(ico_mid_cop.paa);
@@ -72,7 +72,7 @@ class DUCG_tlt_HUD
       w = HUD_ICO_SIZE;
 	    h = HUD_ICO_SIZE;
     };
-    class hud_ico_medics : DUCD_Picture
+    class hud_ico_medics : DUCD_Picture_KeepRatio
     {
       idc = 15070;
       text = ASSETPATH(ico_mid_med.paa);
@@ -81,7 +81,7 @@ class DUCG_tlt_HUD
       w = HUD_ICO_SIZE;
 	    h = HUD_ICO_SIZE;
     };
-    class hud_ico_mechs : DUCD_Picture
+    class hud_ico_mechs : DUCD_Picture_KeepRatio
     {
       idc = 15080;
       text = ASSETPATH(ico_mid_mech.paa);

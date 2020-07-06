@@ -62,6 +62,9 @@ class CfgDebriefing //todo debriefing in extra header file
 // Test
 #include "life\modules\ui\gui\testUI\dialog\dialog.hpp"
 
+// Phone Dialog
+#include "life\modules\ui\gui\phone\dialog\dialog.hpp"
+
 
 
 

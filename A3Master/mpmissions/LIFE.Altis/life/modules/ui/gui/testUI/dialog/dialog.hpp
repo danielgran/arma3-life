@@ -50,6 +50,8 @@ class RscDisplayStore {
 	onUnload = "['onUnload', _this] call HALs_store_fnc_main";
 
 	class controls {
+
+		
 		class ContainerGroup: RscItemCtrlGroupNoScrollbars {
 			idc = IDC_GROUP_TRADER;
 			x = TRADER_X;
@@ -84,7 +86,7 @@ class RscDisplayStore {
 				    h = GRID_Y(pixelGridNoUIScale, 2, TRADER_PIC_H - BAR_H);
 				    colorBackground[] = {0, 0, 0, 0.7};
 				};
-
+/*
 				class ContainerLoadBackground: RscItemText {
 				    idc = -1;
 				    x = 0;
@@ -171,6 +173,7 @@ class RscDisplayStore {
 					sizeEx = FONT(1);
 					action = "['button', ['pressed', []]] call HALs_store_fnc_main;";
 				};
+				*/
 
 				/*class SellButton: RscItemButtonAction {
 					idc = IDC_BUTTON_SELL;
@@ -185,6 +188,7 @@ class RscDisplayStore {
 				};*/
 			};
 		};
+		
 
 		class HALs_store_dialog: RscItemCtrlGroupNoScrollbars {
 			idc = IDC_GROUP_ITEMS;
@@ -211,7 +215,7 @@ class RscDisplayStore {
 					h = GRID_Y(pixelGridNoUIScale, 2, STORE_H - (BAR_H + SPACE_H));
 					colorBackground[] = {0, 0, 0, 0.7};
 				};
-
+/*
 				class TitleFunds: RscItemStructuredText {
 					idc = IDC_FUNDS;
 					x = GRID_X(pixelGridNoUIScale, 2, FUNDS_X);
@@ -335,7 +339,7 @@ class RscDisplayStore {
 					h = GRID_Y(pixelGridNoUIScale, 2, STORE_H - (ITEM_Y + PIC_H + SPACE_H + BUFFER_H));
 					colorBackground[] = {0.05, 0.05, 0.05, 0.3};
 				};
-
+*/
 				class ItemDescriptionGroup: RscItemCtrlGroup {
 					idc = -1;
 					x = GRID_X(pixelGridNoUIScale, 2, ITEM_X);
