@@ -10,7 +10,7 @@
 #define PHONE_X 0
 #define PHONE_Y 0
 
-#define PHONE_SIZE
+#define PHONE_SIZE 0.66
 #define PHONE_W safezoneW * PHONE_SIZE
 #define PHONE_H safezoneH * PHONE_SIZE
 
@@ -18,12 +18,12 @@
 #define ASSETPATH(FILENAME) life\modules\ui\assets\phone\FILENAME
 
 
-class DUCG_PHONE {
+class DUCG_PHONE
+{
   
-  idd = DUCG_HANDY_IDC_Display;
+  idd = DUCG_PHONE_IDC_Display;
   onLoad = "";
   onUnload = "";
-
 
 
   class ControlsBackground
@@ -31,7 +31,7 @@ class DUCG_PHONE {
     class Phone : DUCD_ItemGroup_NoScrollBar
     {
 
-      idc = DUCG_HANDY_IDC_Content;
+      idc = DUCG_PHONE_IDC_PhoneControlsBackground;
       x = PHONE_X;
       y = PHONE_Y;     
       w = safezoneW;
@@ -41,7 +41,7 @@ class DUCG_PHONE {
       {
         class PhoneBackground : DUCD_Picture
         {
-          idc = DUCG_HANDY_IDC_PhoneBackground;
+          idc = DUCG_PHONE_IDC_PhoneBackground;
           text = ASSETPATH(background\sq_bg01_ca.paa);
           x = 0;
 	        y = 0;
@@ -50,7 +50,7 @@ class DUCG_PHONE {
         };
         class PhoneFrame : DUCD_Picture
         {
-          idc = DUCG_HANDY_IDC_PhoneFrame;
+          idc = DUCG_PHONE_IDC_PhoneFrame;
           text = ASSETPATH(sq_phone_frame_ca.paa);
           x = 0;
 	        y = 0;
@@ -64,19 +64,16 @@ class DUCG_PHONE {
     };
   };
 
-
-
-
   class Controls
   {
-
     class PhoneControls : DUCD_ItemGroup_NoScrollBar
     {
+      idc = DUCG_PHONE_IDC_PhoneControls;
       x = PHONE_X;
       y = PHONE_Y;
 
 
-      // Apps 
+      // App Icons
       class Controls
       {
       
@@ -86,4 +83,28 @@ class DUCG_PHONE {
 
     };
   };
+};
+
+
+// App: Bank
+class DUCG_PHONE_APP_BANK
+{
+  idd = DUCG_PHONE_IDC_APP_Bank;
+
+
+  class Controls
+  {
+    class Headline: DUCD_StrucText
+    {
+      idc = 15090;
+	    text = "<t font=""PuristaMedium"" align=""center"" valign=""middle"" size=""1.1"">Sparkasse</t>"; //--- ToDo: Localize;
+      style = 0x0C;
+	    x = PHONE_X + PHONE_W / 2;
+	    y = PHONE_Y + PHONE_H / 2;
+	    w = 1;
+	    h = 1;
+    };
+  };
+
+
 };
