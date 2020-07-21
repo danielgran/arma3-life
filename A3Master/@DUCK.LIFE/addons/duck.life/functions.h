@@ -88,6 +88,15 @@ class Duck_Life_VItems
 		class transferItem {};
 	};
 
+
+	class Shop
+	{
+		file = "duck.life\life\modules\item\shop";
+
+		class buyItem {};
+	};
+
+
 	class Shop_Database
 	{
 		file = "duck.life\life\modules\item\shop\database";

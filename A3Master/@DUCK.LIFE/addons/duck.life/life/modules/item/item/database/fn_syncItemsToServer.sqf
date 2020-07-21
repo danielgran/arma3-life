@@ -29,18 +29,9 @@ private[
 ];
 
 
-params[
-
-  ["_ph01", "", ["a"]],
-  ["_ph02", "", ["a"]]
-
-];
-
-
 _schema = DEF_DB_GET_SCHEMA("db_life", "tblListItems", "schema");
 _query = "SELECT item.nameClass, type.name as 'type', item.isVirtual, item.nameDisplay, item.priceBuy, item.priceSell FROM list_items item JOIN list_item_types type on item.type = type.id;";
 _databaseResult = DEF_DB_MYSQL_EXEC_QUERY_RS(_query);
-
 
 _toStore = [];
 _toStore = _databaseResult;
@@ -51,12 +42,14 @@ _toStore = _databaseResult;
 	
 } forEach _databaseResult;
 */
-
 uiNamespace setVariable ["SUDC_V_LISTITEMS", _toStore];
 
 
+#ifdef DEBUG
 
+  DEF_CORE_PRINT_DEBUG("Updated Itemcache");
 
+#endif
 
 
 

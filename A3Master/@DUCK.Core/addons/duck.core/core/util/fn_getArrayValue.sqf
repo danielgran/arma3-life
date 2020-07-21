@@ -20,8 +20,7 @@
 
 private[
 
-  "_placeholder01",
-  "_placeholder02"
+  "_index"
 
 ];
 
@@ -47,42 +46,3 @@ _index = -1;
 if (_index isEqualTo -1) exitWith { false; };
 
 _array select _index;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//

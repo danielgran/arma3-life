@@ -47,7 +47,7 @@ if(_senderDatabaseKeyValue isEqualTo "" || _receiverDatabaseKeyValue isEqualTo "
 
 // get inventory from sender
 _senderInv = [_senderDatabaseID, _senderDatabaseKey, _senderDatabaseSchema, _senderDatabaseKeyValue] call DUC_CORE_redis_fnc_listEntryGet;
-_itemCheckSenderInv = [_senderInv, _item, _count] call DUC_LIFE_VITEM_FNC_invGetItem;
+_itemCheckSenderInv = [_senderInv, _item] call DUC_LIFE_VITEM_FNC_invGetItem;
 
 // check if sender has enough items
 if (_itemCheckSenderInv - _count < 0) exitWith { false; };

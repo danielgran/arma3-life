@@ -35,7 +35,7 @@ params[
   ["_databaseID", 0, [1]],
   ["_key", "", [""]],
   ["_schema", []],
-  ["_entry", ""]
+  ["_entry", ""] // i.e. invVirtual
 
 ];
 

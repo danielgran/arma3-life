@@ -17,8 +17,9 @@
 ////////////////////////////////
 
 #define DEF_CORE_CONST_SERVERID getNumber(configFile >> "CfgSettings" >> "serverID")
+#define DEF_CORE_PRINT_DEBUG(MSG) diag_log MSG
 
-
+#define DEF_CORE_GET_OBJECT_VALUE(SCHEMA, OBJECT, FIELD) ([SCHEMA, OBJECT, FIELD] call DUC_CORE_fnc_getArrayValue)
 
 
 /////////////////////////////////////////////
@@ -31,8 +32,8 @@
 
 
 
-#define DEF_DB_GET_SCHEMA(DB, TBL, SCH) getArray(configFile >> "CfgSettings" >> DB >> TBL >> SCH)
-#define DEF_DB_REDIS_GET_DBID(KEY) [DEF_DB_GET_SCHEMA("db_life", "Redis", "dbIDs"), KEY, "SCALAR"] call DUC_CORE_fnc_getConfigEntry
+#define DEF_DB_GET_SCHEMA(DB, TBL, SCH) (getArray(configFile >> "CfgSettings" >> DB >> TBL >> SCH))
+#define DEF_DB_REDIS_GET_DBID(KEY) ([DEF_DB_GET_SCHEMA("db_life", "Redis", "dbIDs"), KEY, "SCALAR"] call DUC_CORE_fnc_getConfigEntry)
 
 
 

@@ -36,16 +36,16 @@ params[
 ];
 
 
-_schemaInventoryItem = getArray(configFile >> "CfgSettings" >> "DEF_VITEM" >> "inventoryItem");
+_schemaInventoryItem = getArray(configFile >> "CfgSettings" >> "DEF_VITEM" >> "schemaInventoryEntry");
 
 _return = -1;
 {
-  _xitem =  [_schemaInventoryItem, _x, "itemClass"] call DUC_CORE_fnc_getArrayValue;
+  _xitem =  [_schemaInventoryItem, _x, "itemClassName"] call DUC_CORE_fnc_getArrayValue;
   _xcount = [_schemaInventoryItem, _x, "itemCount"] call DUC_CORE_fnc_getArrayValue;
 
   if (_xitem isEqualTo _item) exitWith
   {
-	_return = _xcount;
+	  _return = _xcount;
   };
 
 } forEach _inventory;

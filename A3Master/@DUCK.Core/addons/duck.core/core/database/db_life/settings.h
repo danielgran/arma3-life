@@ -11,7 +11,7 @@ class db_life
     {
       {"playerdata", 0}, // Contains all the cached playerdata which the player is using
       {"garagedata", 1}, // Contains all playergarages and houses
-      {"shopdata", 2}, // Contains Infrmation about shops on the server
+      {"shopdata", 2}, // Contains Information about shops on the server
       {"placeholder03", 3},
       {"placeholder04", 4},
       {"placeholder05", 5},
@@ -122,6 +122,14 @@ class db_life
       {"warehouse", "DBARRAY"}
     };
 
+
+    schemaWarehouseItem[] =
+    {
+      {"className", "STRING"},
+      {"priceBuy", "SCALAR"},
+      {"priceSell", "SCALAR"},
+      {"stock", "SCALAR"}
+    };
 
 
 

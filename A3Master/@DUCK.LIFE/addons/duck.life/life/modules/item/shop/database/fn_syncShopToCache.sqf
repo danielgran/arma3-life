@@ -86,7 +86,7 @@ _done = [];
       // if current shop id is in the searched one exit with push the item back
       if((_x select 0) isEqualTo _shopID) exitWith 
       {
-        (_x select 3) pushBack [_itemClass, _itemName, _itemIsVirtual, _itemType, _itemPriceBuy, _itemPriceSell, _itemStock];
+        (_x select 3) pushBack [_itemClass, _itemPriceBuy, _itemPriceSell, _itemStock];
       };
     } forEach _redisarray;
 
