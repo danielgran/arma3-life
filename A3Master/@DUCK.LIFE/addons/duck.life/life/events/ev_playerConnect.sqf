@@ -32,7 +32,7 @@ addMissionEventHandler ["PlayerConnected",
 
   // Delete authkey if there is one
   [_databaseID, format["auth#%1", _uid]] call DUC_core_redis_fnc_keyDelete;
-
+  
 
 
 

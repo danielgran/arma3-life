@@ -12,14 +12,17 @@ class db_life
       {"playerdata", 0}, // Contains all the cached playerdata which the player is using
       {"garagedata", 1}, // Contains all playergarages and houses
       {"shopdata", 2}, // Contains Information about shops on the server
-      {"placeholder03", 3},
+      {"vehicledata", 3},
       {"placeholder04", 4},
       {"placeholder05", 5},
       {"placeholder06", 6},
       {"placeholder07", 7},
       {"placeholder08", 8},
       {"placeholder09", 9},
-      {"placeholder10", 10}
+      {"placeholder09", 10},
+      {"placeholder09", 11},
+      {"placeholder09", 12},
+      {"placeholder10", 13}
 
     };
   };
@@ -67,6 +70,8 @@ class db_life
       {"nameDisplay", "STRING"},
       {"canSpawn", "BOOL"},
       {"priceBuy", "BOOL"},
+      {"owner", "STRING"},
+      {"keyOwner", "DBARRAY"},
       {"inventoryVirt", "DBARRAY"},
       {"fuel", "SCALAR"},
       {"hitInfo", "DBARRAY"},

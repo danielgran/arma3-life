@@ -36,7 +36,7 @@ params[
 
 
 // error trycatching
-if (count _array > count _schema) exitWith { false; };
+if (count _array < count _schema) exitWith { false; };
 
 _index = -1;
 {

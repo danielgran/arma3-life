@@ -129,6 +129,7 @@ class Duck_Life_Vehicles
 		file = "duck.life\life\modules\vehicle\database";
 
 		class getPlayerGarage {};
+		class playerGarageToCache {};
 	};
 };
 
