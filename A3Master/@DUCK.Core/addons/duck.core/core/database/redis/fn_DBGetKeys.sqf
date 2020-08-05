@@ -18,7 +18,7 @@
 private[
 
   "_stmt",
-  "_databaseResult",
+  "_databaseResult"
 
 ];
 
