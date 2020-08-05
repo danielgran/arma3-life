@@ -126,11 +126,7 @@ class Duck_Core_Redis
 		file = "duck.core\core\database\redis";
 
 		class connect {};
-		// TODO RECONNECT / DISCONNECT
-
-		// NEVER NEEDED REMOVE IN FUTURE ////
-		/**/  class getInfoFromDB {};    /**/
-		/////////////////////////////////////
+		// TODO RECONNECT / DISCONNECT ?
 
 		class DBFlush {};
 		class DBGetKeys {};
