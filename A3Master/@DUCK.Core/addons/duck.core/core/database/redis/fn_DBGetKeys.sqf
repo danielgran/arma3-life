@@ -15,25 +15,19 @@
 
  */
 
-
-
-
 private[
+
+  "_stmt",
+  "_databaseResult",
+
+];
+
+params[
 
   "_databaseID",
   "_regex"
 
 ];
-
-
-params[
-
-  "_stmt",
-  "_databaseResult"
-
-];
-
-
 
 
 _stmt = format["redis:dbkeys:%1:%2", _databaseID, _regex];
