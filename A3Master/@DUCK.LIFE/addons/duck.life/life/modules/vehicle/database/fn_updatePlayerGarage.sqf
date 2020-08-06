@@ -94,3 +94,24 @@ _schemaVehicle = DEF_DB_GET_SCHEMA("db_life", "tblGarageVehicle", "schema");
 
 
 // cache now up to date now update everything to mysql
+
+
+[_schema, _playerSafe, "players", format["steamid64 = '%1'", _steamID64]] call DUC_core_mysql_fnc_datasetUpdate;
+
+
+// get new entrys in mysql
+
+
+_playerGarageRedis = [_steamid64] call duc_life_veh_fnc_getPLayerarage; 
+{
+
+  // Current result is saved in variable _x
+
+  if !(_x in _mysqlIDs) then
+  {
+    // add vehicle to mysql
+    
+  };
+  
+} forEach _redisIDs;
+
