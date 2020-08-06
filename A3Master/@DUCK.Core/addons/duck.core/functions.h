@@ -80,9 +80,12 @@ class Duck_Core_MySQL_Life
 	class MySQLDatabaseManager
 	{
 		file = "duck.core\core\database\helper\mysql";
-		class queryHandler {};
+		
+		class buildInsert {};
 		class buildSelect {};
 		class buildUpdate {};
+
+		class queryHandler {};
 		class DBArrayToA3Array {};
 		class A3ArrayToDBArray {};
 		class A3ArrayToDBList {};
