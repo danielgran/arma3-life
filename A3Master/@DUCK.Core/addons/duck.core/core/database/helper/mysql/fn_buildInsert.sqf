@@ -55,7 +55,7 @@ _inserts = "";
   _newInsert = objNull;
   switch ((_schema select _forEachIndex) select 1) do
   {
-	  case: "BOOL"
+	  case "BOOL":
 	  {
       if(_x isEqualTo true) then
       {
@@ -65,11 +65,11 @@ _inserts = "";
         _newInsert = 0;
       };
     };
-    case: "DBARRAY"
+    case "DBARRAY":
     {
       _newInsert = [_x] call DUC_core_fnc_mresArrayToString;
     };
-    default:
+    default
     {
       _newInsert = _x
     };
