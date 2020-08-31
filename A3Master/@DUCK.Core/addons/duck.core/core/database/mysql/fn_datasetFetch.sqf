@@ -40,7 +40,7 @@ params
 ];
 
 _stmt = [_schema, "players", format["steamID64 = '%1'", _steamID64]] call DUC_core_mysql_fnc_buildSelect;
-_databaseResult = [_stmt, 2, call ducv_core_dbidplayerdata] call DUC_core_mysql_fnc_queryHandler;
+_databaseResult = [_stmt, 2, call ducv_core_id_dblife] call DUC_core_mysql_fnc_queryHandler;
 
 if (count _databaseResult isEqualTo 1 ) then
 {

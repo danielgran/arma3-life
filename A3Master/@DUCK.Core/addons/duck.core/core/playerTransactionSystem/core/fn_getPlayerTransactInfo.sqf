@@ -35,7 +35,7 @@ params[
 
 
 _query = format ["CALL spGetPlayerServerTransaction('%1');", _steamID64];
-_databaseResult = [_query, 2, (call ducv_core_dbidplayerdata)] call DUC_core_mysql_fnc_queryHandler;
+_databaseResult = [_query, 2, (call ducv_core_id_dblife)] call DUC_core_mysql_fnc_queryHandler;
 
 // todo Mehr KANN zurück kommen?
 _databaseResult = _databaseResult select 0;

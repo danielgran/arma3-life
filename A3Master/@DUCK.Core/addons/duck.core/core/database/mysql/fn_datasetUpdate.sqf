@@ -44,4 +44,4 @@ _stmt = [_datasetSchema, _dataset, _table, _where] call DUC_core_mysql_fnc_build
 
 diag_log _stmt;
 
-[_stmt, 1, call ducv_core_dbidplayerdata] call DUC_core_mysql_fnc_queryHandler;
+[_stmt, 1, call ducv_core_id_dblife] call DUC_core_mysql_fnc_queryHandler;

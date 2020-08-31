@@ -63,15 +63,15 @@ if (("extDB3" callExtension "9:VERSION") isEqualTo "") exitWith
 };
 
 
-if (isNil {uiNamespace getVariable "ducv_core_dbidplayerdata"} ) then {
-	ducv_core_dbidplayerdata = round(random(999999));
-	__SVAR__(ducv_core_dbidplayerdata, ducv_core_dbidplayerdata);
-	uiNamespace setVariable ["ducv_core_dbidplayerdata", ducv_core_dbidplayerdata];
+if (isNil {uiNamespace getVariable "ducv_core_id_dblife"} ) then {
+	ducv_core_id_dblife = round(random(999999));
+	__SVAR__(ducv_core_id_dblife, ducv_core_id_dblife);
+	uiNamespace setVariable ["ducv_core_id_dblife", ducv_core_id_dblife];
 
 
   //init "playerdata" extdb3 db
   "extDB3" callExtension format["9:ADD_DATABASE:%1", "playerdata"];
-	"extDB3" callExtension format["9:ADD_DATABASE_PROTOCOL:%1:SQL:%2:TEXT2", "playerdata", (call ducv_core_dbidplayerdata)];
+	"extDB3" callExtension format["9:ADD_DATABASE_PROTOCOL:%1:SQL:%2:TEXT2", "playerdata", (call ducv_core_id_dblife)];
 
 	//Add logging for specific logs
 
@@ -109,7 +109,7 @@ switch("extDB3" callExtension "9:LOCK_STATUS") do
 
 
 
-_databaseResult = ["SHOW PROCESSLIST", 2, (call ducv_core_dbidplayerdata)] call DUC_core_mysql_fnc_queryHandler;
+_databaseResult = ["SHOW PROCESSLIST", 2, (call ducv_core_id_dblife)] call DUC_core_mysql_fnc_queryHandler;
 if (_databaseResult isEqualTo [[]]) then // Check if Databaseconnection is established
 {
   diag_log "[DUCK:CORE] Connection to Database failed";

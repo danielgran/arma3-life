@@ -39,7 +39,7 @@ params[
 
 // Get the bytesizes of the vehicles
 _stmt = format["CALL spGetPlayerGarageVehiclesByteSizes('%1')", _steamID];
-_databaseResult = [_stmt, 2, (call ducv_core_dbidplayerdata)] call DUC_core_mysql_fnc_queryHandler;
+_databaseResult = [_stmt, 2, (call ducv_core_id_dblife)] call DUC_core_mysql_fnc_queryHandler;
 
 if(_databaseResult isEqualTo []) exitWith { false; };
 
@@ -65,7 +65,7 @@ _vehicles = [];
       diag_log format["Sending now %1", str(_toGet)];
       _stmt = format["CALL spGetVehiclesFromGarage('%1')", ([_toGet] call DUC_CORE_mysql_fnc_A3ArrayToDBList)];
       _toGet = [];
-      _tmp = [_stmt, 2, (call ducv_core_dbidplayerdata)] call DUC_core_mysql_fnc_queryHandler;
+      _tmp = [_stmt, 2, (call ducv_core_id_dblife)] call DUC_core_mysql_fnc_queryHandler;
       {
           _vehicles pushBack _x;
       } forEach _tmp;
@@ -83,7 +83,7 @@ _vehicles = [];
 } forEach _databaseResult;
 
 _stmt = format["CALL spGetVehiclesFromGarage('%1')", ([_toGet] call DUC_CORE_mysql_fnc_A3ArrayToDBList)];
-_tmp = [_stmt, 2, (call ducv_core_dbidplayerdata)] call DUC_core_mysql_fnc_queryHandler;
+_tmp = [_stmt, 2, (call ducv_core_id_dblife)] call DUC_core_mysql_fnc_queryHandler;
 {
   _vehicles pushBack _x;
 } forEach _tmp;

@@ -40,7 +40,7 @@ if (!canSuspend) exitWith { false; };
 
 // GET MYSQL DATA
 _stmt = format["CALL spGetEconomyShopData('%1')", 1]; //TODO MAKE GLOBAL VARIABLE SERVER ID
-_databaseResult = [_stmt, 2, (call ducv_core_dbidplayerdata)] call DUC_core_mysql_fnc_queryHandler;
+_databaseResult = [_stmt, 2, (call ducv_core_id_dblife)] call DUC_core_mysql_fnc_queryHandler;
 
 diag_log format["databaseresult: %1", _databaseResult];
 
