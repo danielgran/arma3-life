@@ -48,3 +48,7 @@ diag_log "==========================================================";
   [] call CDUC_HUD_fnc_close;
   DUCV_HUD_CLOSED = true;
 };
+
+
+// Setup Events
+[] call CDUC_EVENT_fnc_setupEvents;
