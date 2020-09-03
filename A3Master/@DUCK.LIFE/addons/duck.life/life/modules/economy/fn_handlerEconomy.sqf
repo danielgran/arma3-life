@@ -26,7 +26,7 @@ params[
 switch (_id) do {
 
     case (0): { // Abheben
-        //[_player] call DUC_life_eco_fnc_withdraw;
+        [_player] call DUC_life_eco_fnc_withdraw;
     };
 
     case (1): { // Einzahlen

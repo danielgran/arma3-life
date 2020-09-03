@@ -45,7 +45,6 @@ switch (_id) do {
       _count = _content select 1;
 
       _databaseID = DEF_DB_REDIS_GET_DBID("playerdata");
-
       _databaseSchema = DEF_DB_GET_SCHEMA("db_life", "tblplayers", "playerRelated");
       _databaseKey =  "invVirtual";
 

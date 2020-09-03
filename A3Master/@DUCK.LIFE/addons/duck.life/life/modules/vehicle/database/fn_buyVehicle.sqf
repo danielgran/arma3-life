@@ -2,13 +2,18 @@
 /*
 
   Author: Duckfine
-  Date created: 21-7-2020 17:07
+  Date created: 03-09-2020 10:37
 
   Description
-    <desc>
+    Gets called if a player buys a vehicle
+	The buyed vehicle gets stored in players garage
+	if the player wants to see it at the car dealer its part of the buy script to spawn the vehicle
 
   Parameter:
     - int shop
+	- string vehicle
+	- int quant
+	- string steamid64
 
   Returns:
     - <type> <name>
@@ -16,7 +21,7 @@
 
  */
 
-private[
+ private[
 
   "_placeholder01",
   "_placeholder02"
@@ -26,11 +31,12 @@ private[
 params[
 
   ["_shop", 0, [1]],     // Shopid
-  ["_item", "", ["a"]],     // ItemClassname
+  ["_vehicle", "", ["a"]],     // ItemClassname
   ["_quant", 0, [1]],    // Quantity
   ["_steamID64", "", ["a"]] // Player
 
 ];
+
 
 _shopDataID = DEF_DB_REDIS_GET_DBID("shopdata");
 _playerDataID = DEF_DB_REDIS_GET_DBID("playerdata");
@@ -44,7 +50,7 @@ _shopWarehouse = [_shopDataID, str(_shop), _schemaShop, "warehouse"] call DUC_CO
 _warehouseItem = "";
 {
   _xClassName = DEF_CORE_GET_OBJECT_VALUE(_schemaWarehouseItem, _x, "className");
-  if(_xClassName isEqualTo _item) exitWith { _warehouseItem = _x; };
+  if(_xClassName isEqualTo _vehicle) exitWith { _warehouseItem = _x; };
 } forEach _shopWarehouse;
 if (_warehouseItem isEqualTo "") exitWith { false; };
 
@@ -60,6 +66,8 @@ if(_playerMoney < _itemPriceBuy * _quant) exitWith { false; };
 
 // Set inventory counts
 _playerMoney = _playerMoney - _itemPriceBuy * _quant;
+
+// Update Warehouse
 {
   _xClassName = DEF_CORE_GET_OBJECT_VALUE(_schemaWarehouseItem, _x, "className");
   if (_xClassName isEqualTo _item) exitWith
@@ -78,16 +86,21 @@ _playerMoney = _playerMoney - _itemPriceBuy * _quant;
 	
 } forEach _shopWarehouse;
 
-_playerInv = [_playerDataID, _steamID64, _schemaPlayer, "invVirtual"] call DUC_CORE_redis_fnc_listEntryGet;
-_playerInv = [_playerInv, _item, _quant] call DUC_LIFE_VITEM_FNC_invAddItem;
 
-diag_log _shopWarehouse;
 
+// TODO handle to add to player garage
+
+// TODO 
+[] call DUC_LIFE_VEH_fnc_playerGarageAddVehicle;
+
+
+/////////////
+
+
+// update bank(player), warehouse and inv of shop to database 
 [_playerDataID, _steamID64, _playerMoney, _schemaPlayer, "bank"] call DUC_CORE_redis_fnc_listEntryUpdate;
 [_shopDataID, str(_shop), _shopWarehouse, _schemaShop, "warehouse"] call DUC_CORE_redis_fnc_listEntryUpdate;
 [_playerDataID, _steamID64, _playerInv, _schemaPlayer, "invVirtual"] call DUC_CORE_redis_fnc_listEntryUpdate;
-
-
 
 
 

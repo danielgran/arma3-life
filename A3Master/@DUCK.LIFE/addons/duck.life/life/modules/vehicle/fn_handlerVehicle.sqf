@@ -18,21 +18,19 @@ params[
 
 switch (_id) do {
 
-
     // Get Player Garage
     case (0): {
-        //[_player] call DUC_life_eco_fnc_withdraw;
+        _content = [_steamID64] call DUC_life_veh_getPlayerGarage;
     };
 
-    case (1): { // Einzahlen
-      //spawn handleQuery
+    case (1): {
 
     };
 
-    case (1): { // Überweisen
-      //spawn handleQuery
+    case (2): {
 
     };
+    
 };
 
 // here return to client

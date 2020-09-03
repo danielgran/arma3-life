@@ -16,7 +16,6 @@
 
 */
 
-
 private[
 
   "_stmt",
@@ -27,7 +26,6 @@ private[
   "_tmp",
   "_vehicles"
 
-
 ];
 
 params[
@@ -35,7 +33,6 @@ params[
   ["_steamID",""]
 
 ];
-
 
 // Get the bytesizes of the vehicles
 _stmt = format["CALL spGetPlayerGarageVehiclesByteSizes('%1')", _steamID];
@@ -89,41 +86,3 @@ _tmp = [_stmt, 2, (call ducv_core_id_dblife)] call DUC_core_mysql_fnc_queryHandl
 } forEach _tmp;
 
 _vehicles;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//

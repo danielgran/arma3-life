@@ -124,6 +124,15 @@ class Duck_Life_VItems
 class Duck_Life_Vehicles
 {
 	tag = "duc_life_veh";
+
+
+  class Handler
+	{
+    file = "duck.life\life\modules\vehicle";
+
+		class handlerVehicle {};
+	};
+
 	class Database
 	{
 		file = "duck.life\life\modules\vehicle\database";
