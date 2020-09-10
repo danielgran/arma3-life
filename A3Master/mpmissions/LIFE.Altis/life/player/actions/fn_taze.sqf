@@ -15,16 +15,12 @@
 
  */
 
-
-
-
 private[
 
   "_placeholder01",
   "_placeholder02"
 
 ];
-
 
 params[
 
@@ -33,14 +29,9 @@ params[
 
 ];
 
-
 if (!(isPlayer _target)) exitWith { false; }; 
-
 if (!canSuspend) exitWith { false; };
-
 hint "u have been tazed";
-
-
 player switchMove "AparPercMstpSnonWnonDnon_AmovPpneMstpSnonWnonDnon";
 
 
