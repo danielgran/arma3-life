@@ -4,7 +4,11 @@
 # Ada Library Information
 *.ali
 
-
 # ARMA 3
 
 *.pbo
+
+
+#VS Code
+.vscode/
+.vscode/settings.json
