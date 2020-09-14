@@ -7,6 +7,8 @@ class Core
     file = "core\methods";
 
     class getAllTurretWeapons {};
+
+    class playSoundGlobal {};
   };
 };
 

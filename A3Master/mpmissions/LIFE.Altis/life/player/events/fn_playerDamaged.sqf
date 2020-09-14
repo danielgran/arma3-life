@@ -12,11 +12,7 @@
   Returns:
    If code provided returns a numeric value, this value will overwrite the default damage of given selection after processing. Return value of 0 will make the unit invulnerable if damage is not scripted in other ways (i.e using setDamage and/or setHit for additional damage handling). If no value is returned, the default damage processing will be done. This allows for safe stacking of this event handler. Only the return value of the last added "HandleDamage" EH is considered.
 
-
  */
-
-
-
 
 private[
 
@@ -24,7 +20,6 @@ private[
   "_placeholder02"
 
 ];
-
 
 params[
 
@@ -43,24 +38,21 @@ hint "hsn";
 if (!(isPlayer _unit) || !(isPlayer _source)) exitWith {};
 hint str(_unit);
 
+#ifdef DEBUG
 systemChat format ["%1", currentWeapon _source ];
 systemChat format ["%1", _projectile ];
-
+#endif
 
 // Tazer
 if ((_source != _unit) && (alive _unit)) then
 {
-  if(currentWeapon _source isEqualTo "hgun_ACPC2_F" && _projectile isEqualTo "B_45ACP_Ball_Green") then
+  if(currentWeapon _source isEqualTo "hgun_ACPC2_snds_F" && _projectile isEqualTo "B_45ACP_Ball_Green") then
   {
-hint "hsn2";
-
-	_distance = (getPos _source) distance (getPos _unit);
-	if(_distance > 10) exitWith { false; };
-	// set _unit tazed
-hint "hsn3";
-
-	[_source, _unit] spawn CDUC_ACT_fnc_taze;
-	0;
+	  _distance = (getPos _source) distance (getPos _unit);
+	  if(_distance > 10) exitWith { false; };
+	  // set _unit tazed
+	  [_source, _unit] spawn CDUC_ACT_fnc_taze;
+	  0; // return 0 (player get not harmed)
   };
 };
 

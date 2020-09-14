@@ -52,5 +52,6 @@
     "editor.useTabStops": false,
     "psi-header.config": {
     
-    }
+    },
+    "rpt.differentRptFolder": "P:\\a3servertest\\A3Master\\logs"
 }
