@@ -3,10 +3,11 @@ class DUC_lif
 
   class Variables
   {
-
+    // Setup vars which are set with setVariable / global vars
     global[] = 
     {
       {"DUCV_HUD_CLOSED", "true"},
+      {"DUCV_ACT_TAZED", "false"},
       {"DUCV_PLACEHOLDER", """place"""}
     };
 

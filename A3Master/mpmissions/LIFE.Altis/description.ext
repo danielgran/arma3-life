@@ -28,7 +28,7 @@ class CfgDebriefing //todo debriefing in extra header file
 {
   class TeamWin
   {
-    title = "some title has to be fixed"; //todo set title properly
+    title = "Die Verbinding wurde erfolgreich unterbrochen3"; //todo set title properly
     subtitle = "DOCKOTH.eu"; //todo set subtitle properly
     description = "Some Description here"; //todo set description properly
     pictureBackground = ""; //todo picture background?
@@ -44,6 +44,20 @@ class CfgDebriefing //todo debriefing in extra header file
     pictureBackground = ""; //todo picture background?
     picture = ""; // todo set pictures
     pictureColor[] = {0.0,0.3,0.6,1}; //todo set colors properly
+  };
+};
+
+
+class CfgSounds
+{
+  sounds[] = {};
+
+  class taze
+  {
+    name = "taze";
+
+    sound[] = {"life\assets\sounds\tazer.ogg", 1, 1};
+    titles[] = { 1, "" };
   };
 };
 

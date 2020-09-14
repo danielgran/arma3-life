@@ -52,11 +52,33 @@ class ECO
 
 
 
+class Events
+{
+  tag = "CDUC_EVENT";
+
+  class Events
+  {
+    file = "life\player\events";
+
+    class setupEvents {};
+    
+    class playerDamaged {};
+  };
+}
 
 
 
+class Actions
+{
+  tag = "CDUC_ACT";
 
+  class Action
+  {
+    file = "life\player\actions";
 
+    class taze {};
+  };
+}
 
 
 

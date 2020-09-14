@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1918;
+		nextID=1920;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12446.414,51.834488,15750.26};
-		dir[]={-0.16897644,-0.44802079,-0.87794346};
-		up[]={-0.084679231,0.89401013,-0.43996456};
-		aside[]={-0.98200321,9.0803951e-008,0.18900673};
+		pos[]={24130.963,43.228256,22812.092};
+		dir[]={-0.14827777,-0.49994728,0.85327274};
+		up[]={-0.08560361,0.86602849,0.49261039};
+		aside[]={0.98523951,1.3213139e-007,0.17121033};
 	};
 };
 binarizationWanted=0;
@@ -420,7 +420,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1035;
+		items=1036;
 		class Item0
 		{
 			dataType="Group";
@@ -13615,7 +13615,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={24135.463,37.399994,22832.508};
+						position[]={24125.279,36.732151,22822.01};
 						angles[]={6.1940885,0.79676026,6.2591896};
 					};
 					side="West";
@@ -13626,7 +13626,6 @@ class Mission
 					};
 					id=504;
 					type="B_Soldier_A_F";
-					atlOffset=-3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13674,29 +13673,7 @@ class Mission
 			class Attributes
 			{
 			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=1;
-				};
-				class Links
-				{
-					items=1;
-					class Item0
-					{
-						linkID=0;
-						item0=504;
-						item1=522;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-				};
-			};
 			id=503;
-			atlOffset=-0.010257721;
 		};
 		class Item2
 		{
@@ -13900,8 +13877,8 @@ class Mission
 				position[]={24135.555,38.992081,22832.488};
 				angles[]={6.1940885,0.79676026,6.2591896};
 			};
-			side="West";
-			flags=6;
+			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
@@ -34407,7 +34384,7 @@ class Mission
 			type="mil_arrow";
 			a=1.5;
 			b=1.5;
-			angle=328.44287;
+			angle=328.44281;
 			id=1907;
 			atlOffset=184.632;
 		};
@@ -34473,6 +34450,23 @@ class Mission
 			type="loc_Fountain";
 			id=1917;
 			atlOffset=0.00032615662;
+		};
+		class Item1035
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={24126.381,36.756199,22823.025};
+				angles[]={6.2152901,0,6.2738504};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1919;
+			type="Weapon_hgun_ACPC2_F";
+			atlOffset=-9.9182129e-005;
 		};
 	};
 };

@@ -16,9 +16,6 @@
 
  */
 
-
-
-
 private[
 
   "_steamid64",
@@ -27,14 +24,11 @@ private[
 
 ];
 
-
 params[
 
   ["_steamID64", "", ["a"]]
 
 ];
-
-
 
 _vehicles = [_steamID64] call duc_life_veh_fnc_getPlayerGarage;
 
