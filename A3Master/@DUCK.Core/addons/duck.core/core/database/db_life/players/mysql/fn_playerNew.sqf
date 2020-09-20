@@ -4,10 +4,7 @@
   Author: Duckfine
 */
 
-private[ "_pattern", "_playerInternalID", "_steamID64", "_a3name", "_proceed", "_count", "_max"];
-
-_pattern = "0XXX0XXX0";
-
+private["_query", "_databaseResult"];
 
 params [
   "_steamID64",
