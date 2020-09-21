@@ -1,1 +1,0 @@
-["defeatMaldenNorth.Malden"] call dck_mvs_changeMission;
