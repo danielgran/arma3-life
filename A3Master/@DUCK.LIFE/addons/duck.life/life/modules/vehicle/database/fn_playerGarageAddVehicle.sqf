@@ -29,7 +29,7 @@ params[
 
   ["_steamID64", "", ["a"]],   // Player
   ["_vehicle", "", ["a"]],     // ItemClassname
-  ["_quant", 0, [1]],    // Quantity
+  ["_quant", 0, [1]]    // Quantity
 
 ];
 
@@ -37,11 +37,11 @@ params[
 
 // TODO 
 _playerGarage = [_steamID64] call DUC_LIFE_VEH_fnc_getPlayerGarage;
-
+/*
 {
 	
 } forEach  ;
 
-
+*/
 
 
