@@ -11,38 +11,7 @@ diag_log "|  ___/| |  | |\___ \   | |    | | | . ` | | |    | |   ";
 diag_log "| |    | |__| |____) |  | |   _| |_| |\  |_| |_   | |   ";
 diag_log "|_|     \____/|_____/   |_|  |_____|_| \_|_____|  |_|   ";
 
-
-
-
-
 // Set Servers in cache
 [] spawn DUC_CORE_SYS_FNC_getServerInfo;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 "END POST INIT" call test_fnc_log;
-//

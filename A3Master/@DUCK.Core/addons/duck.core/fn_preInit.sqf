@@ -11,22 +11,16 @@ diag_log "|______|  ___/|  _  /|  __|   | | | . ` | | |    | |   ";
 diag_log "       | |    | | \ \| |____ _| |_| |\  |_| |_   | |   ";
 diag_log "       |_|    |_|  \_\______|_____|_| \_|_____|  |_|   ";
 
-
-
 // let init only be executed once
-if (!isNil(serverInitDone) or serverInitDone isEqualTo true) exitWith {diag_log "INIT EXECUTED TWICE?";};  //Alarm, weil unerlaubterweise die Init erneut ausgeführt wurde
+if (!isNil(serverInitDone) or serverInitDone isEqualTo true) exitWith {diag_log "INIT EXECUTED TWICE?";};
 serverInitDone = false;
-
-
 
 
 // Activate DEBUG Mode
 #define DEBUG debug
 
 #ifdef DEBUG
-
-diag_log "DEBUGMODE ACTIVATED AHAHAHAH";
-
+diag_log "DEBUGMODE ACTIVATED";
 #endif
 
 
@@ -34,13 +28,12 @@ diag_log "DEBUGMODE ACTIVATED AHAHAHAH";
 #define __SCVAR__(var) var = compileFinal (if(typeName var isEqualTo "STRING") then {var} else {str(var)})
 
 
-//Redis Server init
+// Redis Server init
 
 // Connect to RedisServer
 _con = call DUC_core_redis_fnc_connect;
 // Check Redis Extension Version
 _a3rversion = call DUC_core_redis_fnc_checkVersion;
-
 
 if (_a3rversion isEqualTo "") exitWith
 {
@@ -48,14 +41,9 @@ if (_a3rversion isEqualTo "") exitWith
   // Server isnt ready yet
   // todo stop server from beeing starting and exiting --> have to mail/sms/push this to an administrator
 };
-
 diag_log format["[DUCK:CORE] ArmaRedisClient wurde geladen! Version: %1", _a3redis];
 
-
-
-
-
-//MySQL Server Initialize
+// MySQL Server Initialize
 if (("extDB3" callExtension "9:VERSION") isEqualTo "") exitWith
 {
 	diag_log "EXTDB3 ERROR WURDE NICHT RICHTIG INSTALLIERT";
@@ -118,56 +106,7 @@ if (_databaseResult isEqualTo [[]]) then // Check if Databaseconnection is estab
 	diag_log "[DUCK:CORE] Connectiontest to Database succeeded";
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //TODO: some sort of control structure if everything loaded fine
 serverInitDone = true;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 "END PREINIT" call test_fnc_log;
-//
