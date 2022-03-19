@@ -35,13 +35,7 @@ _databaseResult = DEF_DB_MYSQL_EXEC_QUERY_RS(_query);
 
 _toStore = [];
 _toStore = _databaseResult;
-// Here could be some logic
-/*
-{
-	_toStore pushBack _x;
-	
-} forEach _databaseResult;
-*/
+
 uiNamespace setVariable ["SUDC_V_LISTITEMS", _toStore];
 
 
