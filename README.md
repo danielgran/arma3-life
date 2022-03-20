@@ -1,4 +1,4 @@
-# DUCKLIFE
+# ArmA3-Life
 
 
 
