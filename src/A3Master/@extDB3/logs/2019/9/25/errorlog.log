@@ -1,2 +1,0 @@
-[21:48:19:400193 +02:00] [Thread 16872]  Failed Statement - SHOW PROCESSLIST - with [0,"Error Unknown Protocol"]
-[21:50:53:514674 +02:00] [Thread 14392]  Error - Innerloopcounter exeeded max  - [3] - SELECT id FROM players WHERE playerid = '76561198216442289'

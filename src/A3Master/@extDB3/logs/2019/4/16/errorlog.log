@@ -1,2 +1,0 @@
-[21:59:05:041836 +02:00] [Thread 12776]  Error - Innerloopcounter exeeded max  - [3] - SELECT playerintid FROM players WHERE playerintid = 'U52B55'
-[22:02:28:044238 +02:00] [Thread 15264]  Error - Innerloopcounter exeeded max  - [3] - SELECT playerintid FROM players WHERE playerintid = 'V15YGP66F'

@@ -1,6 +1,0 @@
-[21:22:34:495696 +01:00] [Thread 13236]  Performed Query 1 - 207125 - SHOW PROCESSLIST
-[21:22:34:495925 +01:00] [Thread 7124]  Finished Query - SHOW PROCESSLIST - with return - [1010]
-[21:43:04:699559 +01:00] [Thread 8488]  Performed Query 1 - 267770 - SHOW PROCESSLIST
-[21:43:04:700163 +01:00] [Thread 1032]  Finished Query - SHOW PROCESSLIST - with return - [1010]
-[21:54:11:560421 +01:00] [Thread 12428]  Performed Query 1 - 507810 - SHOW PROCESSLIST
-[21:54:11:560544 +01:00] [Thread 11256]  Finished Query - SHOW PROCESSLIST - with return - [1010]
