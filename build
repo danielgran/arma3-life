@@ -1,0 +1,3 @@
+# copy header files
+find ./src/servermods/@DUCK.LIFE/addons -name '*.h' -o -name '*.hpp' -o -name '*.cpp' -exec cp {} ./dist \;
+
