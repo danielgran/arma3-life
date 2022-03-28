@@ -1,4 +1,4 @@
-#include "\duck.core\script_macros.hpp"
+#include "duck.core/script_macros.hpp"
 /*
 
   Author: Duckfine
