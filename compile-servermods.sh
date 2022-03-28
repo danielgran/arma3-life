@@ -2,34 +2,34 @@
 
 rm -rf ./dist/*
 
-for servermod in $(find ./src/servermods -name '@*' -type d); do
+for servermod in $(find ./src/servermods -type d -mindepth 1 -maxdepth 1); do
   servermod_path=$(realpath $servermod)
   servermod_name=$(basename $servermod_path)
+
+  # Check if mod.cpp is there
+  if [ ! -f "$servermod_path/mod.cpp" ]; then
+    echo "No mod.cpp found in $servermod_path"
+    continue
+  fi
+
+
   echo "Processing $servermod_name"
+  # print variables
+  echo "servermod_path: $servermod_path"
 
-  mkdir -p ./dist/$servermod_name/addons
-  find $servermod_path/addons -type f \( -name '*.h' -o -name '*.hpp' -o -name '*.cpp' \) -exec cp {} ./dist/$servermod_name \;
+  # the headerfiles should be useable in the sqf file, so
+    # rename all include dependencies in the sqf files
+    # example: #include '\duck.core\blabla.hpp' -> #include 'duck.core/blabla.hpp'
+    # then the file preprocessor can be used to include the headerfiles
+    # call it like "cpp -I"modone" -I "modtwo" etc, so everything gets loaded as expected
 
+  # loop through all *.sqf files in the mod folder and preprocess them to a temporary folder
 
-  #find $servermod_path -name '*.sqf' -exec sh -c 'cp {} .$(echo {} | ' \;
+  
 
-
-  for file in $(find $servermod_path -name '*.sqf'); do
-    relative_path_of_file=$(realpath $file | sed "s/.*\(addons\)/\1/g")
-    without_first_path_part=${relative_path_of_file#*/}
-    copypath="./dist/$servermod_name/addons/$without_first_path_part"
-    mkdir -p $(dirname $copypath)
-    #cp $file $copypath
-    #find ./src/servermods/@DUCK.LIFE/addons -name '*.h' -o -name '*.hpp' -o -name '*.cpp' -exec cp {} ./dist \;
-    
-    # Copy header files of mod to the output folder
-    
-    cpp -I"$servermod_path/addons" -P $file $copypath
-  done
 
 done
 
 
-#rm -rf ./tmp/*
 
 # function but not as the standard arma3 syntax - you have to redefine all the defines
