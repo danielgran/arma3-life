@@ -1,2 +1,2 @@
 name = "DUCK.CORE";
-author="Duckfine";
+author = "Duckfine";
