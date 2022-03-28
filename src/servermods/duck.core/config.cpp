@@ -38,7 +38,7 @@ class CfgSettings
 
 
  	// Settings for DB related stuff
-	#include "core\database\db_life\settings.h"
+	#include "duck.core/core/database/db_life/settings.h"
 
 
 

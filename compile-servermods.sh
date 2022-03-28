@@ -16,6 +16,21 @@ for servermod in $(find ./src/servermods -type d -mindepth 1 -maxdepth 1); do
   echo "Processing $servermod_name"
   # print variables
   echo "servermod_path: $servermod_path"
+  # find header files
+
+  # for all sqf files in the servermod folder
+  for sqf_file in $(find $servermod_path -type f -name "*.sqf"); do
+    # destpath
+    relative_path_of_file=$(realpath $sqf_file | sed "s/.*\(servermods\)/\1/g")
+    without_first_path_part=${relative_path_of_file#*/}
+    sqf_file_destination="./dist/@$servermod_name/addons/$without_first_path_part"
+
+    echo "--> Processing $sqf_file"
+
+    mkdir -p $(dirname $sqf_file_destination)
+    cpp -I$(pwd)/src/servermods -P $sqf_file $sqf_file_destination
+  done
+
 
   # the headerfiles should be useable in the sqf file, so
     # rename all include dependencies in the sqf files
