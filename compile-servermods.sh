@@ -6,11 +6,6 @@ for servermod in $(find ./src/servermods -mindepth 1 -maxdepth 1 -type d); do
   servermod_path=$(realpath $servermod)
   servermod_name=$(basename $servermod_path)
 
-  # Check if mod.cpp is there
-  if [ ! -f "$servermod_path/mod.cpp" ]; then
-    echo "No mod.cpp found in $servermod_path"
-    continue
-  fi
 
 
   echo "Processing $servermod_name"
