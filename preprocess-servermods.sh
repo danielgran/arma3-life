@@ -31,6 +31,3 @@ for servermod in $(find ./src/servermods -mindepth 1 -maxdepth 1 -type d); do
 
 
 done
-
-
-# function but not as the standard arma3 syntax - you have to redefine all the defines
