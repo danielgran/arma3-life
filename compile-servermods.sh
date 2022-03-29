@@ -7,8 +7,7 @@ for servermod in $(find ./src/servermods -mindepth 1 -maxdepth 1 -type d); do
   servermod_name=$(basename $servermod_path)
 
 
-
-  echo "Processing $servermod_name"
+  echo "Preprocessing $servermod_name"
   # print variables
   echo "servermod_path: $servermod_path"
   # find header files
