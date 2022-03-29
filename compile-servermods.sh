@@ -2,7 +2,7 @@
 
 rm -rf ./dist/*
 
-for servermod in $(find ./src/servermods -type d -mindepth 1 -maxdepth 1); do
+for servermod in $(find ./src/servermods -mindepth 1 -maxdepth 1 -type d); do
   servermod_path=$(realpath $servermod)
   servermod_name=$(basename $servermod_path)
 
