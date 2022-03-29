@@ -1,8 +1,3 @@
-/**
- * @Date:   2020-04-01T11:18:59+02:00
- * @Last modified time: 18-04-2020 21:35
- */
-
 class CfgPatches
 {
 	class duck_core
@@ -30,18 +25,9 @@ class CfgRemoteExec
 
 class CfgSettings
 {
-  
 	ServerID = 1;
-
-	
-
-
-
  	// Settings for DB related stuff
 	#include "duck.core/core/database/db_life/settings.h"
-
-
-
 
 	class Logging
 	{
