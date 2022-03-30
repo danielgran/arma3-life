@@ -33,11 +33,12 @@ for "_mainFunc" from 0 to (count _cfgFunctions)-1 do
                     diag_log format["         at: %1", _filePath];
                     private _bin = compile _content;
                     private _namespaceName = format ["%1_fnc_%2", _mainConfigTag, _functionName];
-                    diag_log format["         finished: %1", _namespaceName];
                     missionNamespace setVariable [
                         _namespaceName,
                         _bin
                     ];
+                    diag_log format["         finished: %1", _namespaceName];
+                    diag_log "";
                 };
             };
         };

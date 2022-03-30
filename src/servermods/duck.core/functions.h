@@ -12,6 +12,7 @@ class Duck_Core_Test
 
 class Duck_Core_Startup
 {
+  tag = "startup";
   class Initialize
   {
     file = "duck.core";
