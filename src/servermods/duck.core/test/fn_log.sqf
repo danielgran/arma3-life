@@ -1,9 +1,5 @@
 /*
-  Logs something to the server RPT
-
-
-  Author: Duckfine
-
+  Description: Logs something to the server RPT log.
 */
 
 params
@@ -12,52 +8,3 @@ params
 ];
 
 diag_log _message;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
