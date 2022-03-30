@@ -46,5 +46,3 @@ for "_mainFunc" from 0 to (count _cfgFunctions)-1 do
         };
     };
 };
-
-"END POST INIT" call test_fnc_log;
