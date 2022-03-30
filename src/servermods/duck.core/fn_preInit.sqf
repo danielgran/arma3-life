@@ -21,22 +21,23 @@ if (!isNil("serverInitDone")) exitWith {diag_log "INIT EXECUTED TWICE?";};
 // Redis Server init
 
 // Connect to RedisServer
-_con = call DUC_core_redis_fnc_connect;
+private _con = call DUC_core_redis_fnc_connect;
 // Check Redis Extension Version
-_a3rversion = call DUC_core_redis_fnc_checkVersion;
+private _a3rversion = call DUC_core_redis_fnc_checkVersion;
 
 if (_a3rversion isEqualTo "") exitWith
 {
-  diag_log text "[DUCK:CORE] A3Redis wurde nicht gefunden";
-  // Server isnt ready yet
-  // todo stop server from beeing starting and exiting --> have to mail/sms/push this to an administrator
+	["A3Redis wurde nicht gefunden", 4] call log_fnc_log;
+  if (true) exitWith {};
 };
-diag_log format["[DUCK:CORE] ArmaRedisClient wurde geladen! Version: %1", _a3redis];
+
+[format["[DUCK:CORE] ArmaRedisClient wurde geladen! Version: %1", _a3redis], 0] call log_fnc_log;
 
 // MySQL Server Initialize
 if (("extDB3" callExtension "9:VERSION") isEqualTo "") exitWith
 {
-	diag_log "EXTDB3 ERROR WURDE NICHT RICHTIG INSTALLIERT";
+	["extDB3 wurde nicht gefunden", 4] call log_fnc_log;
+	if (true) exitWith {};
 	duc_core_dbavailable = false;
 };
 
