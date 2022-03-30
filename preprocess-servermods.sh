@@ -27,8 +27,7 @@ for servermod in $(find ./src/servermods -mindepth 1 -maxdepth 1 -type d); do
     cpp -I$(pwd)/src/servermods -P $sqf_file $sqf_file_destination
   done
 
-  # copy important header files to the mod folder
-  # config.cpp
+  # copy the important config.cpp file
   echo "--> Copying config.cpp"
   cpp -I$(pwd)/src/servermods -P ./src/servermods/$servermod_name/config.cpp ./dist/@$servermod_name/addons/$servermod_name/config.cpp
 
