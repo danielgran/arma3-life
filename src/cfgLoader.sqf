@@ -1,7 +1,3 @@
-#define DF__SQF_RUNTIME__ASSEMBLY_DEBUG_ON_EXECUTE
-#define DF__SQF_RUNTIME__VALUE_SCOPE_DEBUG
-#define DF__CLI_PRINT_INPUT_ARGS
-
 normalize_string = {
     params["_text"];
     (_text splitString '"') select 0
