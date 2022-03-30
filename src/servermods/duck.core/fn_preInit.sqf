@@ -13,14 +13,7 @@ diag_log "       |_|    |_|  \_\______|_____|_| \_|_____|  |_|   ";
 
 // let init only be executed once
 if (!isNil("serverInitDone")) exitWith {diag_log "INIT EXECUTED TWICE?";};
-serverInitDone = false;
 
-// Activate DEBUG Mode
-#define DEBUG debug
-
-#ifdef DEBUG
-diag_log "DEBUGMODE ACTIVATED";
-#endif
 
 #define __SVAR__(var1,var2) var1 = compileFinal (if(typeName var2 isEqualTo "STRING") then {var2} else {str(var2)})
 #define __SCVAR__(var) var = compileFinal (if(typeName var isEqualTo "STRING") then {var} else {str(var)})
