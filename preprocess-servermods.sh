@@ -1,6 +1,7 @@
 #/bin/bash
 
-rm -rf ./dist/*
+rm -rf dist
+mkdir dist
 
 for servermod in $(find ./src/servermods -mindepth 1 -maxdepth 1 -type d); do
   servermod_path=$(realpath $servermod)
@@ -21,6 +22,7 @@ for servermod in $(find ./src/servermods -mindepth 1 -maxdepth 1 -type d); do
     sqf_file_destination="./dist/@$servermod_name/addons/$without_first_path_part"
 
     echo "--> Processing $sqf_file"
+    echo "  at $sqf_file_destination"
     mkdir -p $(dirname $sqf_file_destination)
     cpp -I$(pwd)/src/servermods -P $sqf_file $sqf_file_destination
   done
