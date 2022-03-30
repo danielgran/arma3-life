@@ -1,206 +1,293 @@
 class Duck_Core_Test
 {
-	tag = "test";
-	class test
-	{
-		file = "duck.core/test";
-		class log {};
-	};
+  tag = "test";
+  class test
+  {
+    file = "duck.core/test";
+    class log
+    {
+    };
+  };
 };
 
 class Duck_Core_Startup
 {
-	class Initialize
-	{
-		file = "duck.core";
+  class Initialize
+  {
+    file = "duck.core";
 
-		class preInit {preInit=1;};
-		class postInit {postInit=1;};
-	};
+    class preInit
+    {
+      preInit = 1;
+    };
+    class postInit
+    {
+      postInit = 1;
+    };
+  };
 };
 
 class Duck_Core
 {
-	tag = "duc_core";
-	class Util
-	{
-		file = "duck.core/core/util";
-		
-		class generateID {};
+  tag = "duc_core";
+  class Util
+  {
+    file = "duck.core/core/util";
 
-		class getArrayValue {};
-		class getConfigEntry {};
+    class generateID
+    {
+    };
 
-		class mresStringToArray {};
-		class mresArrayToString {};
-		class mresString {};
+    class getArrayValue
+    {
+    };
+    class getConfigEntry
+    {
+    };
 
-		class numberToString {};
+    class mresStringToArray
+    {
+    };
+    class mresArrayToString
+    {
+    };
+    class mresString
+    {
+    };
 
-		class setArrayValue {};
-		
-		class stringIsNumber {};
+    class numberToString
+    {
+    };
 
-	};
+    class setArrayValue
+    {
+    };
 
-	class StringUtils
-	{
-		file = "duck.core/core/util/string";
+    class stringIsNumber
+    {
+    };
+  };
 
-		 class replaceString {};
-	};
+  class StringUtils
+  {
+    file = "duck.core/core/util/string";
 
-
+    class replaceString
+    {
+    };
+  };
 };
 
 class Duck_Core_MySQL_Life
 {
-	tag = "duc_core_mysql";
+  tag = "duc_core_mysql";
 
-	// Overall methods
-	class MySQLDatabaseManager
-	{
-		file = "duck.core/core/database/helper/mysql";
-		
-		class buildInsert {};
-		class buildSelect {};
-		class buildUpdate {};
+  // Overall methods
+  class MySQLDatabaseManager
+  {
+    file = "duck.core/core/database/helper/mysql";
 
-		class queryHandler {};
-		class DBArrayToA3Array {};
-		class A3ArrayToDBArray {};
-		class A3ArrayToDBList {};
-	};
+    class buildInsert
+    {
+    };
+    class buildSelect
+    {
+    };
+    class buildUpdate
+    {
+    };
 
-	class UniversalMethods
-	{
-		file = "duck.core/core/database/mysql";
-		class datasetFetch {};
-		class datasetUpdate {};
-	};
+    class queryHandler
+    {
+    };
+    class DBArrayToA3Array
+    {
+    };
+    class A3ArrayToDBArray
+    {
+    };
+    class A3ArrayToDBList
+    {
+    };
+  };
 
-	// table: players
-	class Players_players
-	{
-		file = "duck.core/core/database/db_life/players/mysql";
-		class playerCheck {};
-		class playerNew {};
-	};
+  class UniversalMethods
+  {
+    file = "duck.core/core/database/mysql";
+    class datasetFetch
+    {
+    };
+    class datasetUpdate
+    {
+    };
+  };
+
+  // table: players
+  class Players_players
+  {
+    file = "duck.core/core/database/db_life/players/mysql";
+    class playerCheck
+    {
+    };
+    class playerNew
+    {
+    };
+  };
 };
 
 class Duck_Core_Redis
 {
-	tag = "duc_core_redis";
+  tag = "duc_core_redis";
 
-	//Universal Methods which can be used with any db context
-	class UniversalMethods
-	{
-		file = "duck.core/core/database/redis";
+  // Universal Methods which can be used with any db context
+  class UniversalMethods
+  {
+    file = "duck.core/core/database/redis";
 
-		class connect {};
-		// TODO RECONNECT / DISCONNECT ?
+    class connect
+    {
+    };
+    // TODO RECONNECT / DISCONNECT ?
 
-		class DBFlush {};
-		class DBGetKeys {};
-		class DBGetSize {};
+    class DBFlush
+    {
+    };
+    class DBGetKeys
+    {
+    };
+    class DBGetSize
+    {
+    };
 
-		class keyDelete {};
-		class keyExists {};
-		class keyGet {};
-		class keySet {};
+    class keyDelete
+    {
+    };
+    class keyExists
+    {
+    };
+    class keyGet
+    {
+    };
+    class keySet
+    {
+    };
 
-		class listAdd {};
-		class listDelete {};
-		class listFetch {};
-		class listEntryGet {};
-		class listEntryUpdate {};
+    class listAdd
+    {
+    };
+    class listDelete
+    {
+    };
+    class listFetch
+    {
+    };
+    class listEntryGet
+    {
+    };
+    class listEntryUpdate
+    {
+    };
+  };
 
-	};
+  // Helper methods for redis
+  class RedisUtil
+  {
+    file = "duck.core/core/database/helper/redis";
+    class checkVersion
+    {
+    };
 
-
-
-
-	// Helper methods for redis
-	class RedisUtil
-	{
-		file = "duck.core/core/database/helper/redis";
-		class checkVersion {};
-
-		class DBArrayToA3Array {};
-		class DBValToA3Val {};
-		class A3ValToDBVal {};
-
-	};
-
-
+    class DBArrayToA3Array
+    {
+    };
+    class DBValToA3Val
+    {
+    };
+    class A3ValToDBVal
+    {
+    };
+  };
 };
 
 class Duck_Core_System
 {
-	tag = "DUC_CORE_SYS";
+  tag = "DUC_CORE_SYS";
 
-	class System
-	{
-		file = "duck.core/core/system";
-		class handlerSystem {};
-		class initPlayer {};
-	};
+  class System
+  {
+    file = "duck.core/core/system";
+    class handlerSystem
+    {
+    };
+    class initPlayer
+    {
+    };
+  };
 
-	class Server
+  class Server
   {
     file = "duck.core/core/system/server";
 
-    class getServerInfo {};
+    class getServerInfo
+    {
+    };
   };
-
 };
-
-
 
 class Duck_Core_AUTH
 {
-	tag = "DUC_core_auth";
+  tag = "DUC_core_auth";
 
-	class Auth
-	{
-		file = "duck.core/core/system/auth";
-		class register {};
-	};
+  class Auth
+  {
+    file = "duck.core/core/system/auth";
+    class register {};
+  };
 };
-
 
 class Duck_Core_NETWORK
 {
-	tag = "DUC_core_net";
+  tag = "DUC_core_net";
 
-	class Network
-	{
-		file = "duck.core/core/system/network";
+  class Network
+  {
+    file = "duck.core/core/system/network";
 
-		class serverInterface {};
-		class sendClient {};
-		class prepClientVars {};
-	};
+    class serverInterface
+    {
+    };
+    class sendClient
+    {
+    };
+    class prepClientVars
+    {
+    };
+  };
 };
 
 class Duck_Core_PTS
 {
-	// Stands for Player Transaction System
-	tag = "DUC_CORE_PTS";
-	
+    // Stands for Player Transaction System
+  tag = "DUC_CORE_PTS";
+
   class Handler
   {
     file = "duck.core/core/pts";
 
-    class handlerPTS {};
+    class handlerPTS
+    {
+    };
   };
 
-	class Functions
-	{
-		file = "duck.core/core/pts/functions";
+  class Functions
+  {
+    file = "duck.core/core/pts/functions";
 
-		class getTransactionInfoPlayer {};
-    class transactPlayer {};
-	};
-
+    class getTransactionInfoPlayer
+    {
+    };
+    class transactPlayer
+    {
+    };
+  };
 };
