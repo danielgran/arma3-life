@@ -1,3 +1,5 @@
+// This file is only used to load the functions in the servermod to the missionnamespace
+
 private _normalize_string = {
     params["_text"];
     (_text splitString '"') select 0
