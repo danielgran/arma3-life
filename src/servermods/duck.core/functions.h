@@ -1,9 +1,9 @@
 class Duck_Core_Test
 {
-  tag = "test";
+  tag = "log";
   class test
   {
-    file = "duck.core/test";
+    file = "duck.core/core/logging";
     class log
     {
     };

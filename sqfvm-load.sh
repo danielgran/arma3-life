@@ -1,1 +1,1 @@
-docker run -v "$(pwd):/a3l" --rm -it danielgran/sqfvm sqfvm -v "/a3l/dist/@duck.core/addons|/" --input-config /a3l/dist/\@duck.core/addons/duck.core/config.cpp --input-sqf /a3l/src/sqfvm/cfgLoader.sqf
+docker run -v "$(pwd):/a3l" --rm -it danielgran/sqfvm sqfvm --suppress-welcome -v "/a3l/dist/@duck.core/addons|/" --input-config /a3l/dist/\@duck.core/addons/duck.core/config.cpp --input-sqf /a3l/src/sqfvm/cfgLoader.sqf
