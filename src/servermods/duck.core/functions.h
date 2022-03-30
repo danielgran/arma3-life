@@ -10,7 +10,7 @@ class Duck_Core_Test
 	tag = "test";
 	class test
 	{
-		file = "duck.core\test";
+		file = "duck.core/test";
 		class log {};
 	};
 };
@@ -34,7 +34,7 @@ class Duck_Core
 	tag = "duc_core";
 	class Util
 	{
-		file = "duck.core\core\util";
+		file = "duck.core/core/util";
 		
 		class generateID {};
 
@@ -55,7 +55,7 @@ class Duck_Core
 
 	class StringUtils
 	{
-		file = "duck.core\core\util\string";
+		file = "duck.core/core/util/string";
 
 		 class replaceString {};
 	};
@@ -65,10 +65,10 @@ class Duck_Core
 
 /////////////////////////////////////////////////
 //           __  ___      _____ ____    __     //
-//          /  |/  /_  __/ ___// __ \  / /     //
-//         / /|_/ / / / /\__ \/ / / / / /      //
+//          /  |/  /_  __/ ___// __ /  / /     //
+//         / /|_/ / / / //__ // / / / / /      //
 //        / /  / / /_/ /___/ / /_/ / / /___    //
-//       /_/  /_/\__, //____/\___\_\/_____/    //
+//       /_/  /_//__, //____//___/_//_____/    //
 /////////////////////////////////////////////////
 
 
@@ -79,7 +79,7 @@ class Duck_Core_MySQL_Life
 	// Overall methods
 	class MySQLDatabaseManager
 	{
-		file = "duck.core\core\database\helper\mysql";
+		file = "duck.core/core/database/helper/mysql";
 		
 		class buildInsert {};
 		class buildSelect {};
@@ -93,7 +93,7 @@ class Duck_Core_MySQL_Life
 
 	class UniversalMethods
 	{
-		file = "duck.core\core\database\mysql";
+		file = "duck.core/core/database/mysql";
 		class datasetFetch {};
 		class datasetUpdate {};
 	};
@@ -101,7 +101,7 @@ class Duck_Core_MySQL_Life
 	// table: players
 	class Players_players
 	{
-		file = "duck.core\core\database\db_life\players\mysql";
+		file = "duck.core/core/database/db_life/players/mysql";
 		class playerCheck {};
 		class playerNew {};
 	};
@@ -111,10 +111,10 @@ class Duck_Core_MySQL_Life
 
 /////////////////////////////////////////////
 //           ____           ___            //
-//          / __ \___  ____/ (_)____       //
-//         / /_/ / _ \/ __  / / ___/       //
+//          / __ /___  ____/ (_)____       //
+//         / /_/ / _ // __  / / ___/       //
 //        / _, _/  __/ /_/ / (__  )        //
-//       /_/ |_|\___/\__,_/_/____/         //
+//       /_/ |_|/___//__,_/_/____/         //
 /////////////////////////////////////////////
 
 
@@ -126,7 +126,7 @@ class Duck_Core_Redis
 	//Universal Methods which can be used with any db context
 	class UniversalMethods
 	{
-		file = "duck.core\core\database\redis";
+		file = "duck.core/core/database/redis";
 
 		class connect {};
 		// TODO RECONNECT / DISCONNECT ?
@@ -154,7 +154,7 @@ class Duck_Core_Redis
 	// Helper methods for redis
 	class RedisUtil
 	{
-		file = "duck.core\core\database\helper\redis";
+		file = "duck.core/core/database/helper/redis";
 		class checkVersion {};
 
 		class DBArrayToA3Array {};
@@ -169,9 +169,9 @@ class Duck_Core_Redis
 ////////////////////////////////
 //     ______
 //    / ____/___  ________
-//   / /   / __ \/ ___/ _ \
+//   / /   / __ // ___/ _ /
 //  / /___/ /_/ / /  /  __/
-//  \____/\____/_/   \___/
+//  /____//____/_/   /___/
 ////////////////////////////////
 
 
@@ -181,14 +181,14 @@ class Duck_Core_System
 
 	class System
 	{
-		file = "duck.core\core\system";
+		file = "duck.core/core/system";
 		class handlerSystem {};
 		class initPlayer {};
 	};
 
 	class Server
   {
-    file = "duck.core\core\system\server";
+    file = "duck.core/core/system/server";
 
     class getServerInfo {};
   };
@@ -203,7 +203,7 @@ class Duck_Core_AUTH
 
 	class Auth
 	{
-		file = "duck.core\core\system\auth";
+		file = "duck.core/core/system/auth";
 		class register {};
 	};
 };
@@ -215,7 +215,7 @@ class Duck_Core_NETWORK
 
 	class Network
 	{
-		file = "duck.core\core\system\network";
+		file = "duck.core/core/system/network";
 
 		class serverInterface {};
 		class sendClient {};
@@ -223,69 +223,24 @@ class Duck_Core_NETWORK
 	};
 };
 
-
 class Duck_Core_PTS
 {
 	// Stands for Player Transaction System
 	tag = "DUC_CORE_PTS";
-
+	
   class Handler
   {
-    file = "duck.core\core\pts";
+    file = "duck.core/core/pts";
 
     class handlerPTS {};
   };
 
-
-
 	class Functions
 	{
-		file = "duck.core\core\pts\functions";
+		file = "duck.core/core/pts/functions";
 
 		class getTransactionInfoPlayer {};
     class transactPlayer {};
 	};
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
