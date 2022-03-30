@@ -29,6 +29,7 @@ for servermod in $(find ./src/servermods -mindepth 1 -maxdepth 1 -type d); do
 
   # copy important header files to the mod folder
   # config.cpp
+  echo "--> Copying config.cpp"
   cpp -I$(pwd)/src/servermods -P ./src/servermods/$servermod_name/config.cpp ./dist/@$servermod_name/addons/$servermod_name/config.cpp
 
 
