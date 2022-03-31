@@ -18,6 +18,8 @@ for clientmission in $(find ./src/clientmissions -mindepth 1 -maxdepth 1 -type d
   # preprocess the description.ext file
   cpp -I$mission_source_root -P ./src/clientmissions/$clientmission_name/description.ext $mission_target_root/description.ext
 
+  cp $mission_source_root/mission.sqm $mission_target_root/mission.sqm
+  
   # preprocess the *.sqf files with cpp
   for sqf in $(find $mission_source_root -name "*.sqf" -type f); do
     relative_path_of_file=$(realpath $sqf | sed "s/.*\(clientmissions\)/\1/g")
