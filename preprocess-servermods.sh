@@ -6,6 +6,8 @@ mkdir dist
 for servermod in $(find ./src/servermods -mindepth 1 -maxdepth 1 -type d); do
   servermod_path=$(realpath $servermod)
   servermod_name=$(basename $servermod_path)
+
+  
   
   # Check for valid mod.cpp
   if [ ! -f "$servermod_path/mod.cpp" ]; then
