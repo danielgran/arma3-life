@@ -1,1 +1,0 @@
--config=server.cfg -autoinit -profiles=logs/ -serverMod=@A3Log;@extDB3;@Duck.Core;@DUCK.LIFE

@@ -1,0 +1,6 @@
+binary: "arma3server_x64"
+config:
+  config: "server.cfg"
+  autoinit: "yes"
+  profiles: "logs/"
+  serverMod: "@extDB3"
