@@ -66,18 +66,18 @@ class CfgSounds
 //               DIALOG              //
 ///////////////////////////////////////
 // Implement standard defines
-#include "life\modules\ui\define\standard.hpp"
+#include "life/modules/ui/define/standard.hpp"
 // Implement custom defines
-#include "life\modules\ui\define\DucDefines.hpp"
+#include "life/modules/ui/define/DucDefines.hpp"
 // Implement RscTitles
-#include "life\modules\ui\hud\RscTitles.hpp"
+#include "life/modules/ui/hud/RscTitles.hpp"
 
 
 // Test
-#include "life\modules\ui\gui\testUI\dialog\dialog.hpp"
+#include "life/modules/ui/gui/testUI/dialog/dialog.hpp"
 
 // Phone Dialog
-#include "life\modules\ui\gui\phone\dialog\dialog.hpp"
+#include "life/modules/ui/gui/phone/dialog/dialog.hpp"
 
 
 
@@ -86,10 +86,10 @@ class CfgSounds
 class CfgFunctions
 {
   // Include CoreFuncs
-  #include "core\functions.h"
+  #include "core/functions.h"
 
   // Include LifeFuncs
-	#include "life\functions.h"
+	#include "life/functions.h"
 };
 
 class CfgRemoteExec
@@ -100,5 +100,5 @@ class CfgRemoteExec
 class CfgSettings
 {
 
-  #include "life\config\clientVars.hpp"
+  #include "life/config/clientVars.hpp"
 };
