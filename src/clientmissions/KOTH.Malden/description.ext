@@ -49,12 +49,12 @@ class CfgFunctions
 	#include "functions.h"
 };
 
-#include "gui\defines.hpp"
-#include "gui\dialogs\playerGUI.hpp"
+#include "gui/defines.hpp"
+#include "gui/dialogs/playerGUI.hpp"
 
 
 class RscTitles
 {
-	#include "gui\titles\statusAdmin.hpp"
-	#include "gui\titles\statusPlayer.hpp"
+	#include "gui/titles/statusAdmin.hpp"
+	#include "gui/titles/statusPlayer.hpp"
 };

@@ -1,7 +1,5 @@
 #/bin/bash
 
-rm -rf dist
-mkdir dist
 
 for servermod in $(find ./src/servermods -mindepth 1 -maxdepth 1 -type d); do
   servermod_path=$(realpath $servermod)
