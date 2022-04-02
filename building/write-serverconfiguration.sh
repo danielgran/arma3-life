@@ -1,4 +1,5 @@
 #!/bin/bash
+source buildvars.sh
 
 parse_yaml() {
    local prefix=$2
@@ -17,7 +18,7 @@ parse_yaml() {
 }
 
 # Process the configuration yaml
-eval $(parse_yaml ./src/serverconfiguration/staticstartparams.yaml)
+eval $(parse_yaml $SERVERCONFIG/staticstartparams.yaml)
 
 arguments=""
 
@@ -37,7 +38,7 @@ if [ -n "$config_profiles" ]; then
 fi
 
 # Build the -serverMod argument
-for servermod in $(find ./src/servermods -mindepth 1 -maxdepth 1 -type d); do
+for servermod in $(find $SERVERMODS -mindepth 1 -maxdepth 1 -type d); do
   servermod_path=$(realpath $servermod)
   servermod_name=$(basename $servermod_path)
 
@@ -46,5 +47,5 @@ done;
 arguments="$arguments -serverMod=$config_serverMod"
 
 
-cp ./src/serverconfiguration/server.cfg ./dist/server.cfg
-echo "./$binary $arguments" > ./dist/start.sh
+cp $SERVERCONFIG/server.cfg $DESTINATION/server.cfg
+echo "./$binary $arguments" > $DESTINATION/start.sh

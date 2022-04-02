@@ -2,6 +2,7 @@
 source ./buildvars.sh
 
 for servermod in $(find $SERVERMODS -mindepth 1 -maxdepth 1 -type d); do
+  echo $servermod
   servermod_path=$(realpath $servermod)
   servermod_name=$(basename $servermod_path)
   # Check for valid mod.cpp

@@ -1,4 +1,6 @@
-SERVERMODS="../src/servermods"
-CLIENTMISSIONS="../src/clientmissions"
+SERVERMODS="$(pwd)/../src/servermods"
+SERVERCONFIG="$(pwd)/../src/serverconfiguration"
+CLIENTMISSIONS="$(pwd)/../src/clientmissions"
 
-DESTINATION="../dist"
+
+DESTINATION="$(pwd)/../tmp"
