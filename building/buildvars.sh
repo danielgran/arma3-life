@@ -4,3 +4,7 @@ CLIENTMISSIONS="$(pwd)/../src/clientmissions"
 
 
 TMP_PATH="$(pwd)/../tmp"
+
+DESTINATION="$(pwd)/../dist"
+
+DESTINATION=$(realpath $DESTINATION)

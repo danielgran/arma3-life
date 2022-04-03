@@ -6,6 +6,7 @@ start_seconds="$(date +%s)"
 ./preprocess-servermods.sh
 ./preprocess-clientmissions.sh
 ./write-serverconfiguration.sh
+./pack-pbos.sh
 
 end_seconds="$(date +%s)"
 
