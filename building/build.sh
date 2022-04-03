@@ -3,6 +3,7 @@
 start_seconds="$(date +%s)"
 
 ./clear.sh
+./init-folderstructure.sh
 ./preprocess-servermods.sh
 ./preprocess-clientmissions.sh
 ./pack-pbos.sh
