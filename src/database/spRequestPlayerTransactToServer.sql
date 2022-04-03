@@ -1,5 +1,4 @@
-create
-    definer = root@`%` procedure spRequestPlayerTransactToServer(IN parSteamID64 char(20), IN parServerFrom char(20),
+create definer = root@`%` procedure spRequestPlayerTransactToServer(IN parSteamID64 char(20), IN parServerFrom char(20),
                                                                  IN parServerTo char(30), IN parVehicle char(100),
                                                                  IN parVehicleSkin char(100), IN parVelocity char(100))
 BEGIN
