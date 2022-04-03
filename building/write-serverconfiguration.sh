@@ -47,5 +47,5 @@ done;
 arguments="$arguments -serverMod=$config_serverMod"
 
 
-cp $SERVERCONFIG/server.cfg $DESTINATION/server.cfg
-echo "./$binary $arguments" > $DESTINATION/start.sh
+cp $SERVERCONFIG/server.cfg $TMP_PATH/server.cfg
+echo "./$binary $arguments" > $TMP_PATH/start.sh

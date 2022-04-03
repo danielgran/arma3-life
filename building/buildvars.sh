@@ -3,4 +3,4 @@ SERVERCONFIG="$(pwd)/../src/serverconfiguration"
 CLIENTMISSIONS="$(pwd)/../src/clientmissions"
 
 
-DESTINATION="$(pwd)/../tmp"
+TMP_PATH="$(pwd)/../tmp"
