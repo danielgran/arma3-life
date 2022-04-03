@@ -7,7 +7,7 @@ start_seconds="$(date +%s)"
 ./preprocess-clientmissions.sh
 ./pack-pbos.sh
 ./write-serverconfiguration.sh
-
+./copy-binaries.sh
 
 end_seconds="$(date +%s)"
 
