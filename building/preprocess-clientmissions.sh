@@ -10,7 +10,7 @@ for clientmission in $(find $CLIENTMISSIONS -mindepth 1 -maxdepth 1 -type d); do
   echo $clientmission_name
 
   mission_source_path="$CLIENTMISSIONS/$clientmission_name"
-  mission_target_path="$TMP_PATH/mpmissions/$clientmission_name"
+  mission_target_path="$PREPROCESSOR_OUTPUT/mpmissions/$clientmission_name"
   mkdir -p $mission_target_path
 
   # preprocess the description.ext file
@@ -23,7 +23,7 @@ for clientmission in $(find $CLIENTMISSIONS -mindepth 1 -maxdepth 1 -type d); do
   for sqf in $(find $mission_source_path -name "*.sqf" -type f); do
     relative_path_of_file=$(realpath $sqf | sed "s/.*\(clientmissions\)/\1/g")
     without_first_path_part=${relative_path_of_file#*/}
-    sqf_file_destination="$TMP_PATH/mpmissions/$without_first_path_part"
+    sqf_file_destination="$PREPROCESSOR_OUTPUT/mpmissions/$without_first_path_part"
     folder_of_source_sqf=$(dirname $(realpath $sqf))
     
     mkdir -p $(dirname $sqf_file_destination)

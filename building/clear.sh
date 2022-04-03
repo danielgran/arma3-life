@@ -1,5 +1,5 @@
 #!/bin/bash
 source buildvars.sh
 
-rm -rf $TMP_PATH
+rm -rf $PREPROCESSOR_OUTPUT
 rm -rf $DESTINATION

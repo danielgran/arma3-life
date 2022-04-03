@@ -17,7 +17,7 @@ for servermod in $(find $SERVERMODS -mindepth 1 -maxdepth 1 -type d); do
   for sqf_file in $(find $servermod_path -type f -name "*.sqf"); do
     relative_path_of_file=$(realpath $sqf_file | sed "s/.*\(servermods\)/\1/g")
     without_first_path_part=${relative_path_of_file#*/}
-    sqf_file_destination="$TMP_PATH/@$servermod_name/addons/$without_first_path_part"
+    sqf_file_destination="$PREPROCESSOR_OUTPUT/@$servermod_name/addons/$without_first_path_part"
 
     echo "  --> Processing $sqf_file"
     echo "  at $sqf_file_destination"
@@ -28,7 +28,7 @@ for servermod in $(find $SERVERMODS -mindepth 1 -maxdepth 1 -type d); do
 
   # copy the important config.cpp file
   echo "--> Copying config.cpp"
-  cpp -I"$SERVERMODS" -P $SERVERMODS/$servermod_name/config.cpp $TMP_PATH/@$servermod_name/addons/$servermod_name/config.cpp
+  cpp -I"$SERVERMODS" -P $SERVERMODS/$servermod_name/config.cpp $PREPROCESSOR_OUTPUT/@$servermod_name/addons/$servermod_name/config.cpp
 
 
 done

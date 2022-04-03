@@ -3,9 +3,9 @@ SERVERCONFIG="$(pwd)/../src/serverconfiguration"
 CLIENTMISSIONS="$(pwd)/../src/clientmissions"
 
 
-TMP_PATH="$(pwd)/../tmp"
+PREPROCESSOR_OUTPUT="$(pwd)/../preprocessor-output"
 
 DESTINATION="$(pwd)/../dist"
 
-TMP_PATH=$(realpath $TMP_PATH)
+PREPROCESSOR_OUTPUT=$(realpath $PREPROCESSOR_OUTPUT)
 DESTINATION=$(realpath $DESTINATION)
