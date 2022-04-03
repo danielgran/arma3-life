@@ -7,4 +7,5 @@ TMP_PATH="$(pwd)/../tmp"
 
 DESTINATION="$(pwd)/../dist"
 
+TMP_PATH=$(realpath $TMP_PATH)
 DESTINATION=$(realpath $DESTINATION)

@@ -15,11 +15,15 @@ for servermod in $(find $TMP_PATH -name "@*" -mindepth 1 -maxdepth 1 -type d); d
   docker exec $container_id /bin/bash -c "mkdir -p $container_path/out/@$servermod_name/addons"
   docker exec $container_id /bin/bash -c "pbomanager $container_path/in/@$servermod_name/addons/ \
                                                      $container_path/out/@$servermod_name/addons/$servermod_name.pbo"
-  
-
 done;
 
-
+for clientmission in $(find $TMP_PATH/mpmissions -mindepth 1 -maxdepth 1 -type d); do
+  clientmission_path=$(realpath $clientmission)
+  clientmission_name=$(basename $clientmission_path)
+  docker exec $container_id /bin/bash -c "mkdir -p $container_path/out/mpmissions"
+  docker exec $container_id /bin/bash -c "pbomanager $container_path/in/mpmissions/$clientmission_name \
+                                                     $container_path/out/mpmissions/$clientmission_name.pbo"
+done;
 
 # Stop container and send task in background
 docker stop $container_id &
