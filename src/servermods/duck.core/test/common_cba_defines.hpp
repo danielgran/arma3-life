@@ -1569,11 +1569,11 @@ Author:
 #define TEST_OP(A,OPERATOR,B,MESSAGE) \
     if ((A) OPERATOR (B)) then \
     { \
-        TEST_SUCCESS('(A OPERATOR B)') \
+        diag_log "Test OK: " + (str (A)) + " " + (str (OPERATOR)) + " " + (str (B)); \
     } \
     else \
     { \
-        TEST_FAIL('(A OPERATOR B)') \
+        diag_log "Test FAIL: " + (str (A)) + " " + (str (OPERATOR)) + " " + (str (B)) + " " + (MESSAGE); \
     };
 
 /* -------------------------------------------
