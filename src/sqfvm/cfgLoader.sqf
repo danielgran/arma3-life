@@ -46,3 +46,7 @@ for "_mainFunc" from 0 to (count _cfgFunctions)-1 do
         };
     };
 };
+
+"A3Redis" callExtension "version";
+
+[] call startup_fnc_preInit;
