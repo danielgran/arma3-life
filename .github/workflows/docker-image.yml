@@ -17,7 +17,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
+    - name: Build to dist
       run: cd $GITHUB_WORKSPACE/building && ./build.sh
 
     - name: Store artifacts
