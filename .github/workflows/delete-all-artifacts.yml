@@ -1,0 +1,13 @@
+name: Delete all artifacts
+
+on:
+  workflow_dispatch:
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: kolpav/purge-artifacts-action@v1
+      with:
+        token: ${{ secrets.GITHUBTOKEN }}
+        expire-in: 0
